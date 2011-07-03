@@ -14,13 +14,13 @@ if ( is_active_sidebar( 'right-sidebar' ) ) dynamic_sidebar('right-sidebar'); el
 	</li>
 
 	<li id="archives" class="widget-container">
-		<h3 class="sidebar_title"><?php _e( 'Archives', 'dot-b' ); ?></h3>
+		<h3 class="widget_title"><?php _e( 'Archives', 'dot-b' ); ?></h3>
 		<ul>
 			<?php wp_get_archives( 'type=monthly' ); ?>
 		</ul>
 	</li>
 	<li id="recent-post" class="widget-container">
-		<h3 class="sidebar_title"><?php _e( 'Recent Posts', 'dot-b' ); ?></h3>
+		<h3 class="widget_title"><?php _e( 'Recent Posts', 'dot-b' ); ?></h3>
 		<ul>
 		<?php
 			$recent_posts = wp_get_recent_posts();
@@ -31,17 +31,17 @@ if ( is_active_sidebar( 'right-sidebar' ) ) dynamic_sidebar('right-sidebar'); el
 		</ul>
 	</li>
 	<li id="recent-comments" class="widget-container">
-			<?php the_widget('WP_Widget_Recent_Comments', 'number', 'before_widget=&after_widget=&before_title=<h3 class="sidebar_title">&after_title =</h3>'); ?> 
+			<?php the_widget('WP_Widget_Recent_Comments', 'number', 'before_widget=&after_widget=&before_title=<h3 class="widget_title">&after_title =</h3>'); ?> 
 	</li>	
 	<li id="recent-comments" class="widget-container">
-		<h3 class="sidebar_title"><?php _e( 'Archives', 'dot-b' ); ?></h3>
+		<h3 class="widget_title"><?php _e( 'Archives', 'dot-b' ); ?></h3>
 		<ul>
 		<?php wp_tag_cloud('smallest=8&largest=22'); ?>
 		</ul>
 	</li>
 
 	<li id="meta" class="widget-container">
-		<h3 class="sidebar_title"><?php _e( 'Meta', 'dot-b' ); ?></h3>
+		<h3 class="widget_title"><?php _e( 'Meta', 'dot-b' ); ?></h3>
 		<ul>
 			<?php wp_register(); ?>
 			<li><?php wp_loginout(); ?></li>

@@ -4,9 +4,9 @@ if ( function_exists('register_nav_menu') ) { register_nav_menu('primary', 'head
 
 // Register sidebar
 register_sidebar(array(
-	'before_widget' => '<div class="side_box" id="%2$s">'."\n",
-	'after_widget' => "</div>\n",
-	'before_title' => '<h3 class="sidebar_title">',
+	'before_widget' => '<li class="widget-container" id="%2$s">'."\n",
+	'after_widget' => "</li>\n",
+	'before_title' => '<h3 class="widget_title">',
 	'after_title' => "</h3>\n",
 	'name' => 'Sidebar',
 	'id' => 'right-sidebar'

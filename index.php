@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header(); ?><?php echo $dotb_is_ga; if ($dotb_is_ga == "false") echo $dotb_analytics_code; ?>
 <div id="main"><!--here -->
 	<div id="content">
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -11,7 +11,7 @@
 			</div>
 			<div class="post_content">
  <?php if(is_category() || is_archive()) {
-     the_excerpt();
+
  } else {
      the_content(__('Read more'));
  } ?>

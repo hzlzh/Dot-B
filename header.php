@@ -1,3 +1,10 @@
+<?
+global $options;
+foreach ($options as $value) {
+    if (get_settings( $value['id'] ) === FALSE) { $$value['id'] = $value['std']; } else { $$value['id'] = get_settings( $value['id'] ); }
+}
+?>
+<?php include (TEMPLATEPATH.'/get-theme-options.php'); ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 <head>
@@ -23,6 +30,7 @@
 	if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' );
 	wp_enqueue_script('jquery','/wp-includes/js/jquery/jquery.js','','','true'); ?>
 	<?php wp_head(); ?>
+<?php if ($dotb_is_ga == "true") echo $dotb_analytics_code; ?>
 </head>
 <body <?php body_class(); ?>>
 <div id="top-bar"></div>
@@ -37,7 +45,7 @@
 					<div id="header_search_area">
 						<?php get_search_form(); ?>
 					</div>
-				<a id="rss" rel="external nofollow" href="<?php if($options['rss_url'] != '') { echo($options['rss_url']); } else { bloginfo('rss2_url'); } ?>" title="<?php _e('RSS Feed', 'dot-b'); ?>" ><?php _e('RSS Feed', 'dot-b'); ?></a>
+				<a id="rss" rel="external nofollow" href="<?php if($dotb_rss_url != '') { echo $dotb_rss_url; } else { bloginfo('rss2_url'); } ?>" title="<?php _e('RSS Feed', 'dot-b'); ?>" ><?php _e('RSS Feed', 'dot-b'); ?></a>
 			</div>
 			<div class="clear"></div>
 			<div id="social">
@@ -49,4 +57,4 @@
 			</div>
 		</div>
 		<div class="header_menu"><?php wp_nav_menu('link_before=<span>&link_after=</span>'); ?></div>
-	</div>
+	</div><?php echo $dotb_is_ga; if ($dotb_is_ga == "false") echo $dotb_analytics_code; ?>

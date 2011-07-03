@@ -20,9 +20,11 @@
 		<span class="post_readmore"><?php comments_popup_link(__('Leave a comment', 'dot-b'),__('[ 1 Comment ]', 'dot-b'),__('[ % Comments ]', 'dot-b')); ?></span>	
 	</div>
 	<div class="post-nav">
-		<span class="previous_post"><?php previous_post_link('%link') ?></span>
-		<span class="next_post"><?php next_post_link('%link') ?></span>
+		<span class="previous_post"><?php if (get_next_post()) : ?><?php next_post_link('%link') ?><?php else: ?><?php _e('Already the latest post!', 'dot-b'); ?><?php endif; ?></span>
+		<span class="next_post"><?php if (get_previous_post()) : ?><?php previous_post_link('%link') ?><?php else: ?><?php _e('Already the last  post!', 'dot-b'); ?><?php endif; ?></span>
 	</div>
+	
+	
 	
 <?php endwhile; else: ?>
     <div class="post">

@@ -23,7 +23,7 @@
 
 // All the jQuery function that WordPress used
 // Add empty span tag at menu which have drop-down meun
-jQuery("ul.sub-menu").parent().append("<span class=\"menu-mark\"></span>");
+jQuery("ul.sub-menu:not(.sub-menu .sub-menu)").parent().append("<span class=\"menu-mark\"></span>");
 // Drop down menu slide function
 var mouseover_tid = [];var mouseout_tid = []; jQuery('.menu > li').each(function(index){jQuery(this).hover( function(){var _self = this; clearTimeout(mouseout_tid[index]); mouseover_tid[index] = setTimeout(function(){jQuery(_self).find('ul:eq(0)').slideDown('fast');}, 200);}, function(){var _self = this; clearTimeout(mouseover_tid[index]); mouseout_tid[index] = setTimeout(function(){jQuery(_self).find('ul:eq(0)').slideUp('fast');}, 200);} );});
 // Top colourful bar
@@ -70,5 +70,6 @@ jQuery(function () {
 
 
 </script>
+<?php if ($dotb_is_ga == "false") echo $dotb_analytics_code; ?>
 </body>
 </html>

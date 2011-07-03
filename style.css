@@ -227,14 +227,13 @@ width: 170px;
 #sidebar li li{ 
     line-height: 20px;
     margin: 0 0 4px;
-	font-style: italic;
-	
 	}
 #sidebar li li a{
-font-style: normal;
+
 }
 #sidebar li li:hover{    background-position: 0 -204px;}
-.sidebar_title{
+#sidebar .widget-container div {padding: 5px;}
+.widget_title{
 color:#777;
     background-color: #EEEEEE;
     border-left: 2px solid #999;
@@ -244,7 +243,7 @@ color:#777;
     padding: 5px;
 	margin: 0 0 0.7em;
 }
-.sidebar_title:hover{
+.widget_title:hover{
     background-color: #EEEEEE;
     border-left: 2px solid #0066cc;
 }
@@ -254,16 +253,20 @@ overflow:hidden;
 margin-top: 10px;
 }
 .post-nav .previous_post {
+	font-style: italic;
+	color: #888888;
     background-position: 0 -315px;
     float: left;
 	height:19px;
 	display:block;
 	overflow:hidden;
     margin: 0 0 0 6px;
-    padding: 0 0 0 13px;
+    padding: 0 10px 0 13px;
 }
 
 .post-nav  .next_post {
+	font-style: italic;
+	color: #888888;
     background-position: right -315px;
     float: right;
 	height:19px;
