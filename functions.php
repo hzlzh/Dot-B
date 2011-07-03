@@ -20,11 +20,15 @@ add_filter('wp_tag_cloud', 'colorCloud', 1);
 // Custom Comments List.
 function mytheme_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
+	if ( $post = get_post($post_id) ) {
+                       if ( $comment->user_id === $post->post_author )
+                               $bypostauthor = 'by-post-author';
+               }
 	switch ( $comment->comment_type ) :
 		case '' :
 	?>
 	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-		<div id="comment-<?php comment_ID(); ?>">
+		<div id="comment-<?php comment_ID(); ?>" class="<?php echo $bypostauthor;?>">
 		<div class="comment-author vcard">
 			<?php echo get_avatar( $comment, 40 ); ?>
 			<?php printf( sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>

@@ -33,11 +33,38 @@ jQuery("#s").mouseover(function() {
     jQuery(this).focus().val([""]).mouseout(function() {jQuery(this).val(["type, hit enter"]).blur()})
   });
 // Link sparkling function
-jQuery("body a:not(.post_meta li a),.post_meta li").hover(function(){
+jQuery(".post_meta li,body a:not(.post_meta li a)").hover(function(){
 if(!jQuery(this).is(":animated")){
 jQuery(this).animate({opacity:".7" },220).animate({opacity:"1"},180);
 }
 }); 
+    jQuery(function(){
+    jQuery('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        && location.hostname == this.hostname) {
+            var $target = jQuery(this.hash);
+            $target = $target.length && $target || jQuery('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top-100;
+                jQuery('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+}); 
+// hide #return_top first
+jQuery("#return_top").hide();
+// fade in #return_top
+jQuery(function () {
+	jQuery(window).scroll(function () {
+		if (jQuery(this).scrollTop() > 100) {
+			jQuery('#return_top').fadeIn();
+		} else {
+			jQuery('#return_top').fadeOut();
+		}
+	});
+}); 
+
   
 });
 

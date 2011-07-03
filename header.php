@@ -45,11 +45,7 @@
 				<a rel="external nofollow" href="http://delicious.com/post?url=<?php the_permalink() ?>" class="twitter" title="Delicious" ></a>
 				<a rel="external nofollow" href="http://delicious.com/post?url=<?php the_permalink() ?>" class="delicious" title="Delicious" ></a>
 				<a rel="external nofollow" href="http://delicious.com/post?url=<?php the_permalink() ?>" class="google" title="Delicious" ></a>
-				<a rel="external nofollow" href="http://delicious.com/post?url=<?php the_permalink() ?>" class="picasa" title="Delicious" ></a>
 				<a rel="external nofollow" href="http://delicious.com/post?url=<?php the_permalink() ?>" class="tencent" title="Delicious" ></a>
-				<a rel="external nofollow" href="http://delicious.com/post?url=<?php the_permalink() ?>" class="rss" title="Delicious" ></a>
-				<a rel="external nofollow" href="http://delicious.com/post?url=<?php the_permalink() ?>" class="facebook1" title="Delicious" ></a>
-				<a rel="external nofollow" href="http://delicious.com/post?url=<?php the_permalink() ?>" class="twitter1" title="Delicious" ></a>
 			</div>
 		</div>
 		<div class="header_menu"><?php wp_nav_menu('link_before=<span>&link_after=</span>'); ?></div>

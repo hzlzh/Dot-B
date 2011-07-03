@@ -25,7 +25,7 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 }
 /* body | background image | font-style */
 body{
-	background:url("img/body-bg.jpg") repeat scroll center top transparent;
+	background:url("images/body-bg.jpg") repeat scroll center top transparent;
 	font:13px/18px Tahoma,Arial,Helvetica,sans-serif;
 	color:#555;
 	line-height:1;}
@@ -55,7 +55,7 @@ blockquote:hover{
 pre{border:1px solid #CCC;background:#EEEFFF;padding:10px;margin:0 0 1em 0;overflow:hidden;white-space:pre-wrap;}
 object{display:block;margin:0 auto}
 	
-#top-bar,#bottom-bar,#social a,#rss,.menu-mark,.post_info_date,.post_info_author,.post_info_edit,.post_title_h2,.post_meta,.previous_post,.next_post,#comments-title,#sidebar ul li ul li,#header_search_area,#reply-title{background-image: url("img/all.png");}
+#top-bar,#bottom-bar,#social a,#rss,.menu-mark,.post_info_date,.post_info_author,.post_info_edit,.post_title_h2,.post_meta,.previous_post,.next_post,#comments-title,#sidebar ul li ul li,#header_search_area,#reply-title{background-image: url("images/all.png");}
 /* the colourful top and bottom bar action with jQuery function located in (./all.js) */
 #top-bar{background-position: 0 -632px;height:4px;font-size:0;width:20%;}
 #bottom-bar{background-position: 0 bottom;height:4px;font-size:0;}
@@ -63,7 +63,7 @@ object{display:block;margin:0 auto}
 #wrapper{background: none repeat scroll 0 0 #F1F1F1;margin:0 auto;width:960px}
 /* header */
 #header{background:none repeat scroll 0 0 #F1F1F1;border-color:#e8e8e8;border-style: hidden solid;border-width:1px}
-#header #logo{display: inline;float: left;margin: 20px;}
+#header #logo{display: inline;float: left;margin: 20px 10px;}
 #header #logo a,#header #logo a:visited{font-size:32px;color:#0066cc;line-height:32px;}
 #header #logo a:hover{color:#2089cc}
 #header #description{color: #888888;font-size: 13px;font-weight: normal;line-height: 13px;margin-top: 7px;}
@@ -177,7 +177,7 @@ width: 170px;
 	    line-height: 20px;
     padding: 4px 0;
 	}
-.post{}
+.post{margin-top: 10px;}
 .post_content{margin: 10px 5px;}
 .post_title_h2 a,.post_title_h2 a:visited{color:#555;display:inline-block}
 .post_title_h2 a:hover{color:#BD0800}
@@ -196,9 +196,9 @@ width: 170px;
 .post_info_bootom{overflow:hidden;margin: 10px 0 10px -7px;padding:0 0 0 7px;}
 .post_meta{float: left;width: 550px;display: inline;background-position: right -441px;margin: 0 0 0 -7px;padding:0 0 0 7px;overflow:hidden;height:19px;}
 .post_meta ul{line-height:100%}
-.post_meta li{float:left;padding-right:0;position:relative;background:url("img/tag.png") no-repeat scroll transparent;margin-left:-7px;padding:0 0 0 7px;background-position:-12px 0;}
-.post_meta li:hover{background:url("img/tag.png") no-repeat scroll -12px -103px transparent}
-.post_meta ul li a{background:url("img/tag.png") no-repeat scroll 100% -50px #b6b6b6;color:#FFF;display:block;float:left;height:19px;line-height:19px;overflow:hidden;padding:0 14px 0 5px}
+.post_meta li{float:left;padding-right:0;position:relative;background:url("images/tag.png") no-repeat scroll transparent;margin-left:-7px;padding:0 0 0 7px;background-position:-12px 0;}
+.post_meta li:hover{background:url("images/tag.png") no-repeat scroll -12px -103px transparent}
+.post_meta ul li a{background:url("images/tag.png") no-repeat scroll 100% -50px #b6b6b6;color:#FFF;display:block;float:left;height:19px;line-height:19px;overflow:hidden;padding:0 14px 0 5px}
 .post_meta ul li:hover a,.post_meta ul li a:hover{color:#FFF;background-color:#7ea6dd;background-position:100% -153px}
 .post_readmore{margin:0 0 0 6px;height: 17px;
     line-height: 17px;display: inline;}
@@ -304,7 +304,7 @@ margin-top: 10px;
 #wp-calendar tbody a:hover{background-color:#e7e7e7}
 /* calendar */
 
-#thecomments{margin-right:20px;}
+#thecomments{margin-right:20px;width: 640px;}
 #comments-title{
 	background-position: 0 -421px;
     font-size: 14px;
@@ -315,36 +315,28 @@ margin-top: 10px;
 #comments-title span{background:#f1f1f1;padding:0 4px;color:#888;}
 #comments-title span a{color:#888;}
 ol.commentlist li{position:relative;list-style:none;margin:0 0 5px;padding-bottom:4px}
-ol.commentlist li div.comment-author{    border-bottom: 3px dashed #DDDDDD;
-    margin-bottom: 4px;}
-ol.commentlist li div.vcard img.avatar{    background: none repeat scroll 0 0 #FFFFFF;
-    border-color: #CCCCCC;
-    border-style: solid;
-    border-width: 1px;
-    height: 40px;
-    padding: 1px;
-    position: absolute;}
+
+ol.commentlist li .by-post-author div.vcard img.avatar{position: absolute;right: 0;float: right;border: 1px dashed #ddd;margin-top:-4px;}
+ol.commentlist li .by-post-author div.vcard cite.fn{float: right;margin: 0 50px 0 0;}
+ol.commentlist li .by-post-author span.comment-meta{    position: absolute;
+    right: 48px;
+    top: 20px;left:auto;}
+ol.commentlist li .by-post-author p{padding: 3px 0 3px 44px;}
+ol.commentlist li .by-post-author div.reply,ol .commentlist li .atclass{right:auto;left: 0px;top: 5px;}
+ol.commentlist li .by-post-author div.comment-author{height:18px;}
+
+
+ol.commentlist li div.comment-author{height:20px;border-bottom: 3px dashed #DDDDDD;margin-bottom: 4px;}
+ol.commentlist li div.vcard img.avatar{    background: none repeat scroll 0 0 #FFFFFF;border-color: #CCCCCC;border-style: solid;border-width: 1px;height: 40px;padding: 1px;position: absolute;}
 ol.commentlist li div.vcard cite.fn{margin-left:50px;font-style:normal;font-size:14px;font-weight:bold}
 ol.commentlist li div.vcard cite.fn a.url{color:#06c}
 ol.commentlist li div.vcard cite.fn a.url:hover{color:#555}
 ol.commentlist li div.vcard span.says{position:absolute;text-indent:-9999em}
-ol.commentlist li span.comment-meta{    color: #aaa;
-    font-size: 12px;
-    left: 55px;
-    margin-left: 5px;
-    top: 25px;}
+ol.commentlist li span.comment-meta{    color: #aaa;font-size: 12px;left: 55px;margin-left: 5px;top: 25px;}
 ol.commentlist li span.comment-meta a{color:#AAA}
 ol.commentlist li span.comment-meta a:hover{color:#222}
 ol.commentlist li p{padding:0 50px 5px 55px}
-ol.commentlist li div.reply,ol .commentlist li .atclass{
-    background: none repeat scroll 0 0 #FFFFFF;
-    border: 2px dashed #DDDDDD;
-    position: absolute;
-    right: 0;
-    top: 10px;
-	font-size:12px;
-	padding:2px;
-	}
+ol.commentlist li div.reply,ol .commentlist li .atclass{background: none repeat scroll 0 0 #FFFFFF;border: 2px dashed #DDDDDD;position: absolute;right: 0;top: 8px;font-size:12px;padding:2px;}
 ol.commentlist li  comment-author vcard{    }
 ol.commentlist li div.reply a,ol.commentlist li .atclass a{color:#999}
 ol.commentlist li div.reply a:hover,ol.commentlist li .atclass a:hover{color:#222}
@@ -355,6 +347,14 @@ ol.commentlist li ul.children li div.comment-author{overflow:hidden;border-botto
     height: 16px;border:none;border-bottom:1px dashed #DDDDDD}
 ol.commentlist li ul.children li.bypostauthor{}
 
+ol.commentlist li ul.children .by-post-author div.vcard img.avatar{position: absolute;right: 0;float: right;border: 1px dashed #ddd;height:24px;margin-top:2px;width:24px}
+ol.commentlist li ul.children .by-post-author div.vcard cite.fn{ margin-left: 10px;float: right;margin-right: 32px;}
+ol.commentlist li ul.children .by-post-author span.comment-meta{ 
+    position: absolute;
+    right: 31px;
+    top: 16px;left:auto;}
+ol.commentlist li ul.children .by-post-author p{padding: 3px 0 3px 31px;}
+ol.commentlist li ul.children .by-post-author div.reply,ol .commentlist li .atclass{right:auto;left: -17px;top: 5px;}
 
 ol.commentlist li ul.children div.vcard img.avatar{position: absolute;right: auto;float: none;border: 1px dashed #ddd;height:24px;margin-top:-1px;width:24px}
 ol.commentlist li ul.children div.vcard cite.fn{float: none;margin-left: 35px;}
@@ -362,11 +362,7 @@ ol.commentlist li ul.children span.comment-meta{float: none;left:38px;top:18px}
 ol.commentlist li ul.children p{padding: 3px 0 3px 31px;}
 ol.commentlist li ul.children div.reply,ol .commentlist li .atclass{top: 6px;right:0;left: auto;}
 
-ol.commentlist li.bypostauthor div.vcard img.avatar{position: absolute;right: 0;float: right;border: 1px dashed #ddd;height:24px;margin-top:-2px;width:24px}
-ol.commentlist li.bypostauthor div.vcard cite.fn{float: right;margin-right: 32px;}
-ol.commentlist li.bypostauthor span.comment-meta{float: right;left:38px;top:18px}
-ol.commentlist li.bypostauthor p{padding: 3px 0 3px 31px;}
-ol.commentlist li.bypostauthor div.reply,ol .commentlist li .atclass{right:auto;left: 0px;top: 5px;}
+
 
 
 
@@ -386,7 +382,7 @@ ol.commentlist li.bypostauthor div.reply,ol .commentlist li .atclass{right:auto;
 
 #commentform textarea, #author, #email, #url{border-radius: 3px 3px 3px 3px;padding: 3px;height: 16px;float:left;border:1px dashed #DDDDDD;margin-right: 5px;color:#333;}
 #commentform textarea:hover, #author:hover, #email:hover, #url:hover{border:1px dashed #bbb;}
-#commentform textarea{height:130px;background:url("img/comment-bg.png") no-repeat scroll center center #FFFFFF;}
+#commentform textarea{height:130px;background:url("images/comment-bg.png") no-repeat scroll center center #FFFFFF;}
 
 #comment{margin: 0 10px 0 0;width: 330px;}
 #submit{border-radius: 3px 3px 3px 3px;background-color:#888;border:medium none;color:#DDD;padding:2px 5px}
@@ -394,7 +390,7 @@ ol.commentlist li.bypostauthor div.reply,ol .commentlist li .atclass{right:auto;
 .trackbacks-pingbacks h3{font-weight:bold;margin-bottom:10px;border-bottom:1px solid #CCC;color:#555;padding:3px 0}
 .trackbacks-pingbacks ul{margin:5px 20px 15px;list-style-type:circle}
 .trackbacks-pingbacks ul li{margin-bottom:4px}
-.feed{background:url("img/all.png") no-repeat scroll 0 -155px transparent;float:right;font-size:13px;height:18px;padding-left:20px}
+.feed{background:url("images/all.png") no-repeat scroll 0 -155px transparent;float:right;font-size:13px;height:18px;padding-left:20px}
 
 
 .page_navi{margin:20px;text-align: center;}
