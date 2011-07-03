@@ -336,6 +336,7 @@ ol.commentlist li span.comment-meta{    color: #aaa;font-size: 12px;left: 55px;m
 ol.commentlist li span.comment-meta a{color:#AAA}
 ol.commentlist li span.comment-meta a:hover{color:#222}
 ol.commentlist li p{padding:0 50px 5px 55px}
+ol.commentlist li.pingback p{padding:0 10px 5px 10px;margin:0;}
 ol.commentlist li div.reply,ol .commentlist li .atclass{background: none repeat scroll 0 0 #FFFFFF;border: 2px dashed #DDDDDD;position: absolute;right: 0;top: 8px;font-size:12px;padding:2px;}
 ol.commentlist li  comment-author vcard{    }
 ol.commentlist li div.reply a,ol.commentlist li .atclass a{color:#999}
@@ -383,6 +384,7 @@ ol.commentlist li ul.children div.reply,ol .commentlist li .atclass{top: 6px;rig
 #commentform textarea, #author, #email, #url{border-radius: 3px 3px 3px 3px;padding: 3px;height: 16px;float:left;border:1px dashed #DDDDDD;margin-right: 5px;color:#333;}
 #commentform textarea:hover, #author:hover, #email:hover, #url:hover{border:1px dashed #bbb;}
 #commentform textarea{height:130px;background:url("images/comment-bg.png") no-repeat scroll center center #FFFFFF;}
+#commentform .form-allowed-tags {color: #888888;font-size: 12px;line-height: 1.2em;}
 
 #comment{margin: 0 10px 0 0;width: 330px;}
 #submit{border-radius: 3px 3px 3px 3px;background-color:#888;border:medium none;color:#DDD;padding:2px 5px}

@@ -7,7 +7,7 @@
 * then the sidebar simply doesn't exist, so we'll hard-code in
 * some default sidebar stuff just in case.
 */
-if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
+if ( is_active_sidebar( 'right-sidebar' ) ) dynamic_sidebar('right-sidebar'); else { ?>
 
 	<li id="calendar" class="widget-container">
 		<?php the_widget('WP_Widget_Calendar', $instance, $args); ?> 
@@ -49,6 +49,6 @@ if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
 		</ul>
 	</li>
 
-<?php endif; // end primary widget area ?>
+<?php }// end primary widget area ?>
 	</ul>
 </div><!-- #primary .widget-area -->
