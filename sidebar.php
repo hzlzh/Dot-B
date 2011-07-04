@@ -10,7 +10,7 @@
 if ( is_active_sidebar( 'right-sidebar' ) ) dynamic_sidebar('right-sidebar'); else { ?>
 
 	<li id="calendar" class="widget-container">
-		<?php the_widget('WP_Widget_Calendar', $instance, $args); ?> 
+		<?php the_widget('WP_Widget_Calendar'); ?> 
 	</li>
 
 	<li id="archives" class="widget-container">
@@ -20,20 +20,13 @@ if ( is_active_sidebar( 'right-sidebar' ) ) dynamic_sidebar('right-sidebar'); el
 		</ul>
 	</li>
 	<li id="recent-post" class="widget-container">
-		<h3 class="widget_title"><?php _e( 'Recent Posts', 'dot-b' ); ?></h3>
-		<ul>
-		<?php
-			$recent_posts = wp_get_recent_posts();
-			foreach( $recent_posts as $post ){
-				echo '<li><a href="' . get_permalink($post["ID"]) . '" title="Look '.$post["post_title"].'" >' .   $post["post_title"].'</a> </li> ';
-			}
-		?>
-		</ul>
+			<?php the_widget('WP_Widget_Recent_Posts', 'number=25&title=21212', 'before_title=<h3 class="widget_title">&after_title =</h3>&widget_id=1212'); ?> 
 	</li>
 	<li id="recent-comments" class="widget-container">
-			<?php the_widget('WP_Widget_Recent_Comments', 'number', 'before_widget=&after_widget=&before_title=<h3 class="widget_title">&after_title =</h3>'); ?> 
+			<?php the_widget('WP_Widget_Recent_Comments', 'number=25&title=21212', 'before_title=<h3 class="widget_title">&after_title =</h3>&widget_id=1212'); ?> 
+			
 	</li>	
-	<li id="recent-comments" class="widget-container">
+	<li id="archives" class="widget-container">
 		<h3 class="widget_title"><?php _e( 'Archives', 'dot-b' ); ?></h3>
 		<ul>
 		<?php wp_tag_cloud('smallest=8&largest=22'); ?>

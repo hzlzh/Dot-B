@@ -17,7 +17,8 @@
 	</div><!-- #footer -->
 </div>
 <div id="bottom-bar"></div>
-<?php wp_footer(); ?>
+<?php wp_footer();global $dotb_options;
+$dotb_settings = get_option( 'dotb_options', $dotb_options ); ?>
 
 <script type="text/javascript"> 
 
@@ -70,6 +71,6 @@ jQuery(function () {
 
 
 </script>
-<?php if ($dotb_is_ga == "false") echo $dotb_analytics_code; ?>
+<?php if (!$dotb_settings['dotb_is_ga']) echo $dotb_settings['dotb_analytics_code']; ?>
 </body>
 </html>

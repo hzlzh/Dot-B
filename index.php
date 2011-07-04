@@ -1,4 +1,4 @@
-<?php get_header(); ?><?php echo $dotb_is_ga; if ($dotb_is_ga == "false") echo $dotb_analytics_code; ?>
+<?php get_header();?>
 <div id="main"><!--here -->
 	<div id="content">
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
