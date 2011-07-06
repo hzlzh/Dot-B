@@ -21,4 +21,4 @@
 	<?php } // end ! comments_open() ?>
 
 	<?php } // end have_comments()
-	comment_form($args); ?>
+	comment_form(); ?>

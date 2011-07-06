@@ -1,14 +1,13 @@
 <?php
     $theme_data = get_theme_data(TEMPLATEPATH.'/style.css');
+	//echo '%%%%%'.get_option('thread_comments_depth')
 ?>
 <?php
 // Default options values
-$temp_copyright = 'Copyright &copy; '.date("Y").'
-<a href="'.home_url( '/' ).'" title="'.esc_attr( get_bloginfo( 'name') ).'" rel="home">'.esc_attr( get_bloginfo( 'name') ).'
-</a>';
+$temp_copyright = 'Copyright &copy; '.date("Y").'<a href="'.home_url( '/' ).'" title="'.esc_attr( get_bloginfo( 'name') ).'" rel="home">'.esc_attr( get_bloginfo( 'name') ).'</a>';
 
 $dotb_options = array(
-	'dotb_rss_url' => '&copy; ' . date('Y') . ' ' . get_bloginfo('name'),
+	'dotb_rss_url' => get_bloginfo('rss2_url'),
 	'dotb_is_excerpt' => false,
 	'dotb_is_ga' => false,
 	'dotb_analytics_code' => '',
@@ -38,7 +37,7 @@ add_action( 'admin_menu', 'dotb_theme_options' );
 // Function to generate options page
 function dotb_theme_options_page() {
 	global $dotb_options;
-
+	print_r($_REQUEST);
 	if ( ! isset( $_REQUEST['settings-updated'] ) )
 		$_REQUEST['settings-updated'] = false;
 	else if( isset( $_REQUEST['action'])&&('reset' == $_REQUEST['action']) ) 
@@ -47,14 +46,17 @@ function dotb_theme_options_page() {
 ?>
 
 	<div class="wrap">
-
+	<style>
+	textarea,input[type='text']{width:50%;}
+	</style>
 	<?php screen_icon(); echo "<h2>" . get_current_theme() . __( ' Theme Options' ) . "</h2>";
 	// This shows the page's name and an icon if one has been provided ?>
-
-	<?php if ( $_REQUEST['settings-updated'] ) : ?>
-	<div class="updated fade"><p><strong><?php _e( 'Options saved' ); ?></strong></p></div>
+	<?php if ( isset( $_REQUEST['action'])&&('reset' == $_REQUEST['action']) ) : ?>
+	<div class="updated fade"><p><strong><?php _e( 'Options reset successfully!' ); ?></strong></p></div>
+	<?php elseif ( $_REQUEST['settings-updated'] ) : ?>
+	<div class="updated fade"><p><strong><?php _e( 'Options saved successfully!' ); ?></strong></p></div>
 	<?php endif; // If the form has just been submitted, this shows the notification ?>
-
+	
 	<form method="post" action="options.php">
 
 	<?php $settings = get_option( 'dotb_options', $dotb_options ); ?>
@@ -69,7 +71,7 @@ function dotb_theme_options_page() {
 	
 	<tr valign="top"><th scope="row">Rss Feed URL</th>
 	<td><label for="dotb_rss_url">
-	<input id="dotb_rss_url" name="dotb_options[dotb_rss_url]" type="text" value="<?php esc_attr_e($settings['dotb_rss_url']); ?>" />( With "<code>http://</code>" )   Keep blank to use WordPress default Rss Feed URL.</label>
+	<input id="dotb_rss_url" name="dotb_options[dotb_rss_url]" type="text" value="<?php esc_attr_e($settings['dotb_rss_url']); ?>" /><br>( With "<code>http://</code>" )   Keep blank to use WordPress default Rss Feed URL.</label>
 	</td>
 	</tr>
 
@@ -79,6 +81,7 @@ function dotb_theme_options_page() {
 	Show excerpt in Home and Archives</label>
 	</td>
 	</tr>
+	
 	
 	<tr valign="top"><th scope="row">Use Google Analytics?</th>
 	<td><label for="dotb_is_ga">
@@ -96,13 +99,14 @@ function dotb_theme_options_page() {
 
 	<tr valign="top"><th scope="row"><label for="dotb_footer">Footer Copyright</label></th>
 	<td>
-	<textarea id="dotb_footer" name="dotb_options[dotb_footer]" rows="5" cols="30"><?php echo stripslashes($settings['dotb_footer']); ?></textarea><strong>Preview:&nbsp;&nbsp;</strong><?php echo stripslashes($settings['dotb_footer']); ?>
+	<textarea id="dotb_footer" name="dotb_options[dotb_footer]" rows="5" cols="30"><?php echo stripslashes($settings['dotb_footer']); ?></textarea><p><strong>Preview:&nbsp;&nbsp;</strong><?php echo stripslashes($settings['dotb_footer']); ?></p>
 	</td>
 	</tr>
 
 	<tr valign="top"><th scope="row">Display SQL count at footer?</th>
 	<td><label for="dotb_is_sqlcount">
 	<input type="checkbox" id="dotb_is_sqlcount" name="dotb_options[dotb_is_sqlcount]" value="1" <?php checked( true, $settings['dotb_is_sqlcount'] ); ?> />
+	<strong>Preview:&nbsp;&nbsp;</strong><code>{ 29 queries in 1.018 seconds }</code>
 	</label>
 	</td>
 	</tr>
@@ -111,14 +115,23 @@ function dotb_theme_options_page() {
 	</table>
 	<input name="dotb_options[dotb_version]" type="hidden" value="<?php echo $settings['dotb_version']; ?>">
 	<p class="submit"><input type="submit" class="button-primary" value="Save Options" /></p>
-
 	</form>
 	<form method="post">
-<p class="submit">
-<input class="button" name="reset" type="submit" value="Reset All Settings" />
-<input type="hidden" name="action" value="reset" />
-</p>
-</form>
+	<p class="submit">
+	<input class="button" name="reset" type="submit" value="Reset All Settings" />
+	<input type="hidden" name="action" value="reset" />
+	</p>
+	</form>
+	<div class="tips">
+	<div id="icon-edit" class="icon32"><br></div>
+	<h2>Some Tips Here</h2>
+	<ul>
+		<li>1.Your threaded (nested) comments <strong>[<?php echo get_option('thread_comments_depth');?>]</strong> levels deep, change it here <a target="_blank" href="./options-discussion.php">[Setting]->[Discussion]</a>, if you want</li>
+		<li>2.</li>
+		<li></li>
+		<li></li>
+	</ul>
+	</div>
 <div class="updated" id="donate">
 <div style="text-align: center;">
 		<span style="font-size: 20px;margin: 5px 0;display: block;"><a href="http://zlz.im/">Dot-B v<?php echo esc_attr_e($settings['dotb_version']);?></a></span>

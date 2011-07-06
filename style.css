@@ -218,6 +218,10 @@ width: 170px;
     font-size: 12px;
     margin-left: 5px;
     padding-left: 10px;
+	font-style: italic;
+}
+#sidebar ul li ul li a{
+	font-style: normal;
 }
 #sidebar ul li ul li:hover {
     background-position: -32px -148px;
