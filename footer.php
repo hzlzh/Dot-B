@@ -1,24 +1,21 @@
+<?php global $dotb_options;
+$dotb_settings = get_option( 'dotb_options', $dotb_options ); ?>
 		<div id="footer" role="contentinfo">
 			<div id="copyright">
 				<div id="site-info">
-					<?php _e('Copyright', 'dot-b'); ?> &copy; <?php echo date("Y"); ?>
-					<a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-						<?php bloginfo( 'name' ); ?>
-					</a>
+				<?php echo $dotb_settings['dotb_footer'];?>
 				</div><!-- #site-info -->
-
 				<div id="site-generator">
 					Powered by <a href="http://wordpress.org/">WordPress</a>
-					 | Theme <abbr title="Dot-B v1.1.0">Dot-B</abbr> by <a href="http://zlz.im/">HzlzH</a>
-					{ <?php echo get_num_queries(); ?> queries in <?php timer_stop(3); ?> seconds }
+					 | Theme <abbr title="Dot-B v<?php echo $dotb_settings['dotb_version'];?>">Dot-B</abbr> by <a href="http://zlz.im/">HzlzH</a> <?php if ($dotb_settings['dotb_is_sqlcount']) 
+					{ echo '{ '.get_num_queries().' queries in '.timer_stop(0,3).' seconds }';}?>
 				</div><!-- #site-generator -->
 			</div><!-- #colophon -->
 			<a id="return_top" href="#wrapper">Δ Top</a>
 	</div><!-- #footer -->
 </div>
 <div id="bottom-bar"></div>
-<?php wp_footer();global $dotb_options;
-$dotb_settings = get_option( 'dotb_options', $dotb_options ); ?>
+<?php wp_footer(); ?>
 
 <script type="text/javascript"> 
 

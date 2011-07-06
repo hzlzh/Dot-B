@@ -1,8 +1,6 @@
-<?php //include (TEMPLATEPATH.'/get-theme-options.php'); 
-// echo $dotb_is_ga."^^^^".$dotb_analytics_code;
+<?php
 global $dotb_options;
 $dotb_settings = get_option( 'dotb_options', $dotb_options );
-print_r($dotb_settings); ?>
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
@@ -44,7 +42,7 @@ print_r($dotb_settings); ?>
 					<div id="header_search_area">
 						<?php get_search_form(); ?>
 					</div>
-				<a id="rss" rel="external nofollow" href="<?php if($dotb_settings['$dotb_rss_url'] != '') { echo $dotb_settings['$dotb_rss_url']; } else { bloginfo('rss2_url'); } ?>" title="<?php _e('RSS Feed', 'dot-b'); ?>" ><?php _e('RSS Feed', 'dot-b'); ?></a>
+				<a id="rss" rel="external nofollow" href="<?php if($dotb_settings['dotb_rss_url'] != '') { echo $dotb_settings['dotb_rss_url']; } else { bloginfo('rss2_url'); } ?>" title="<?php _e('RSS Feed', 'dot-b'); ?>" ><?php _e('RSS Feed', 'dot-b'); ?></a>
 			</div>
 			<div class="clear"></div>
 			<div id="social">
