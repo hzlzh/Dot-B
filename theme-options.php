@@ -106,7 +106,7 @@ function dotb_theme_options_page() {
 	<tr valign="top"><th scope="row">Display SQL count at footer?</th>
 	<td><label for="dotb_is_sqlcount">
 	<input type="checkbox" id="dotb_is_sqlcount" name="dotb_options[dotb_is_sqlcount]" value="1" <?php checked( true, $settings['dotb_is_sqlcount'] ); ?> />
-	<strong>Preview:&nbsp;&nbsp;</strong><code>{ 29 queries in 1.018 seconds }</code>
+	<strong>Preview:&nbsp;&nbsp;</strong><code>{ 29 <?php _e("queries in");?> 1.018 <?php _e("seconds");?> }</code>
 	</label>
 	</td>
 	</tr>

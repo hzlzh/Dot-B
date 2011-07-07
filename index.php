@@ -5,8 +5,8 @@
 		<div class="post">
 			<h2 class="post_title_h2"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 			<div class="post_info_top">
-				<div class="post_info_date"><?php _e('Posted on ', 'dot-b'); ?><?php the_time(get_option( 'date_format' )) ?></div>
-				<div class="post_info_author"> <?php _e('by ', 'dot-b'); ?><?php the_author_posts_link(); ?></div>
+				<div class="post_info_date"> <?php printf( __('Posted on %s ', 'dot-b'), get_the_date(get_option( 'date_format' ))); ?></div>
+				<div class="post_info_author"> <?php _e('by', 'dot-b'); ?> <?php the_author_posts_link(); ?></div>
 				<?php edit_post_link(__('[ Edit ]'),'<span class="post_info_edit">','</span>'); ?>
 			</div>
 			<div class="post_content">
@@ -24,7 +24,7 @@
 		</div>		
 	<?php endwhile; else: ?>
 		<div class="post">
-			<h2 class="post_title_h2"><?php _e("你在找什么？"); ?></h2>
+			<h2 class="post_title_h2"><?php _e("Nothing Found"); ?></h2>
 		</div>
 	<?php endif; ?>
 	<?php if (function_exists('wp_pagenavi')) { wp_pagenavi(); } else { include('navigation.php'); } ?>

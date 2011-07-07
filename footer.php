@@ -3,15 +3,15 @@ $dotb_settings = get_option( 'dotb_options', $dotb_options ); ?>
 		<div id="footer" role="contentinfo">
 			<div id="copyright">
 				<div id="site-info">
-				<?php echo $dotb_settings['dotb_footer'];?>
+					<?php echo $dotb_settings['dotb_footer'];?>
 				</div><!-- #site-info -->
 				<div id="site-generator">
 					Powered by <a href="http://wordpress.org/">WordPress</a>
-					 | Theme <abbr title="Dot-B v<?php echo $dotb_settings['dotb_version'];?>">Dot-B</abbr> by <a href="http://zlz.im/">HzlzH</a> <?php if ($dotb_settings['dotb_is_sqlcount']) 
-					{ echo '{ '.get_num_queries().' queries in '.timer_stop(0,3).' seconds }';}?>
+					 | Theme <abbr title="Dot-B v<?php echo $dotb_settings['dotb_version'];?>">Dot-B</abbr> by <a href="http://zlz.im/" >HzlzH</a> <?php if ($dotb_settings['dotb_is_sqlcount']) 
+					{ echo '{ '.get_num_queries().' '.__("queries in").' '.timer_stop(0,3).' '._("seconds").' }';}?>
 				</div><!-- #site-generator -->
 			</div><!-- #colophon -->
-			<a id="return_top" href="#wrapper">Δ Top</a>
+			<a id="return_top" href="#wrapper" rel="nofollow" title="<?php _e('Back to top', 'dot-b'); ?>"> Δ <?php _e('Top', 'dot-b'); ?></a>
 	</div><!-- #footer -->
 </div>
 <div id="bottom-bar"></div>
@@ -63,6 +63,31 @@ jQuery(function () {
 	});
 }); 
 
+		// When a link is clicked
+		jQuery("a.tab").click(function () {
+			
+			
+			// switch all tabs off
+			jQuery(".active").removeClass("active");
+			
+			// switch this tab on
+			jQuery(this).addClass("active");
+			
+			// slide all content up
+			jQuery(".content").slideUp();
+			
+			// slide this content up
+			var content_show = jQuery(this).attr("title");
+			jQuery("#"+content_show).slideDown();
+		  
+		});
+		
+		
+		
+		jQuery('#tab-title span').click(function(){
+	jQuery(this).addClass("selected").siblings().removeClass();
+	jQuery("#tab-content > .widget-container").slideUp('1500').eq(jQuery('#tab-title span').index(this)).slideDown('1500');
+});
   
 });
 

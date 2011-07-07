@@ -389,13 +389,13 @@ ol.commentlist li ul.children div.reply,ol .commentlist li .atclass{top: 6px;rig
 #commentform{margin:0;padding:0}
 #commentform p{margin:0 0 10px;padding:0;overflow:hidden;}
 
-#commentform textarea, #author, #email, #url{border-radius: 3px 3px 3px 3px;padding: 3px;height: 16px;float:left;border:1px dashed #DDDDDD;margin-right: 5px;color:#333;}
+#commentform textarea, #author, #email, #url{padding: 3px;height: 16px;float:left;border:1px dashed #DDDDDD;margin-right: 5px;color:#333;}
 #commentform textarea:hover, #author:hover, #email:hover, #url:hover{border:1px dashed #bbb;}
 #commentform textarea{height:130px;background:url("images/comment-bg.png") no-repeat scroll center center #FFFFFF;}
 #commentform .form-allowed-tags {color: #888888;font-size: 12px;line-height: 1.2em;}
 
 #comment{margin: 0 10px 0 0;width: 330px;}
-#submit{border-radius: 3px 3px 3px 3px;background-color:#888;border:medium none;color:#DDD;padding:2px 5px}
+#submit{background-color:#888;border:medium none;color:#DDD;padding:2px 5px}
 #submit:hover{background-color:#666}
 .trackbacks-pingbacks h3{font-weight:bold;margin-bottom:10px;border-bottom:1px solid #CCC;color:#555;padding:3px 0}
 .trackbacks-pingbacks ul{margin:5px 20px 15px;list-style-type:circle}

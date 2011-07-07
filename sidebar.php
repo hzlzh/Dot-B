@@ -13,23 +13,25 @@ if ( is_active_sidebar( 'right-sidebar' ) ) dynamic_sidebar('right-sidebar'); el
 		<?php the_widget('WP_Widget_Calendar'); ?> 
 	</li>
 
+	<li id="recent-post" class="widget-container">
+		<?php the_widget('WP_Widget_Recent_Posts', 'number=25&title=21212', 'before_title=<h3 class="widget_title">&after_title =</h3>&widget_id=1212'); ?> 
+	</li>
+	
+	<li id="recent-comments" class="widget-container">
+		<?php the_widget('WP_Widget_Recent_Comments', 'number=25&title=21212', 'before_title=<h3 class="widget_title">&after_title =</h3>&widget_id=1212'); ?> 
+	</li>
+	
 	<li id="archives" class="widget-container">
 		<h3 class="widget_title"><?php _e( 'Archives', 'dot-b' ); ?></h3>
 		<ul>
 			<?php wp_get_archives( 'type=monthly' ); ?>
 		</ul>
 	</li>
-	<li id="recent-post" class="widget-container">
-			<?php the_widget('WP_Widget_Recent_Posts', 'number=25&title=21212', 'before_title=<h3 class="widget_title">&after_title =</h3>&widget_id=1212'); ?> 
-	</li>
-	<li id="recent-comments" class="widget-container">
-			<?php the_widget('WP_Widget_Recent_Comments', 'number=25&title=21212', 'before_title=<h3 class="widget_title">&after_title =</h3>&widget_id=1212'); ?> 
-			
-	</li>	
+	
 	<li id="archives" class="widget-container">
 		<h3 class="widget_title"><?php _e( 'Archives', 'dot-b' ); ?></h3>
 		<ul>
-		<?php wp_tag_cloud('smallest=8&largest=22'); ?>
+			<?php wp_tag_cloud('smallest=8&largest=22'); ?>
 		</ul>
 	</li>
 

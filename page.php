@@ -6,7 +6,7 @@
     <div class="post">
      <h1 class="post_title_h2"><?php the_title(); ?></h1>
      <ul class="post_info">
-      <?php if ($options['author']) : ?><li><?php _e('By '); ?><?php the_author_posts_link(); ?></li><?php endif; ?>
+      <?php if ($options['author']) : ?><li><?php _e('By'); ?> <?php the_author_posts_link(); ?></li><?php endif; ?>
       <?php edit_post_link(__('[ EDIT ]'), '<li class="post_edit">', '</li>' ); ?>
      </ul>
      <div class="post_content">
