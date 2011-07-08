@@ -1,8 +1,7 @@
 <?php
-    $theme_data = get_theme_data(TEMPLATEPATH.'/style.css');
-	//echo '%%%%%'.get_option('thread_comments_depth')
-?>
-<?php
+$theme_data = get_theme_data(TEMPLATEPATH.'/style.css');
+// Get author information
+
 // Default options values
 $temp_copyright = 'Copyright &copy; '.date("Y").'<a href="'.home_url( '/' ).'" title="'.esc_attr( get_bloginfo( 'name') ).'" rel="home">'.esc_attr( get_bloginfo( 'name') ).'</a>';
 
@@ -126,8 +125,8 @@ function dotb_theme_options_page() {
 	<div id="icon-edit" class="icon32"><br></div>
 	<h2>Some Tips Here</h2>
 	<ul>
-		<li>1.Your threaded (nested) comments <strong>[<?php echo get_option('thread_comments_depth');?>]</strong> levels deep, change it here <a target="_blank" href="./options-discussion.php">[Setting]->[Discussion]</a>, if you want</li>
-		<li>2.</li>
+		<li>1.Your threaded (nested) comments <strong>[<?php echo get_option('thread_comments_depth');?>]</strong> levels deep, change it here -> <a target="_blank" href="./options-discussion.php">[<?php _e('Setting'); ?>]->[<?php _e('Discussion'); ?>]</a>, if you want</li>
+		<li>2.You can change <code>&lt;Body&gt;</code> background image here -> <a target="_blank" href="./themes.php?page=custom-background">[<?php _e('Appearance'); ?>]->[<?php _e('Background'); ?>]</a>  </li>
 		<li></li>
 		<li></li>
 	</ul>

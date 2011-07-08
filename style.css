@@ -62,7 +62,7 @@ object{display:block;margin:0 auto}
 
 #wrapper{background: none repeat scroll 0 0 #F1F1F1;margin:0 auto;width:960px}
 /* header */
-#header{background:none repeat scroll 0 0 #F1F1F1;border-color:#e8e8e8;border-style: hidden solid;border-width:1px}
+#header{background:none repeat scroll 0 0 #F1F1F1;border-left: 1px solid #E8E8E8;border-right: 1px solid #E8E8E8;}
 #header #logo{display: inline;float: left;margin: 20px 10px;}
 #header #logo a,#header #logo a:visited{font-size:32px;color:#0066cc;line-height:32px;}
 #header #logo a:hover{color:#2089cc}
@@ -199,9 +199,9 @@ border-top: 1px solid #ccc;
 .post_info_top a{color:#999999}
 .post_info_top a:hover{color:#0066cc}
 .post_info{overflow:hidden;margin: 0 6px;}
-.post_info_date{ background-position: -23px -174px;float: left;padding: 0 0 0 10px;display: inline;}
-.post_info_author{background-position: -19px -186px;padding: 0 0 0 10px;margin: 0 0 0 6px;display: inline;}
-.post_info_edit{background-position: -7px -223px;padding: 0 0 0 10px;margin: 0 0 0 6px;display: inline;}
+.post_info_date{ background-position: -23px -173px;float: left;padding: 0 0 0 10px;display: inline;}
+.post_info_author{background-position: -19px -187px;padding: 0 0 0 10px;margin: 0 0 0 6px;display: inline;}
+.post_info_edit{background-position: -7px -225px;padding: 0 0 0 10px;margin: 0 0 0 6px;display: inline;}
 .post_info_comments{float:right;}
 
 .post_info_bootom{overflow:hidden;margin: 10px 0 10px -7px;padding:0 0 0 7px;}

@@ -53,5 +53,9 @@ $dotb_settings = get_option( 'dotb_options', $dotb_options );
 				<a rel="external nofollow" href="http://delicious.com/post?url=<?php the_permalink() ?>" class="tencent" title="Delicious" ></a>
 			</div>
 		</div>
+		<?php if ( get_header_image() ) : ?>
+		<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
+		<?php endif; ?>
 		<div class="header_menu"><?php wp_nav_menu('link_before=<span>&link_after=</span>'); ?></div>
 	</div>
+	

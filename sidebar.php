@@ -14,11 +14,11 @@ if ( is_active_sidebar( 'right-sidebar' ) ) dynamic_sidebar('right-sidebar'); el
 	</li>
 
 	<li id="recent-post" class="widget-container">
-		<?php the_widget('WP_Widget_Recent_Posts', 'number=25&title=21212', 'before_title=<h3 class="widget_title">&after_title =</h3>&widget_id=1212'); ?> 
+		<?php the_widget('WP_Widget_Recent_Posts', 'number=25&title=21212', 'before_title=<h3 class="widget22_title">&after_title=</h3>&widget_id=1212'); ?> 
 	</li>
 	
 	<li id="recent-comments" class="widget-container">
-		<?php the_widget('WP_Widget_Recent_Comments', 'number=25&title=21212', 'before_title=<h3 class="widget_title">&after_title =</h3>&widget_id=1212'); ?> 
+		<?php the_widget('WP_Widget_Recent_Comments', 'number=25&title=21212', 'before_title=<h3 class="widget_title">&after_title=</h3>&widget_id=1212'); ?> 
 	</li>
 	
 	<li id="archives" class="widget-container">
