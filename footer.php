@@ -14,7 +14,9 @@ $dotb_settings = get_option( 'dotb_options', $dotb_options ); ?>
 			<a id="return_top" href="#wrapper" rel="nofollow" title="<?php _e('Back to top', 'dot-b'); ?>"> Δ <?php _e('Top', 'dot-b'); ?></a>
 	</div><!-- #footer -->
 </div>
+<?php if($dotb_settings['dotb_is_colorbar']) : ?>
 <div id="bottom-bar"></div>
+<?php endif;?>
 <?php wp_footer(); ?>
 
 <script type="text/javascript"> 

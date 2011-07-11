@@ -57,7 +57,14 @@ add_custom_image_header( '', 'dotb_admin_header_style' );
 
 
 // Register nav_menu
-if ( function_exists('register_nav_menu') ) { register_nav_menu('primary', 'header_menu'); }
+if ( function_exists('register_nav_menu') ) { 
+	register_nav_menus(
+		array(
+		  'primary' => 'Header Menu',
+		  'social_media' => 'Custom Social Media'
+		)
+	);
+}
 
 // Register sidebar
 register_sidebar(array(

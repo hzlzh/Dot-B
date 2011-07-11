@@ -84,28 +84,29 @@ object{display:block;margin:0 auto}
 #header #rss{background-position: 0 0 ;float:left;text-indent: -9999px;height:48px;margin:7px 10px 0 0;width:48px}
 #header #rss:hover{background-position: -58px 0px ;float:left;text-indent: -9999px;height:48px;margin:7px 10px 0 0;width:48px}
 #header #social{float: right;margin-right:20px}
-#header #social a{display:inline;float:left;height:32px;margin:2px;width:32px;}
+#header #social a{display:inline;float:left;height:32px;margin:2px;width:32px;text-indent: -9999px;}
+#header #social ul li {display:inline;}
 
-.facebook{background-position: 0 -88px;}
-.facebook:hover{background-position: 0 -48px;}
-.twitter{background-position: -48px -88px;}
-.twitter:hover{background-position: -48px -48px;}
-.flickr{background-position: -96px -88px;}
-.flickr:hover{background-position: -96px -48px;}
-.delicious{background-position: -144px -88px;}
-.delicious:hover{background-position: -144px -48px;}
-.google{background-position: -192px -88px;}
-.google:hover{background-position: -192px -48px;}
-.picasa{background-position: -240px -88px;}
-.picasa:hover{background-position: -240px -48px;}
-.tencent{background-position: -288px -88px;}
-.tencent:hover{background-position: -288px -48px;}
-.rss{background-position: -336px -88px;}
-.rss:hover{background-position: -336px -48px;}
-.facebook1{background-position: -384px -88px;}
-.facebook1:hover{background-position: -384px -48px;}
-.twitter1{background-position: -432px -88px;}
-.twitter1:hover{background-position: -432px -48px;}
+.facebook a {background-position: 0 -88px;}
+.facebook:hover a {background-position: 0 -48px;}
+.twitter a {background-position: -48px -88px;}
+.twitter:hover a {background-position: -48px -48px;}
+.flickr a {background-position: -96px -88px;}
+.flickr:hover a {background-position: -96px -48px;}
+.delicious a {background-position: -144px -88px;}
+.delicious:hover a {background-position: -144px -48px;}
+.google a {background-position: -192px -88px;}
+.google:hover a {background-position: -192px -48px;}
+.picasa a {background-position: -240px -88px;}
+.picasa:hover a {background-position: -240px -48px;}
+.tencent a {background-position: -288px -88px;}
+.tencent:hover a {background-position: -288px -48px;}
+.rss a {background-position: -336px -88px;}
+.rss:hover a {background-position: -336px -48px;}
+.facebook1 a {background-position: -384px -88px;}
+.facebook1:hover a {background-position: -384px -48px;}
+.twitter1 a {background-position: -432px -88px;}
+.twitter1:hover a {background-position: -432px -48px;}
 /* menu */
 .header_menu{border-bottom: 1px solid #CCCCCC;border-top: 2px dashed #CCCCCC;clear: both;height: 36px;padding: 0 10px;}
 .header_menu ul {

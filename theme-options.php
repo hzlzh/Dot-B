@@ -3,7 +3,7 @@ $theme_data = get_theme_data(TEMPLATEPATH.'/style.css');
 // Get author information
 
 // Default options values
-$temp_copyright = 'Copyright &copy; '.date("Y").'<a href="'.home_url( '/' ).'" title="'.esc_attr( get_bloginfo( 'name') ).'" rel="home">'.esc_attr( get_bloginfo( 'name') ).'</a>';
+$temp_copyright = 'Copyright &copy; '.date("Y").' '.'<a href="'.home_url( '/' ).'" title="'.esc_attr( get_bloginfo( 'name') ).'" rel="home">'.esc_attr( get_bloginfo( 'name') ).'</a>';
 
 $dotb_options = array(
 	'dotb_rss_url' => get_bloginfo('rss2_url'),
@@ -11,6 +11,7 @@ $dotb_options = array(
 	'dotb_is_ga' => false,
 	'dotb_analytics_code' => '',
 	'dotb_footer' => $temp_copyright,
+	'dotb_is_colorbar' => true,
 	'dotb_is_sqlcount' => false,
 	'dotb_version' => $theme_data['Version']
 );
@@ -28,7 +29,7 @@ add_action( 'admin_init', 'dotb_register_settings' );
 
 function dotb_theme_options() {
 	// Add theme options page to the addmin menu
-	add_theme_page( 'Theme Options', 'Theme Options', 'edit_theme_options', 'theme_options', 'dotb_theme_options_page' );
+	add_theme_page( 'Dot-B Theme Options', 'Dot-B Theme Options', 'edit_theme_options', 'theme_options', 'dotb_theme_options_page' );
 }
 
 add_action( 'admin_menu', 'dotb_theme_options' );
@@ -39,7 +40,7 @@ function dotb_theme_options_page() {
 	print_r($_REQUEST);
 	if ( ! isset( $_REQUEST['settings-updated'] ) )
 		$_REQUEST['settings-updated'] = false;
-	else if( isset( $_REQUEST['action'])&&('reset' == $_REQUEST['action']) ) 
+	if( isset( $_REQUEST['action'])&&('reset' == $_REQUEST['action']) ) 
 		delete_option( 'dotb_options' );
 	// This checks whether the form has just been submitted. 
 ?>
@@ -102,6 +103,14 @@ function dotb_theme_options_page() {
 	</td>
 	</tr>
 
+	<tr valign="top"><th scope="row">Display colourful bar on header and footer?</th>
+	<td><label for="dotb_is_colorbar">
+	<input type="checkbox" id="dotb_is_colorbar" name="dotb_options[dotb_is_colorbar]" value="1" <?php checked( true, $settings['dotb_is_colorbar'] ); ?> />
+	<strong>Preview:&nbsp;&nbsp;</strong><span style="color:#0065cc;">▄▄▄▄</span><span style="color:#0fabff;">▄▄▄</span><span style="color:#2a5599;">▄▄▄</span><span style="color:#ff6f6f;">▄▄▄</span><span style="color:#ff0f00;">▄▄</span><span style="color:#be0800;">▄▄</span><span style="color:#5b1301;">▄▄</span><span style="color:#edb012">▄</span><span style="color:#9fcf67">▄</span><span style="color:#0b9938">▄</span>
+	</label>
+	</td>
+	</tr>
+	
 	<tr valign="top"><th scope="row">Display SQL count at footer?</th>
 	<td><label for="dotb_is_sqlcount">
 	<input type="checkbox" id="dotb_is_sqlcount" name="dotb_options[dotb_is_sqlcount]" value="1" <?php checked( true, $settings['dotb_is_sqlcount'] ); ?> />
@@ -125,8 +134,9 @@ function dotb_theme_options_page() {
 	<div id="icon-edit" class="icon32"><br></div>
 	<h2>Some Tips Here</h2>
 	<ul>
-		<li>1.Your threaded (nested) comments <strong>[<?php echo get_option('thread_comments_depth');?>]</strong> levels deep, change it here -> <a target="_blank" href="./options-discussion.php">[<?php _e('Setting'); ?>]->[<?php _e('Discussion'); ?>]</a>, if you want</li>
-		<li>2.You can change <code>&lt;Body&gt;</code> background image here -> <a target="_blank" href="./themes.php?page=custom-background">[<?php _e('Appearance'); ?>]->[<?php _e('Background'); ?>]</a>  </li>
+		<li>1.Customize your Social Media (Facebook, Twitter, Google+ .etc) according to this <a href="">Instructions!</a></li>
+		<li>2.Your threaded (nested) comments <strong>[<?php echo get_option('thread_comments_depth');?>]</strong> levels deep, change it here -> <a target="_blank" href="./options-discussion.php">[<?php _e('Setting'); ?>]->[<?php _e('Discussion'); ?>]</a>, if you want</li>
+		<li>3.You can change <code>&lt;Body&gt;</code> background image here -> <a target="_blank" href="./themes.php?page=custom-background">[<?php _e('Appearance'); ?>]->[<?php _e('Background'); ?>]</a>  </li>
 		<li></li>
 		<li></li>
 	</ul>
@@ -185,6 +195,11 @@ function dotb_validate_options( $input ) {
 	$input['dotb_is_sqlcount'] = null;
 	// We verify if the input is a boolean value
 	$input['dotb_is_sqlcount'] = ( $input['dotb_is_sqlcount'] == 1 ? 1 : 0 );
+
+	if ( ! isset( $input['dotb_is_colorbar'] ) )
+	$input['dotb_is_colorbar'] = null;
+	// We verify if the input is a boolean value
+	$input['dotb_is_colorbar'] = ( $input['dotb_is_colorbar'] == 1 ? 1 : 0 );
 	
 	// We strip all tags from the text field, to avoid vulnerablilties like XSS
 	//$input['dotb_analytics_code'] = wp_filter_post_kses( $input['dotb_analytics_code'] );

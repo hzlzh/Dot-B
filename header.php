@@ -10,7 +10,7 @@ $dotb_settings = get_option( 'dotb_options', $dotb_options );
         // Logic of printing the <title> tag
         global $page, $paged;
         echo trim(wp_title( '', false, 'right' ));
-        if ( !is_home() ) echo "| ";
+        if ( !is_home() ) echo " | ";
 			bloginfo( 'name' );
         // Add the blog description only for home
         $site_description = get_bloginfo( 'description', 'display' );
@@ -30,7 +30,9 @@ $dotb_settings = get_option( 'dotb_options', $dotb_options );
 <?php if ($dotb_settings['dotb_is_ga']) echo $dotb_settings['dotb_analytics_code']; ?>
 </head>
 <body <?php body_class(); ?>>
+<?php if($dotb_settings['dotb_is_colorbar']) : ?>
 <div id="top-bar"></div>
+<?php endif;?>
 <div id="wrapper">
 	<div id="header">
 		<div id="logo">
@@ -46,11 +48,7 @@ $dotb_settings = get_option( 'dotb_options', $dotb_options );
 			</div>
 			<div class="clear"></div>
 			<div id="social">
-				<a rel="external nofollow" href="http://delicious.com/post?url=<?php the_permalink() ?>" class="facebook" title="Delicious" ></a>
-				<a rel="external nofollow" href="http://delicious.com/post?url=<?php the_permalink() ?>" class="twitter" title="Delicious" ></a>
-				<a rel="external nofollow" href="http://delicious.com/post?url=<?php the_permalink() ?>" class="delicious" title="Delicious" ></a>
-				<a rel="external nofollow" href="http://delicious.com/post?url=<?php the_permalink() ?>" class="google" title="Delicious" ></a>
-				<a rel="external nofollow" href="http://delicious.com/post?url=<?php the_permalink() ?>" class="tencent" title="Delicious" ></a>
+				<?php wp_nav_menu(array('theme_location' => 'social_media','depth' => '1')); ?>
 			</div>
 		</div>
 		<?php if ( get_header_image() ) : ?>
