@@ -1,6 +1,6 @@
 <?php global $dotb_options;
 $dotb_settings = get_option( 'dotb_options', $dotb_options ); ?>
-		<div id="footer" role="contentinfo">
+		<div id="footer">
 			<div id="copyright">
 				<div id="site-info">
 					<?php echo $dotb_settings['dotb_footer'];?>
@@ -23,7 +23,7 @@ $dotb_settings = get_option( 'dotb_options', $dotb_options ); ?>
 
 // All the jQuery function that WordPress used
 // Add empty span tag at menu which have drop-down meun
-jQuery("ul.children:not(.children .children)").parent().append("<span class=\"menu-mark\"></span>");
+jQuery("ul.sub-menu:not(.sub-menu .sub-menu)").parent().append('<div class="menu-mark" ></div>');
 // Drop down menu slide function
 var mouseover_tid = [];var mouseout_tid = []; jQuery('.header_menu ul > li').each(function(index){jQuery(this).hover( function(){var _self = this; clearTimeout(mouseout_tid[index]); mouseover_tid[index] = setTimeout(function(){jQuery(_self).find('ul:eq(0)').slideDown('fast');}, 200);}, function(){var _self = this; clearTimeout(mouseover_tid[index]); mouseout_tid[index] = setTimeout(function(){jQuery(_self).find('ul:eq(0)').slideUp('fast');}, 200);} );});
 // Top colourful bar

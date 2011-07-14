@@ -1,4 +1,4 @@
-<div id="sidebar" class="widget-area" role="complementary">
+<div id="sidebar" class="widget-area">
 	<ul class="xoxo">
 
 <?php
@@ -28,10 +28,12 @@ if ( is_active_sidebar( 'right-sidebar' ) ) dynamic_sidebar('right-sidebar'); el
 		</ul>
 	</li>
 	
-	<li id="archives" class="widget-container">
+	<li id="tags" class="widget-container">
 		<h3 class="widget_title"><?php _e( 'Tags', 'dot-b' ); ?></h3>
 		<ul>
+		<li>
 			<?php wp_tag_cloud('smallest=8&largest=22'); ?>
+		</li>
 		</ul>
 	</li>
 
