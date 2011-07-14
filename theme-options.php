@@ -37,7 +37,6 @@ add_action( 'admin_menu', 'dotb_theme_options' );
 // Function to generate options page
 function dotb_theme_options_page() {
 	global $dotb_options;
-	print_r($_REQUEST);
 	if ( ! isset( $_REQUEST['settings-updated'] ) )
 		$_REQUEST['settings-updated'] = false;
 	if( isset( $_REQUEST['action'])&&('reset' == $_REQUEST['action']) ) 
@@ -134,10 +133,10 @@ function dotb_theme_options_page() {
 	<div id="icon-edit" class="icon32"><br></div>
 	<h2>Some Tips Here</h2>
 	<ul>
-		<li>1.Customize your Social Media (Facebook, Twitter, Google+ .etc) according to this <a href="">Instructions!</a></li>
-		<li>2.Your threaded (nested) comments <strong>[<?php echo get_option('thread_comments_depth');?>]</strong> levels deep, change it here -> <a target="_blank" href="./options-discussion.php">[<?php _e('Setting'); ?>]->[<?php _e('Discussion'); ?>]</a>, if you want</li>
-		<li>3.You can change <code>&lt;Body&gt;</code> background image here -> <a target="_blank" href="./themes.php?page=custom-background">[<?php _e('Appearance'); ?>]->[<?php _e('Background'); ?>]</a>  </li>
-		<li></li>
+		<li>1.Customize your Social Media (Facebook, Twitter, Google+ .etc) according to this *** <a href="">Instructions</a> ***</li>
+		<li>2.Your threaded (nested) comments <strong>[<?php echo get_option('thread_comments_depth');?>]</strong> levels deep, change it here -> <a target="_blank" href="./options-discussion.php">[<?php _e('Setting'); ?>]->[<?php _e('Discussion'); ?>]</a></li>
+		<li>3.Change <code>&lt;Body&gt;</code> background image here -> <a target="_blank" href="./themes.php?page=custom-background">[<?php _e('Appearance'); ?>]->[<?php _e('Background'); ?>]</a></li>
+		<li>4.Customize <code>&lt;Header&gt;</code> image here -> <a target="_blank" href="./themes.php?page=custom-header">[<?php _e('Appearance'); ?>]->[<?php _e('Header'); ?>]</a></li>
 		<li></li>
 	</ul>
 	</div>

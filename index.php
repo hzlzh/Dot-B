@@ -1,3 +1,7 @@
+<?php
+global $dotb_options;
+$dotb_settings = get_option( 'dotb_options', $dotb_options );
+?>
 <?php get_header();?>
 <div id="main"><!--here -->
 	<div id="content">
@@ -10,12 +14,8 @@
 				<?php edit_post_link(__('[ Edit ]'),'<span class="post_info_edit">','</span>'); ?>
 			</div>
 			<div class="post_content">
- <?php if(is_category() || is_archive()) {
-
- } else {
-     the_content(__('Read more'));
- } ?>
-		<?php wp_link_pages(); ?>
+				<?php if ( $dotb_settings['dotb_is_excerpt']=='1' ) { echo '111';the_excerpt(__('Read more &raquo;','dot-b')); } else { echo '222';the_content(__('Read more &raquo;','dot-b')); }?>
+				<?php wp_link_pages(); ?>
 			</div>
 		</div>
 		<div class="post_info_bootom">
