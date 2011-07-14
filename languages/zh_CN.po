@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dot-b\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-14 15:51+0800\n"
-"PO-Revision-Date: 2011-07-14 15:51+0800\n"
+"POT-Creation-Date: 2011-07-14 16:00+0800\n"
+"PO-Revision-Date: 2011-07-14 16:03+0800\n"
 "Last-Translator: hzlzh <hzlzh.com@gmail.com>\n"
 "Language-Team: hzlzh <http://zlz.im/>\n"
 "MIME-Version: 1.0\n"
@@ -14,6 +14,7 @@ msgstr ""
 "X-Poedit-Language: English\n"
 "X-Poedit-Country: UNITED STATES\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: comments.php:6
@@ -25,7 +26,7 @@ msgstr "这篇文章受密码保护。查看评论请输入密码。"
 #: page.php:19
 #: single.php:20
 msgid "Leave a Reply ?"
-msgstr "发表回复"
+msgstr "发表评论"
 
 #: comments.php:20
 msgid "Comments are closed."
@@ -114,13 +115,13 @@ msgstr "阅读更多 &raquo;"
 #: page.php:19
 #: single.php:20
 msgid "[ 1 Reply ]"
-msgstr "[ 1 条回复 ]"
+msgstr "[ 1 条评论 ]"
 
 #: index.php:23
 #: page.php:19
 #: single.php:20
 msgid "[ % Replies ]"
-msgstr "[ % 条回复 ]"
+msgstr "[ % 条评论 ]"
 
 #: index.php:27
 #: page.php:23
@@ -129,7 +130,7 @@ msgstr "没有找到"
 
 #: searchform.php:2
 msgid "type, hit enter"
-msgstr "轻击Enter"
+msgstr "敲击Enter搜索"
 
 #: searchform.php:3
 msgid "SEARCH"

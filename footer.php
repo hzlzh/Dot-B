@@ -30,7 +30,7 @@ var mouseover_tid = [];var mouseout_tid = []; jQuery('.header_menu ul > li').eac
 jQuery(document).ready(function(){jQuery("#top-bar").animate( { width: "100%"}, { queue: false, duration: 5000 } );
 // Mouse over search box focus function
 jQuery("#s").mouseover(function() {
-    jQuery(this).focus().val([""]).mouseout(function() {jQuery(this).val(["type, hit enter"]).blur()})
+    jQuery(this).focus().val([""]).mouseout(function() {jQuery(this).blur()})
   });
 // Link sparkling function
 jQuery(".post_meta li,body a:not(.post_meta li a)").hover(function(){
