@@ -14,7 +14,7 @@ $dotb_settings = get_option( 'dotb_options', $dotb_options );
 				<?php edit_post_link(__('[ Edit ]'),'<span class="post_info_edit">','</span>'); ?>
 			</div>
 			<div class="post_content">
-				<?php if ( $dotb_settings['dotb_is_excerpt']=='1' ) { echo '111';the_excerpt(__('Read more &raquo;','dot-b')); } else { echo '222';the_content(__('Read more &raquo;','dot-b')); }?>
+				<?php if ( $dotb_settings['dotb_is_excerpt']=='1' ) { the_excerpt(__('Read more &raquo;','dot-b')); } else { the_content(__('Read more &raquo;','dot-b')); }?>
 				<?php wp_link_pages(); ?>
 			</div>
 		</div>

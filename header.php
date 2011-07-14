@@ -48,7 +48,14 @@ $dotb_settings = get_option( 'dotb_options', $dotb_options );
 			</div>
 			<div class="clear"></div>
 			<div id="social">
-				<?php wp_nav_menu(array('theme_location' => 'social_media','depth' => '1')); ?>
+				<?php if(has_nav_menu( 'social_media' )) : wp_nav_menu(array('theme_location' => 'social_media','depth' => '1', 'fallback_cb' => false)); else : ?>
+				<div class="menu-default-container">
+					<ul class="menu" id="menu-default">
+						<li class="facebook"><a target="_blank" href="http://#">facebook</a></li>
+						<li class="twitter"><a target="_blank" href="http://#">twitter</a></li>
+					</ul>
+				</div>
+				<?php endif;?>
 			</div>
 		</div>
 		<?php if ( get_header_image() ) : ?>

@@ -29,7 +29,7 @@ if ( is_active_sidebar( 'right-sidebar' ) ) dynamic_sidebar('right-sidebar'); el
 	</li>
 	
 	<li id="archives" class="widget-container">
-		<h3 class="widget_title"><?php _e( 'Archives', 'dot-b' ); ?></h3>
+		<h3 class="widget_title"><?php _e( 'Tags', 'dot-b' ); ?></h3>
 		<ul>
 			<?php wp_tag_cloud('smallest=8&largest=22'); ?>
 		</ul>
