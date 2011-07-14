@@ -1,4 +1,5 @@
 <?php
+load_theme_textdomain( 'dot-b', TEMPLATEPATH . '/languages' );
 require_once ( get_stylesheet_directory() . '/theme-options.php' );
 // This theme allows users to set a custom background
 add_custom_background();
@@ -33,13 +34,13 @@ add_custom_image_header( '', 'dotb_admin_header_style' );
 			'url' => '%s/images/headers/path.jpg',
 			'thumbnail_url' => '%s/images/headers/path-thumbnail.jpg',
 			/* translators: header image description */
-			'description' => __( 'path', 'Dot-B' )
+			'description' => __( 'Path', 'Dot-B' )
 		),
 		'inkwell' => array(
 			'url' => '%s/images/headers/inkwell.jpg',
 			'thumbnail_url' => '%s/images/headers/inkwell-thumbnail.jpg',
 			/* translators: header image description */
-			'description' => __( 'inkwell', 'Dot-B' )
+			'description' => __( 'Inkwell', 'Dot-B' )
 		),
 		'willow' => array(
 			'url' => '%s/images/headers/willow.jpg',

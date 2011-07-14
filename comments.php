@@ -10,7 +10,7 @@
 ?>
 <!-- You can start editing here. -->
 	<?php if ( have_comments() ) { ?>
-			<h2 id="comments-title"><span>{ <a href="#respond"  rel="nofollow" title="<?php _e('Leave a comment ?', 'dot-b'); ?>"><?php _e('Leave a comment ?', 'dot-b'); ?></a> }</span></h2>
+			<h2 id="comments-title"><span>{ <a href="#respond"  rel="nofollow" title="<?php _e('Leave a Reply ?', 'dot-b'); ?>"><?php _e('Leave a Reply ?', 'dot-b'); ?></a> }</span></h2>
 			<ol class="commentlist" id="thecomments">
 					<?php wp_list_comments('type=all&callback=mytheme_comment'); ?>
 			</ol>

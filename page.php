@@ -1,29 +1,33 @@
-<?php get_header(); ?>
-  <div id="main">
-   <div id="content">
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php get_header();?>
+<div id="main"><!--here -->
+	<div id="content">
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		<div class="post">
+			<h2 class="post_title_h2"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+			<div class="post_info_top">
+				<div class="post_info_date"> <?php printf( __('Posted on %s ', 'dot-b'), get_the_date(get_option( 'date_format' ))); ?></div>
+				<div class="post_info_author"> <?php _e('by', 'dot-b'); ?> <?php the_author_posts_link(); ?></div>
+				<?php edit_post_link(__('[ Edit ]'),'<span class="post_info_edit">','</span>'); ?>
+			</div>
+			<div class="post_content">
+				<?php the_content(); ?>
+				<?php wp_link_pages(); ?>
+			</div>
+		</div>
+		<div class="post_info_bootom">
+			<div class="post_meta"><?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?></div>  
+			<div class="post_readmore"><?php comments_popup_link(__('Leave a Reply ?', 'dot-b'),__('[ 1 Reply ]', 'dot-b'),__('[ % Replies ]', 'dot-b')); ?></div>	
+		</div>		
+	<?php endwhile; else: ?>
+		<div class="post">
+			<h2 class="post_title_h2"><?php _e("Nothing Found"); ?></h2>
+		</div>
+	<?php endif; ?>
 
-    <div class="post">
-     <h1 class="post_title_h2"><?php the_title(); ?></h1>
-     <ul class="post_info">
-      <?php if ($options['author']) : ?><li><?php _e('By'); ?> <?php the_author_posts_link(); ?></li><?php endif; ?>
-      <?php edit_post_link(__('[ EDIT ]'), '<li class="post_edit">', '</li>' ); ?>
-     </ul>
-     <div class="post_content">
-      <?php the_content(__('Read more')); ?>
-      <?php wp_link_pages(); ?>
-     </div>
-    </div>
-<?php endwhile; else: ?>
-    <div class="post">
-     <p><?php _e("Sorry, but you are looking for something that isn't here."); ?></p>
-    </div>
-<?php endif; ?>
-
-    <div id="comments_wrapper">
-     <?php comments_template( '', true ); ?>
-    </div>
-   </div>
-   <?php get_sidebar(); ?>
-  </div>
+		<div id="comments_wrapper">
+		 <?php comments_template( '', true ); ?>
+		</div>
+	</div>
+<?php get_sidebar(); ?>
+<div class="clear"></div></div><!--here -->
 <?php get_footer(); ?>

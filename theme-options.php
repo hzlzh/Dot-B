@@ -48,7 +48,7 @@ function dotb_theme_options_page() {
 	<style>
 	textarea,input[type='text']{width:50%;}
 	</style>
-	<?php screen_icon(); echo "<h2>" . get_current_theme() . __( ' Theme Options' ) . "</h2>";
+	<?php screen_icon(); echo "<h2>" . get_current_theme() .' '.__( 'Theme Options' ) . "</h2>";
 	// This shows the page's name and an icon if one has been provided ?>
 	<?php if ( isset( $_REQUEST['action'])&&('reset' == $_REQUEST['action']) ) : ?>
 	<div class="updated fade"><p><strong><?php _e( 'Options reset successfully!' ); ?></strong></p></div>
@@ -134,7 +134,7 @@ function dotb_theme_options_page() {
 	<h2>Some Tips Here</h2>
 	<ul>
 		<li>1.Customize your Social Media (Facebook, Twitter, Google+ .etc) according to this *** <a href="">Instructions</a> ***</li>
-		<li>2.Your threaded (nested) comments <strong>[<?php echo get_option('thread_comments_depth');?>]</strong> levels deep, change it here -> <a target="_blank" href="./options-discussion.php">[<?php _e('Setting'); ?>]->[<?php _e('Discussion'); ?>]</a></li>
+		<li>2.Your threaded (nested) comments <strong>[<?php echo get_option('thread_comments_depth');?>]</strong> levels deep, change it here -> <a target="_blank" href="./options-discussion.php">[<?php _e('Settings'); ?>]->[<?php _e('Discussion'); ?>]</a></li>
 		<li>3.Change <code>&lt;Body&gt;</code> background image here -> <a target="_blank" href="./themes.php?page=custom-background">[<?php _e('Appearance'); ?>]->[<?php _e('Background'); ?>]</a></li>
 		<li>4.Customize <code>&lt;Header&gt;</code> image here -> <a target="_blank" href="./themes.php?page=custom-header">[<?php _e('Appearance'); ?>]->[<?php _e('Header'); ?>]</a></li>
 		<li></li>
