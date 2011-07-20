@@ -29,7 +29,7 @@ add_action( 'admin_init', 'dotb_register_settings' );
 
 function dotb_theme_options() {
 	// Add theme options page to the addmin menu
-	add_theme_page( 'Dot-B Theme Options', 'Dot-B Theme Options', 'edit_theme_options', 'theme_options', 'dotb_theme_options_page' );
+	add_theme_page('Dot-B '.__('Theme Options','dot-b'), 'Dot-B '.__('Theme Options','dot-b'), 'edit_theme_options', 'theme_options', 'dotb_theme_options_page' );
 }
 
 add_action( 'admin_menu', 'dotb_theme_options' );
@@ -48,12 +48,12 @@ function dotb_theme_options_page() {
 	<style>
 	textarea,input[type='text']{width:50%;}
 	</style>
-	<?php screen_icon(); echo "<h2>" . get_current_theme() .' '.__( 'Theme Options' ) . "</h2>";
+	<?php screen_icon(); echo "<h2>" . get_current_theme() .' '.__( 'Theme Options' ,'dot-b' ) . "</h2>";
 	// This shows the page's name and an icon if one has been provided ?>
 	<?php if ( isset( $_REQUEST['action'])&&('reset' == $_REQUEST['action']) ) : ?>
-	<div class="updated fade"><p><strong><?php _e( 'Options reset successfully!' ); ?></strong></p></div>
+	<div class="updated fade"><p><strong><?php _e( 'Options reset successfully!','dot-b' ); ?></strong></p></div>
 	<?php elseif ( $_REQUEST['settings-updated'] ) : ?>
-	<div class="updated fade"><p><strong><?php _e( 'Options saved successfully!' ); ?></strong></p></div>
+	<div class="updated fade"><p><strong><?php _e( 'Options saved successfully!','dot-b' ); ?></strong></p></div>
 	<?php endif; // If the form has just been submitted, this shows the notification ?>
 	
 	<form method="post" action="options.php">
@@ -68,52 +68,52 @@ function dotb_theme_options_page() {
 	<tbody>
 
 	
-	<tr valign="top"><th scope="row">Rss Feed URL</th>
+	<tr valign="top"><th scope="row"><?php _e( 'Rss Feed URL','dot-b' ); ?></th>
 	<td><label for="dotb_rss_url">
-	<input id="dotb_rss_url" name="dotb_options[dotb_rss_url]" type="text" value="<?php esc_attr_e($settings['dotb_rss_url']); ?>" /><br>( With "<code>http://</code>" )   Keep blank to use WordPress default Rss Feed URL.</label>
+	<input id="dotb_rss_url" name="dotb_options[dotb_rss_url]" type="text" value="<?php esc_attr_e($settings['dotb_rss_url']); ?>" /><br><?php _e( '( With "<code>http://</code>" )   Keep blank to use WordPress default Rss Feed URL.','dot-b' ); ?></label>
 	</td>
 	</tr>
 
-	<tr valign="top"><th scope="row">Enable Excerpt</th>
+	<tr valign="top"><th scope="row"><?php _e( 'Enable Excerpt','dot-b' ); ?></th>
 	<td><label for="dotb_is_excerpt">
 	<input type="checkbox" id="dotb_is_excerpt" name="dotb_options[dotb_is_excerpt]" value="1" <?php checked( true, $settings['dotb_is_excerpt'] ); ?> />
-	Show excerpt in Home and Archives</label>
+	<?php _e( 'Show excerpt in Home and Archives','dot-b' ); ?></label>
 	</td>
 	</tr>
 	
 	
-	<tr valign="top"><th scope="row">Use Google Analytics?</th>
+	<tr valign="top"><th scope="row"><?php _e( 'Use Google Analytics?','dot-b' ); ?></th>
 	<td><label for="dotb_is_ga">
 	<input type="checkbox" id="dotb_is_ga" name="dotb_options[dotb_is_ga]" value="1" <?php checked( true, $settings['dotb_is_ga'] ); ?> />
-	You can get you <code>Google Analytics</code> code <a target="_blank" href="https://www.google.com/analytics/settings/check_status_profile_handler">here</a>.</label>
+	<?php _e( 'You can get you <code>Google Analytics</code> code <a target="_blank" href="https://www.google.com/analytics/settings/check_status_profile_handler">here</a>.','dot-b' ); ?></label>
 	</td>
 	</tr>
 	
 	
-	<tr valign="top"><th scope="row"><label for="dotb_analytics_code">Analytics Code</label></th>
+	<tr valign="top"><th scope="row"><label for="dotb_analytics_code"><?php _e( 'Analytics Code','dot-b' ); ?></label></th>
 	<td>
 	<textarea id="dotb_analytics_code" name="dotb_options[dotb_analytics_code]" rows="5" cols="30"><?php echo stripslashes($settings['dotb_analytics_code']); ?></textarea>
 	</td>
 	</tr>
 
-	<tr valign="top"><th scope="row"><label for="dotb_footer">Footer Copyright</label></th>
+	<tr valign="top"><th scope="row"><label for="dotb_footer"><?php _e( 'Footer Copyright','dot-b' ); ?></label></th>
 	<td>
-	<textarea id="dotb_footer" name="dotb_options[dotb_footer]" rows="5" cols="30"><?php echo stripslashes($settings['dotb_footer']); ?></textarea><p><strong>Preview:&nbsp;&nbsp;</strong><?php echo stripslashes($settings['dotb_footer']); ?></p>
+	<textarea id="dotb_footer" name="dotb_options[dotb_footer]" rows="5" cols="30"><?php echo stripslashes($settings['dotb_footer']); ?></textarea><p><strong><?php _e( 'Preview','dot-b' ); ?>:&nbsp;&nbsp;</strong><?php echo stripslashes($settings['dotb_footer']); ?></p>
 	</td>
 	</tr>
 
-	<tr valign="top"><th scope="row">Display colourful bar on header and footer?</th>
+	<tr valign="top"><th scope="row"><?php _e( 'Display colourful bar on header and footer?','dot-b' ); ?></th>
 	<td><label for="dotb_is_colorbar">
 	<input type="checkbox" id="dotb_is_colorbar" name="dotb_options[dotb_is_colorbar]" value="1" <?php checked( true, $settings['dotb_is_colorbar'] ); ?> />
-	<strong>Preview:&nbsp;&nbsp;</strong><span style="color:#0065cc;">▄▄▄▄</span><span style="color:#0fabff;">▄▄▄</span><span style="color:#2a5599;">▄▄▄</span><span style="color:#ff6f6f;">▄▄▄</span><span style="color:#ff0f00;">▄▄</span><span style="color:#be0800;">▄▄</span><span style="color:#5b1301;">▄▄</span><span style="color:#edb012">▄</span><span style="color:#9fcf67">▄</span><span style="color:#0b9938">▄</span>
+	<strong><?php _e( 'Preview','dot-b' ); ?>:&nbsp;&nbsp;</strong><span style="color:#0065cc;">▄▄▄▄</span><span style="color:#0fabff;">▄▄▄</span><span style="color:#2a5599;">▄▄▄</span><span style="color:#ff6f6f;">▄▄▄</span><span style="color:#ff0f00;">▄▄</span><span style="color:#be0800;">▄▄</span><span style="color:#5b1301;">▄▄</span><span style="color:#edb012">▄</span><span style="color:#9fcf67">▄</span><span style="color:#0b9938">▄</span>
 	</label>
 	</td>
 	</tr>
 	
-	<tr valign="top"><th scope="row">Display SQL count at footer?</th>
+	<tr valign="top"><th scope="row"><?php _e( 'Display SQL count at footer?','dot-b' ); ?></th>
 	<td><label for="dotb_is_sqlcount">
 	<input type="checkbox" id="dotb_is_sqlcount" name="dotb_options[dotb_is_sqlcount]" value="1" <?php checked( true, $settings['dotb_is_sqlcount'] ); ?> />
-	<strong>Preview:&nbsp;&nbsp;</strong><code>{ 29 <?php _e("queries in");?> 1.018 <?php _e("seconds");?> }</code>
+	<strong><?php _e( 'Preview','dot-b' ); ?>:&nbsp;&nbsp;</strong><code>{ 29 <?php _e("queries in");?> 1.018 <?php _e("seconds");?> }</code>
 	</label>
 	</td>
 	</tr>
@@ -131,12 +131,12 @@ function dotb_theme_options_page() {
 	</form>
 	<div class="tips">
 	<div id="icon-edit" class="icon32"><br></div>
-	<h2>Some Tips Here</h2>
+	<h2><?php _e( 'Some Tips Here','dot-b' ); ?></h2>
 	<ul>
-		<li>1.Customize your Social Media (Facebook, Twitter, Google+ .etc) according to this *** <a href="">Instructions</a> ***</li>
-		<li>2.Your threaded (nested) comments <strong>[<?php echo get_option('thread_comments_depth');?>]</strong> levels deep, change it here -> <a target="_blank" href="./options-discussion.php">[<?php _e('Settings'); ?>]->[<?php _e('Discussion'); ?>]</a></li>
-		<li>3.Change <code>&lt;Body&gt;</code> background image here -> <a target="_blank" href="./themes.php?page=custom-background">[<?php _e('Appearance'); ?>]->[<?php _e('Background'); ?>]</a></li>
-		<li>4.Customize <code>&lt;Header&gt;</code> image here -> <a target="_blank" href="./themes.php?page=custom-header">[<?php _e('Appearance'); ?>]->[<?php _e('Header'); ?>]</a></li>
+		<li><?php _e( '1.Customize your Social Media (Facebook, Twitter, Google+ .etc) according to this','dot-b' ); ?> *** <a href=""><?php _e( 'Instructions','dot-b' ); ?></a> ***</li>
+		<li><?php _e( '2.Your threaded (nested) comments','dot-b' ); ?> <strong>[<?php echo get_option('thread_comments_depth');?>]</strong> <?php _e( 'levels deep, change it here','dot-b' ); ?> -> <a target="_blank" href="./options-discussion.php">[<?php _e('Settings'); ?>]->[<?php _e('Discussion'); ?>]</a></li>
+		<li><?php _e( '3.Change <code>&lt;Body&gt;</code> background image here','dot-b' ); ?> -> <a target="_blank" href="./themes.php?page=custom-background">[<?php _e('Appearance'); ?>]->[<?php _e('Background'); ?>]</a></li>
+		<li><?php _e( '4.Customize <code>&lt;Header&gt;</code> image here','dot-b' ); ?> -> <a target="_blank" href="./themes.php?page=custom-header">[<?php _e('Appearance'); ?>]->[<?php _e('Header'); ?>]</a></li>
 		<li></li>
 	</ul>
 	</div>
@@ -144,8 +144,8 @@ function dotb_theme_options_page() {
 <div style="text-align: center;">
 		<span style="font-size: 20px;margin: 5px 0;display: block;"><a href="http://zlz.im/">Dot-B v<?php echo esc_attr_e($settings['dotb_version']);?></a></span>
 		<br>
-		Created, Developed and maintained by <a href="http://zlz.im/">HzlzH</a><br>
-		If you like the <code>Dot-B</code> theme, please donate.  It will help in developing new features and versions.		<table style="margin:0 auto;">
+		<?php _e('Created, Developed and maintained by <a href=\"http://zlz.im/\">HzlzH</a><br>If you like the <code>Dot-B</code> theme, please donate. It will help in developing new features and versions.','dot-b' ); ?>
+		<table style="margin:0 auto;">
 			<tbody><tr>
 				<td style="width:200px;">
 					<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -160,9 +160,7 @@ function dotb_theme_options_page() {
 					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 					<img alt="" border="0" src="https://www.paypalobjects.com/zh_XC/i/scr/pixel.gif" width="1" height="1">
 					</form>
-
 				</td>
-				
 			</tr>
 		</tbody></table>
 	</div>
