@@ -1,5 +1,5 @@
-<?php get_header();?>
-<div id="main"><!--here -->
+<?php get_header(); ?>
+<div id="main">
 	<div id="content">
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<div class="post">
@@ -7,11 +7,11 @@
 			<div class="post_info_top">
 				<div class="post_info_date"> <?php printf( __('Posted on %s ', 'dot-b'), get_the_date(get_option( 'date_format' ))); ?></div>
 				<div class="post_info_author"> <?php _e('by', 'dot-b'); ?> <?php the_author_posts_link(); ?></div>
-				<?php edit_post_link(__('[ Edit ]'),'<span class="post_info_edit">','</span>'); ?>
+				<?php edit_post_link(__('[ Edit ]', 'dot-b'),'<span class="post_info_edit">','</span>'); ?>
 			</div>
 			<div class="post_content">
 				<?php the_content(); ?>
-				<?php wp_link_pages(); ?>
+				<?php wp_link_pages('before=<div id="page-links">&after=</div>'); ?>
 			</div>
 		</div>
 		<div class="post_info_bootom">
@@ -23,11 +23,11 @@
 			<h2 class="post_title_h2"><?php _e("Nothing Found"); ?></h2>
 		</div>
 	<?php endif; ?>
-
 		<div id="comments_wrapper">
 		 <?php comments_template( '', true ); ?>
 		</div>
-	</div>
+	</div><!-- #content -->
 <?php get_sidebar(); ?>
-<div class="clear"></div></div><!--here -->
+<div class="clear"></div>
+</div><!-- #main -->
 <?php get_footer(); ?>

@@ -17,7 +17,7 @@
 			<div class="navigation"><?php paginate_comments_links(); ?></div>
 	<?php } else { // this is displayed if there are no comments so far ?>
 	<?php if ( ! comments_open() && !is_page() ) { ?>
-			<h2 id="comments"><?php _e('Comments are closed.','dot-b'); ?></h2>
+
 	<?php } // end ! comments_open() ?>
 
 	<?php } // end have_comments()

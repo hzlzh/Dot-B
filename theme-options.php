@@ -113,7 +113,7 @@ function dotb_theme_options_page() {
 	<tr valign="top"><th scope="row"><?php _e( 'Display SQL count at footer?','dot-b' ); ?></th>
 	<td><label for="dotb_is_sqlcount">
 	<input type="checkbox" id="dotb_is_sqlcount" name="dotb_options[dotb_is_sqlcount]" value="1" <?php checked( true, $settings['dotb_is_sqlcount'] ); ?> />
-	<strong><?php _e( 'Preview','dot-b' ); ?>:&nbsp;&nbsp;</strong><code>{ 29 <?php _e("queries in");?> 1.018 <?php _e("seconds");?> }</code>
+	<strong><?php _e( 'Preview','dot-b' ); ?>:&nbsp;&nbsp;</strong><code>{ 29 <?php _e('queries in', 'dot-b');?> 1.018 <?php _e('seconds', 'dot-b');?> }</code>
 	</label>
 	</td>
 	</tr>
@@ -133,7 +133,7 @@ function dotb_theme_options_page() {
 	<div id="icon-edit" class="icon32"><br></div>
 	<h2><?php _e( 'Some Tips Here','dot-b' ); ?></h2>
 	<ul>
-		<li><?php _e( '1.Customize your Social Media (Facebook, Twitter, Google+ .etc) according to this','dot-b' ); ?> *** <a href=""><?php _e( 'Instructions','dot-b' ); ?></a> ***</li>
+		<li><?php _e( '1.Customize your Social Media (Facebook, Twitter, Google+ .etc) according to this','dot-b' ); ?> -> <a href="">[<?php _e( 'Instructions','dot-b' ); ?>]</a></li>
 		<li><?php _e( '2.Your threaded (nested) comments','dot-b' ); ?> <strong>[<?php echo get_option('thread_comments_depth');?>]</strong> <?php _e( 'levels deep, change it here','dot-b' ); ?> -> <a target="_blank" href="./options-discussion.php">[<?php _e('Settings'); ?>]->[<?php _e('Discussion'); ?>]</a></li>
 		<li><?php _e( '3.Change <code>&lt;Body&gt;</code> background image here','dot-b' ); ?> -> <a target="_blank" href="./themes.php?page=custom-background">[<?php _e('Appearance'); ?>]->[<?php _e('Background'); ?>]</a></li>
 		<li><?php _e( '4.Customize <code>&lt;Header&gt;</code> image here','dot-b' ); ?> -> <a target="_blank" href="./themes.php?page=custom-header">[<?php _e('Appearance'); ?>]->[<?php _e('Header'); ?>]</a></li>

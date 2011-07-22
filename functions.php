@@ -10,7 +10,7 @@ if ( ! defined( 'HEADER_TEXTCOLOR' ) )
 
 // No CSS, just IMG call. The %s is a placeholder for the theme template directory URI.
 if ( ! defined( 'HEADER_IMAGE' ) )
-	define( 'HEADER_IMAGE', '%s/images/headers/path.jpg' );
+	define( 'HEADER_IMAGE', '%s/images/headers/inkwell.jpg' );
 
 // The height and width of your custom header. You can hook into the theme's own filters to change these values.
 // Add a filter to dotb_header_image_width and dotb_header_image_height to change these values.
@@ -30,29 +30,41 @@ add_custom_image_header( '', 'dotb_admin_header_style' );
 
 	// Default custom headers packaged with the theme. %s is a placeholder for the theme template directory URI.
 	register_default_headers( array(
-		'path' => array(
-			'url' => '%s/images/headers/path.jpg',
-			'thumbnail_url' => '%s/images/headers/path-thumbnail.jpg',
+		'house' => array(
+			'url' => '%s/images/headers/house.jpg',
+			'thumbnail_url' => '%s/images/headers/house-thumbnail.jpg',
 			/* translators: header image description */
-			'description' => __( 'Path', 'Dot-B' )
+			'description' => __( 'House', 'dot-b' )
 		),
 		'inkwell' => array(
 			'url' => '%s/images/headers/inkwell.jpg',
 			'thumbnail_url' => '%s/images/headers/inkwell-thumbnail.jpg',
 			/* translators: header image description */
-			'description' => __( 'Inkwell', 'Dot-B' )
+			'description' => __( 'Inkwell', 'dot-b' )
 		),
 		'willow' => array(
 			'url' => '%s/images/headers/willow.jpg',
 			'thumbnail_url' => '%s/images/headers/willow-thumbnail.jpg',
 			/* translators: header image description */
-			'description' => __( 'Willow', 'Dot-B' )
+			'description' => __( 'Willow', 'dot-b' )
 		),
 		'shore' => array(
 			'url' => '%s/images/headers/shore.jpg',
 			'thumbnail_url' => '%s/images/headers/shore-thumbnail.jpg',
 			/* translators: header image description */
-			'description' => __( 'Shore', 'Dot-B' )
+			'description' => __( 'Shore', 'dot-b' )
+		),
+		'sky' => array(
+			'url' => '%s/images/headers/sky.jpg',
+			'thumbnail_url' => '%s/images/headers/sky-thumbnail.jpg',
+			/* translators: header image description */
+			'description' => __( 'Sky', 'dot-b' )
+		),
+		'path' => array(
+			'url' => '%s/images/headers/path.jpg',
+			'thumbnail_url' => '%s/images/headers/path-thumbnail.jpg',
+			/* translators: header image description */
+			'description' => __( 'Path', 'dot-b' )
 		),
 	) );
 
@@ -61,8 +73,8 @@ add_custom_image_header( '', 'dotb_admin_header_style' );
 if ( function_exists('register_nav_menu') ) { 
 	register_nav_menus(
 		array(
-		  'primary' => 'Header Menu',
-		  'social_media' => 'Custom Social Media'
+		  'primary' => __( 'Header Menu', 'dot-b' ),
+		  'social_media' => __( 'Custom Social Media', 'dot-b' )
 		)
 	);
 }
@@ -103,18 +115,18 @@ function dotb_admin_header_style() {
 endif;
 
 // Wp_tag_cloud Widget
-function colorCloud($text) { 
-	$text = preg_replace_callback('|<a (.+?)>|i', 'colorCloudCallback', $text);
+function ColorfuTaglCloud($text) { 
+	$text = preg_replace_callback('|<a (.+?)>|i', 'ColorfuTaglCloudCallback', $text);
 	return $text;
 	}
-function colorCloudCallback($matches) { 
+function ColorfuTaglCloudCallback($matches) { 
 	$text = $matches[1];
 	$color = dechex(rand(0,16777215));// Here you can control the color of tags
 	$pattern = '/style=(\'|\")(.*)(\'|\")/i';
 	$text = preg_replace($pattern, "style=\"color:#{$color};$2;\"", $text);
 	return "<a $text>";
 }
-add_filter('wp_tag_cloud', 'colorCloud', 1);
+
 
 // Custom Comments List.
 function mytheme_comment( $comment, $args, $depth ) {
@@ -164,4 +176,47 @@ function mytheme_comment( $comment, $args, $depth ) {
 	endswitch;
 }
 
+?>
+<?php
+class widget_test extends WP_Widget {
+    function widget_test() {
+        $widget_ops = array('description' => 'Dot-B'.__( 'Display Colorful Tags Cloud', 'dot-b'));
+        $this->WP_Widget('widget_test', 'Dot-B'.__( 'Colorful Tag Cloud', 'dot-b'), $widget_ops);
+    }
+    function widget($args, $instance) {
+        extract($args);
+        $title = apply_filters('widget_title', esc_attr($instance['title']));
+        echo $before_widget.$before_title.$title.$after_title;
+        echo '<ul>';
+		add_filter('wp_tag_cloud', 'ColorfuTaglCloud', 1);
+		wp_tag_cloud();
+        echo '</ul>';
+        echo $after_widget;
+    }
+    function update($new_instance, $old_instance) {
+        if (!isset($new_instance['submit'])) {
+            return false;
+        }
+        $instance = $old_instance;
+        $instance['title'] = strip_tags($new_instance['title']);
+
+        return $instance;
+    }
+    function form($instance) {
+        global $wpdb;
+        $instance = wp_parse_args((array) $instance, array('title' => ''));
+        $title = esc_attr($instance['title']);
+
+?>
+        <p>
+            <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e( 'Title', 'dot-b'); ?>:<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" /></label>
+        </p>
+        <input type="hidden" id="<?php echo $this->get_field_id('submit'); ?>" name="<?php echo $this->get_field_name('submit'); ?>" value="1" />
+<?php
+    }
+}
+add_action('widgets_init', 'widget_test_init');
+function widget_test_init() {
+    register_widget('widget_test');
+}
 ?>

@@ -2,16 +2,15 @@
 global $dotb_options;
 $dotb_settings = get_option( 'dotb_options', $dotb_options );
 ?>
-<?php get_header();?>
-<div id="main"><!--here -->
+<?php get_header(); ?>
+<div id="main">
 	<div id="content">
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		<div class="post">
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?><div class="post">
 			<h2 class="post_title_h2"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 			<div class="post_info_top">
-				<div class="post_info_date"> <?php printf( __('Posted on %s ', 'dot-b'), get_the_date(get_option( 'date_format' ))); ?></div>
+				<div class="post_info_date"> <?php printf( __('Posted on %s', 'dot-b'), get_the_date(get_option( 'date_format' ))); ?></div>
 				<div class="post_info_author"> <?php _e('by', 'dot-b'); ?> <?php the_author_posts_link(); ?></div>
-				<?php edit_post_link(__('[ Edit ]', 'dot-b''),'<span class="post_info_edit">','</span>'); ?>
+				<?php edit_post_link(__('[ Edit ]', 'dot-b'),'<span class="post_info_edit">','</span>'); ?>
 			</div>
 			<div class="post_content">
 				<?php if ( $dotb_settings['dotb_is_excerpt']=='1' ) { the_excerpt(__('Read more &raquo;','dot-b')); } else { the_content(__('Read more &raquo;','dot-b')); }?>
@@ -28,8 +27,8 @@ $dotb_settings = get_option( 'dotb_options', $dotb_options );
 		</div>
 	<?php endif; ?>
 	<?php if (function_exists('wp_pagenavi')) { wp_pagenavi(); } else { include('navigation.php'); } ?>
-	</div>
-
+	</div><!-- #content -->
 <?php get_sidebar(); ?>
-<div class="clear"></div></div><!--here -->
+<div class="clear"></div>
+</div><!-- #main -->
 <?php get_footer(); ?> 

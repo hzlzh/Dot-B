@@ -22,6 +22,6 @@ echo paginate_links( array(
         'prev_text' => '&laquo;',
         'next_text' => '&raquo;',
 ));
-echo "\n</div>\n";
+echo "</div>\n";
 
 ?>
