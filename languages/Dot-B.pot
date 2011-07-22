@@ -2,29 +2,25 @@
 # This file is distributed under the same license as the Dot-B package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Dot-B 1.6.5\n"
+"Project-Id-Version: Dot-B 1.7.2\n"
 "Report-Msgid-Bugs-To: http://zlz.im/dot-b/\n"
 "POT-Creation-Date: 2011-07-14 22:47:23+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
-"Last-Translator: hzlzh <i@zlz.im>\n"
-"Language-Team: LANGUAGE <i@zlz.im>\n"
+"Last-Translator: hzlzh <hzlzh.com@gmail.com>\n"
+"Language-Team: LANGUAGE <hzlzh.com@gmail.com>\n"
 
 #: comments.php:6
 msgid "This post is password protected. Enter the password to view comments."
 msgstr ""
 
 #: comments.php:13
-#: index.php:23
+#: index.php:22
 #: page.php:19
-#: single.php:20
+#: single.php:19
 msgid "Leave a Reply ?"
-msgstr ""
-
-#: comments.php:20
-msgid "Comments are closed."
 msgstr ""
 
 #: footer.php:11
@@ -46,7 +42,7 @@ msgid "Top"
 msgstr ""
 
 #: functions.php:37
-msgid "Path"
+msgid "House"
 msgstr ""
 
 #: functions.php:43
@@ -61,18 +57,46 @@ msgstr ""
 msgid "Shore"
 msgstr ""
 
-#: functions.php:137
+#: functions.php:61
+msgid "Sky"
+msgstr ""
+
+#: functions.php:67
+msgid "Path"
+msgstr ""
+
+#: functions.php:76
+msgid "Header Menu"
+msgstr ""
+
+#: functions.php:77
+msgid "Custom Social Media"
+msgstr ""
+
+#: functions.php:149
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: functions.php:137
-#: functions.php:161
+#: functions.php:149
+#: functions.php:173
 msgid "(Edit)"
 msgstr ""
 
-#: functions.php:142
+#: functions.php:154
 msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:183
+msgid "Display Colorful Tags Cloud"
+msgstr ""
+
+#: functions.php:184
+msgid "Colorful Tag Cloud"
+msgstr ""
+
+#: functions.php:212
+msgid "Title"
 msgstr ""
 
 #: header.php:21
@@ -80,93 +104,92 @@ msgstr ""
 msgid "Page %s"
 msgstr ""
 
-#: header.php:47
+#: header.php:44
 msgid "RSS Feed"
 msgstr ""
 
+#: index.php:11
+#, php-format
+msgid "Posted on %s"
+msgstr ""
+
 #: index.php:12
+#: page.php:9
+#: single.php:9
+msgid "by"
+msgstr ""
+
+#: index.php:13
+#: page.php:10
+#: single.php:10
+msgid "[ Edit ]"
+msgstr ""
+
+#: index.php:16
+msgid "Read more &raquo;"
+msgstr ""
+
+#: index.php:22
+#: page.php:19
+#: single.php:19
+msgid "[ 1 Reply ]"
+msgstr ""
+
+#: index.php:22
+#: page.php:19
+#: single.php:19
+msgid "[ % Replies ]"
+msgstr ""
+
+#: index.php:26
+#: page.php:23
+#: single.php:27
+msgid "Nothing Found"
+msgstr ""
+
 #: page.php:8
+#: single.php:8
 #, php-format
 msgid "Posted on %s "
 msgstr ""
 
-#: index.php:13
-#: page.php:9
-#: single.php:10
-msgid "by"
-msgstr ""
-
-#: index.php:14
-#: page.php:10
-#: single.php:11
-msgid "[ Edit ]"
-msgstr ""
-
-#: index.php:17
-msgid "Read more &raquo;"
-msgstr ""
-
-#: index.php:23
-#: page.php:19
-#: single.php:20
-msgid "[ 1 Reply ]"
-msgstr ""
-
-#: index.php:23
-#: page.php:19
-#: single.php:20
-msgid "[ % Replies ]"
-msgstr ""
-
-#: index.php:27
-#: page.php:23
-msgid "Nothing Found"
-msgstr ""
-
-#: searchform.php:2
+#: searchform.php:3
 msgid "type, hit enter"
 msgstr ""
 
-#: searchform.php:3
+#: searchform.php:4
 msgid "SEARCH"
 msgstr ""
 
-#: sidebar.php:17
+#: sidebar.php:16
 msgid "Recent Post"
 msgstr ""
 
-#: sidebar.php:21
+#: sidebar.php:20
 msgid "Recent Comments"
 msgstr ""
 
-#: sidebar.php:25
+#: sidebar.php:24
 msgid "Archives"
 msgstr ""
 
-#: sidebar.php:32
+#: sidebar.php:31
 msgid "Tags"
 msgstr ""
 
-#: sidebar.php:39
+#: sidebar.php:40
 msgid "Meta"
 msgstr ""
 
-#: single.php:9
-msgid "Posted on"
-msgstr ""
-
-#: single.php:23
+#: single.php:22
 msgid "Already the latest post!"
 msgstr ""
 
-#: single.php:24
+#: single.php:23
 msgid "Already the last post!"
 msgstr ""
 
-#: single.php:31
-msgid "Sorry, but you are looking for something that isn't here."
-msgstr ""
-
+#: theme-options.php:32
 #: theme-options.php:51
 msgid "Theme Options"
 msgstr ""
@@ -179,12 +202,82 @@ msgstr ""
 msgid "Options saved successfully!"
 msgstr ""
 
+#: theme-options.php:71
+msgid "Rss Feed URL"
+msgstr ""
+
+#: theme-options.php:73
+msgid "( With \"<code>http://</code>\" )   Keep blank to use WordPress default Rss Feed URL."
+msgstr ""
+
+#: theme-options.php:77
+msgid "Enable Excerpt"
+msgstr ""
+
+#: theme-options.php:80
+msgid "Show excerpt in Home and Archives"
+msgstr ""
+
+#: theme-options.php:85
+msgid "Use Google Analytics?"
+msgstr ""
+
+#: theme-options.php:88
+msgid "You can get you <code>Google Analytics</code> code <a target=\"_blank\" href=\"https://www.google.com/analytics/settings/check_status_profile_handler\">here</a>."
+msgstr ""
+
+#: theme-options.php:93
+msgid "Analytics Code"
+msgstr ""
+
+#: theme-options.php:99
+msgid "Footer Copyright"
+msgstr ""
+
+#: theme-options.php:101
+#: theme-options.php:108
+#: theme-options.php:116
+msgid "Preview"
+msgstr ""
+
+#: theme-options.php:105
+msgid "Display colourful bar on header and footer?"
+msgstr ""
+
+#: theme-options.php:113
+msgid "Display SQL count at footer?"
+msgstr ""
+
+#: theme-options.php:134
+msgid "Some Tips Here"
+msgstr ""
+
+#: theme-options.php:136
+msgid "1.Customize your Social Media (Facebook, Twitter, Google+ .etc) according to this"
+msgstr ""
+
+#: theme-options.php:136
+msgid "Instructions"
+msgstr ""
+
+#: theme-options.php:137
+msgid "2.Your threaded (nested) comments"
+msgstr ""
+
+#: theme-options.php:137
+msgid "levels deep, change it here"
+msgstr ""
+
 #: theme-options.php:137
 msgid "Settings"
 msgstr ""
 
 #: theme-options.php:137
 msgid "Discussion"
+msgstr ""
+
+#: theme-options.php:138
+msgid "3.Change <code>&lt;Body&gt;</code> background image here"
 msgstr ""
 
 #: theme-options.php:138
@@ -197,11 +290,13 @@ msgid "Background"
 msgstr ""
 
 #: theme-options.php:139
+msgid "4.Customize <code>&lt;Header&gt;</code> image here"
+msgstr ""
+
+#: theme-options.php:139
 msgid "Header"
 msgstr ""
 
-#~ msgid "[ 1 Comment ]"
-#~ msgstr ""
-
-#~ msgid "Leave a comment ?"
-#~ msgstr ""
+#: theme-options.php:147
+msgid "Created, Developed and maintained by <a href=\"http://zlz.im/\">HzlzH</a><br>If you like the <code>Dot-B</code> theme, please donate. It will help in developing new features and versions."
+msgstr ""

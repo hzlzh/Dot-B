@@ -144,7 +144,7 @@ function dotb_theme_options_page() {
 <div style="text-align: center;">
 		<span style="font-size: 20px;margin: 5px 0;display: block;"><a href="http://zlz.im/">Dot-B v<?php echo esc_attr_e($settings['dotb_version']);?></a></span>
 		<br>
-		<?php _e('Created, Developed and maintained by <a href=\"http://zlz.im/\">HzlzH</a><br>If you like the <code>Dot-B</code> theme, please donate. It will help in developing new features and versions.','dot-b' ); ?>
+		<?php _e('Created, Developed and maintained by <a href="http://zlz.im/">HzlzH</a><br>If you like the <code>Dot-B</code> theme, please donate. It will help in developing new features and versions.','dot-b' ); ?>
 		<table style="margin:0 auto;">
 			<tbody><tr>
 				<td style="width:200px;">

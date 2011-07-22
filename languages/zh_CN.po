@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the Dot-B package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Dot-B 1.6.5\n"
+"Project-Id-Version: Dot-B 1.7.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-22 16:09+0800\n"
-"PO-Revision-Date: 2011-07-22 16:09+0800\n"
+"POT-Creation-Date: 2011-07-22 17:48+0800\n"
+"PO-Revision-Date: 2011-07-22 17:50+0800\n"
 "Last-Translator: hzlzh <hzlzh.com@gmail.com>\n"
 "Language-Team: hzlzh <http://zlz.im/>\n"
 "MIME-Version: 1.0\n"
@@ -305,39 +305,6 @@ msgid "Header"
 msgstr "顶部"
 
 #: theme-options.php:147
-msgid "Created, Developed and maintained by <a href=\\\"http://zlz.im/\\\">HzlzH</a><br>If you like the <code>Dot-B</code> theme, please donate. It will help in developing new features and versions."
+msgid "Created, Developed and maintained by <a href=\"http://zlz.im/\">HzlzH</a><br>If you like the <code>Dot-B</code> theme, please donate. It will help in developing new features and versions."
 msgstr "本主题由 <a href=\"http://zlz.im/\">HzlzH</a> 创建、开发和维护，<br>如果你喜欢 <code>Dot-B</code> 并希望我今后能为它添加更多更好的功能和不断更新的新版本，请捐赠这个项目，非常感谢！"
 
-#~ msgid "Comments are closed."
-#~ msgstr "评论功能已关闭。"
-
-#~ msgid "Posted on"
-#~ msgstr "发布于"
-
-#~ msgid "Sorry, but you are looking for something that isn't here."
-#~ msgstr "抱歉，没有符合您搜索条件的结果。请换其它关键词再试。"
-
-#~ msgid "ColorfuTaglCloud"
-#~ msgstr "彩色标签云"
-
-#~ msgid ""
-#~ "Created, Developed and maintained by <a href=\\\"http://zlz.im/\\"
-#~ "\">HzlzH</a>"
-#~ msgstr "567657567"
-
-#~ msgid "Created,"
-#~ msgstr "86786787"
-
-#, fuzzy
-#~ msgid "[ Edit ], "
-#~ msgstr "[ 编辑 ]"
-
-#, fuzzy
-#~ msgid "Dot-B Theme Options"
-#~ msgstr "主题选项"
-
-#~ msgid "[ 1 Comment ]"
-#~ msgstr "[ 1 条评论 ]"
-
-#~ msgid "Leave a comment ?"
-#~ msgstr "留下评论"

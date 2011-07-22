@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the Dot-B package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Dot-B 1.6.5\n"
-"Report-Msgid-Bugs-To: http://zlz.im/dot-b/\n"
-"POT-Creation-Date: 2011-07-14 16:25+0800\n"
-"PO-Revision-Date: 2011-07-14 16:33+0800\n"
+"Project-Id-Version: Dot-B 1.7.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-22 17:46+0800\n"
+"PO-Revision-Date: 2011-07-22 17:49+0800\n"
 "Last-Translator: hzlzh <hzlzh.com@gmail.com>\n"
 "Language-Team: hzlzh <http://zlz.im/>\n"
 "MIME-Version: 1.0\n"
@@ -24,15 +24,11 @@ msgid "This post is password protected. Enter the password to view comments."
 msgstr "這篇文章受密碼保護。查看評論請輸入密碼。"
 
 #: comments.php:13
-#: index.php:23
+#: index.php:22
 #: page.php:19
-#: single.php:20
+#: single.php:19
 msgid "Leave a Reply ?"
-msgstr "發表評論"
-
-#: comments.php:20
-msgid "Comments are closed."
-msgstr "評論功能已關閉。"
+msgstr "發表評論?"
 
 #: footer.php:11
 #: theme-options.php:116
@@ -53,8 +49,8 @@ msgid "Top"
 msgstr "頂部"
 
 #: functions.php:37
-msgid "Path"
-msgstr "小道"
+msgid "House"
+msgstr "木屋"
 
 #: functions.php:43
 msgid "Inkwell"
@@ -68,112 +64,139 @@ msgstr "垂柳"
 msgid "Shore"
 msgstr "海邊"
 
-#: functions.php:137
+#: functions.php:61
+msgid "Sky"
+msgstr "藍天"
+
+#: functions.php:67
+msgid "Path"
+msgstr "小道"
+
+#: functions.php:76
+msgid "Header Menu"
+msgstr "頂部導航"
+
+#: functions.php:77
+msgid "Custom Social Media"
+msgstr "自定義社交媒體"
+
+#: functions.php:149
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s at %2$s"
 
-#: functions.php:137
-#: functions.php:161
+#: functions.php:149
+#: functions.php:173
 msgid "(Edit)"
 msgstr "(編輯)"
 
-#: functions.php:142
+#: functions.php:154
 msgid "Your comment is awaiting moderation."
 msgstr "您的評論正等待審核。"
+
+#: functions.php:183
+msgid "Display Colorful Tags Cloud"
+msgstr "顯示彩色標籤雲"
+
+#: functions.php:184
+msgid "Colorful Tag Cloud"
+msgstr "彩色標籤雲"
+
+#: functions.php:212
+msgid "Title"
+msgstr "標題"
 
 #: header.php:21
 #, php-format
 msgid "Page %s"
 msgstr "Page %s"
 
-#: header.php:47
+#: header.php:44
 msgid "RSS Feed"
 msgstr "RSS Feed"
 
+#: index.php:11
+#, php-format
+msgid "Posted on %s"
+msgstr "發佈於 %s"
+
 #: index.php:12
+#: page.php:9
+#: single.php:9
+msgid "by"
+msgstr "by"
+
+#: index.php:13
+#: page.php:10
+#: single.php:10
+msgid "[ Edit ]"
+msgstr "[ 編輯 ]"
+
+#: index.php:16
+msgid "Read more &raquo;"
+msgstr "閱讀更多 &raquo;"
+
+#: index.php:22
+#: page.php:19
+#: single.php:19
+msgid "[ 1 Reply ]"
+msgstr "[ 1 條評論 ]"
+
+#: index.php:22
+#: page.php:19
+#: single.php:19
+msgid "[ % Replies ]"
+msgstr "[ % 條評論 ]"
+
+#: index.php:26
+#: page.php:23
+#: single.php:27
+msgid "Nothing Found"
+msgstr "沒有找到"
+
 #: page.php:8
+#: single.php:8
 #, php-format
 msgid "Posted on %s "
 msgstr "發佈於 %s "
 
-#: index.php:13
-#: page.php:9
-#: single.php:10
-msgid "by"
-msgstr "by"
-
-#: index.php:14
-#: page.php:10
-#: single.php:11
-msgid "[ Edit ]"
-msgstr "[ 編輯 ]"
-
-#: index.php:17
-msgid "Read more &raquo;"
-msgstr "閱讀更多 &raquo;"
-
-#: index.php:23
-#: page.php:19
-#: single.php:20
-msgid "[ 1 Reply ]"
-msgstr "[ 1 條評論 ]"
-
-#: index.php:23
-#: page.php:19
-#: single.php:20
-msgid "[ % Replies ]"
-msgstr "[ % 條評論 ]"
-
-#: index.php:27
-#: page.php:23
-msgid "Nothing Found"
-msgstr "沒有找到"
-
-#: searchform.php:2
+#: searchform.php:3
 msgid "type, hit enter"
 msgstr "敲擊Enter搜索"
 
-#: searchform.php:3
+#: searchform.php:4
 msgid "SEARCH"
 msgstr "搜索"
 
-#: sidebar.php:17
+#: sidebar.php:16
 msgid "Recent Post"
 msgstr "最新文章"
 
-#: sidebar.php:21
+#: sidebar.php:20
 msgid "Recent Comments"
 msgstr "最新評論"
 
-#: sidebar.php:25
+#: sidebar.php:24
 msgid "Archives"
 msgstr "歸檔"
 
-#: sidebar.php:32
+#: sidebar.php:31
 msgid "Tags"
 msgstr "標籤"
 
-#: sidebar.php:39
+#: sidebar.php:40
 msgid "Meta"
 msgstr "雜項"
 
-#: single.php:9
-msgid "Posted on"
-msgstr "發佈於"
-
-#: single.php:23
+#: single.php:22
 msgid "Already the latest post!"
 msgstr "已經是最新文章！"
 
-#: single.php:24
+#: single.php:23
 msgid "Already the last post!"
 msgstr "已經是最舊文章！"
 
-#: single.php:31
-msgid "Sorry, but you are looking for something that isn't here."
-msgstr "抱歉，沒有符合您搜索條件的結果。請換其它關鍵詞再試。"
-
+#: theme-options.php:32
 #: theme-options.php:51
 msgid "Theme Options"
 msgstr "主題選項"
@@ -186,6 +209,72 @@ msgstr "選項重置成功！"
 msgid "Options saved successfully!"
 msgstr "選項保存成功！"
 
+#: theme-options.php:71
+msgid "Rss Feed URL"
+msgstr "RSS Feed 鏈接"
+
+#: theme-options.php:73
+msgid "( With \"<code>http://</code>\" )   Keep blank to use WordPress default Rss Feed URL."
+msgstr "( 需要\"<code>http://</code>\" ) 留空則顯示WordPress默認Rss Feed 地址"
+
+#: theme-options.php:77
+msgid "Enable Excerpt"
+msgstr "啟用摘要"
+
+#: theme-options.php:80
+msgid "Show excerpt in Home and Archives"
+msgstr "首頁和歸檔頁使用文章摘要"
+
+#: theme-options.php:85
+msgid "Use Google Analytics?"
+msgstr "啟用Google Analytics?"
+
+#: theme-options.php:88
+msgid "You can get you <code>Google Analytics</code> code <a target=\"_blank\" href=\"https://www.google.com/analytics/settings/check_status_profile_handler\">here</a>."
+msgstr "你可以在<a target=\"_blank\" href=\"https://www.google.com/analytics/settings/check_status_profile_handler\">這裡</a>獲取你的<code>Google Analytics< /code>統計代碼，勾選並填寫在下方。"
+
+#: theme-options.php:93
+msgid "Analytics Code"
+msgstr "網站統計代碼"
+
+#: theme-options.php:99
+msgid "Footer Copyright"
+msgstr "頁腳版權信息"
+
+#: theme-options.php:101
+#: theme-options.php:108
+#: theme-options.php:116
+msgid "Preview"
+msgstr "預覽"
+
+#: theme-options.php:105
+msgid "Display colourful bar on header and footer?"
+msgstr "顯示頂部和底部彩色加載條"
+
+#: theme-options.php:113
+msgid "Display SQL count at footer?"
+msgstr "頁面底部顯示SQL數據查詢信息"
+
+#: theme-options.php:134
+msgid "Some Tips Here"
+msgstr "一些技巧"
+
+#: theme-options.php:136
+msgid "1.Customize your Social Media (Facebook, Twitter, Google+ .etc) according to this"
+msgstr "1.自定義你的社交媒體圖標(Facebook, Twitter, Google+, 騰訊微博, 新浪微薄, 人人網...等等) ，配置方法請看"
+
+#: theme-options.php:136
+msgid "Instructions"
+msgstr "說明文檔"
+
+#: theme-options.php:137
+msgid "2.Your threaded (nested) comments"
+msgstr "2.你目前的嵌套是"
+
+#: theme-options.php:137
+msgid "levels deep, change it here"
+msgstr "層深，在這裡設置"
+
 #: theme-options.php:137
 msgid "Settings"
 msgstr "設置"
@@ -193,6 +282,10 @@ msgstr "設置"
 #: theme-options.php:137
 msgid "Discussion"
 msgstr "討論"
+
+#: theme-options.php:138
+msgid "3.Change <code>&lt;Body&gt;</code> background image here"
+msgstr "3.自定義<code>&lt;主體&gt;</code> 背景圖片"
 
 #: theme-options.php:138
 #: theme-options.php:139
@@ -204,11 +297,14 @@ msgid "Background"
 msgstr "背景"
 
 #: theme-options.php:139
+msgid "4.Customize <code>&lt;Header&gt;</code> image here"
+msgstr "4.自定義<code>&lt;頂部&gt;</code> 圖像"
+
+#: theme-options.php:139
 msgid "Header"
 msgstr "頂部"
 
-#~ msgid "[ 1 Comment ]"
-#~ msgstr "[ 1 條評論 ]"
+#: theme-options.php:147
+msgid "Created, Developed and maintained by <a href=\"http://zlz.im/\">HzlzH</a><br>If you like the <code>Dot-B</code> theme, please donate. It will help in developing new features and versions."
+msgstr "本主題由<a href=\"http://zlz.im/\">HzlzH</a> 創建、開發和維護，<br>如果你喜歡<code>Dot-B</code> 並希望我今後能為它添加更多更好的功能和不斷更新的新版本，請捐贈這個項目，非常感謝！"
 
-#~ msgid "Leave a comment ?"
-#~ msgstr "留下評論"
