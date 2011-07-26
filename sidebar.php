@@ -29,11 +29,9 @@
 			
 			<li id="tags" class="widget-container">
 				<h3 class="widget_title"><?php _e( 'Tags', 'dot-b' ); ?></h3>
-				<ul>
-				<li>
+				<div>
 					<?php wp_tag_cloud('smallest=8&largest=22'); ?>
-				</li>
-				</ul>
+				</div>
 			</li>
 
 			<li id="meta" class="widget-container">

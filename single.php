@@ -11,7 +11,7 @@
 			</div>
 			<div class="post_content">
 				<?php the_content(); ?>
-				<?php wp_link_pages('before=<div id="page-links">&after=</div>'); ?>
+				<?php wp_link_pages('before=<div class="page-link">&after=</div>'); ?>
 			</div>
 		</div>
 		<div class="post_info_bootom">

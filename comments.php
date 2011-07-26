@@ -12,7 +12,7 @@
 	<?php if ( have_comments() ) { ?>
 			<h2 id="comments-title"><span>{ <a href="#respond"  rel="nofollow" title="<?php _e('Leave a Reply ?', 'dot-b'); ?>"><?php _e('Leave a Reply ?', 'dot-b'); ?></a> }</span></h2>
 			<ol class="commentlist" id="thecomments">
-					<?php wp_list_comments('type=all&callback=mytheme_comment'); ?>
+					<?php wp_list_comments('type=comment&callback=mytheme_comment'); ?>
 			</ol>
 			<div class="navigation"><?php paginate_comments_links(); ?></div>
 	<?php } else { // this is displayed if there are no comments so far ?>
