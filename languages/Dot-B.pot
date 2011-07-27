@@ -177,7 +177,7 @@ msgstr ""
 msgid "Tags"
 msgstr ""
 
-#: sidebar.php:40
+#: sidebar.php:38
 msgid "Meta"
 msgstr ""
 
@@ -248,59 +248,68 @@ msgstr ""
 msgid "Display SQL count at footer?"
 msgstr ""
 
-#: theme-options.php:134
+#: theme-options.php:132
 msgid "Some Tips Here"
 msgstr ""
 
-#: theme-options.php:136
+#: theme-options.php:134
 msgid "1.Customize your Social Media (Facebook, Twitter, Google+ .etc) according to this"
 msgstr ""
 
-#: theme-options.php:136
+#: theme-options.php:134
+#: theme-options.php:138
 msgid "Instructions"
 msgstr ""
 
-#: theme-options.php:137
+#: theme-options.php:135
 msgid "2.Your threaded (nested) comments"
 msgstr ""
 
-#: theme-options.php:137
+#: theme-options.php:135
 msgid "levels deep, change it here"
 msgstr ""
 
-#: theme-options.php:137
+#: theme-options.php:135
 msgid "Settings"
 msgstr ""
 
-#: theme-options.php:137
+#: theme-options.php:135
 msgid "Discussion"
 msgstr ""
 
-#: theme-options.php:138
+#: theme-options.php:136
 msgid "3.Change <code>&lt;Body&gt;</code> background image here"
 msgstr ""
 
-#: theme-options.php:138
-#: theme-options.php:139
+#: theme-options.php:136
+#: theme-options.php:137
 msgid "Appearance"
 msgstr ""
 
-#: theme-options.php:138
+#: theme-options.php:136
 msgid "Background"
 msgstr ""
 
-#: theme-options.php:139
+#: theme-options.php:137
 msgid "4.Customize <code>&lt;Header&gt;</code> image here"
 msgstr ""
 
-#: theme-options.php:139
+#: theme-options.php:137
 msgid "Header"
 msgstr ""
 
-#: theme-options.php:147
+#: theme-options.php:138
+msgid "5.Download & Customize <code>Social Media Icons</code> from PSD source files here"
+msgstr ""
+
+#: theme-options.php:139
+msgid "========= Feel free to get my help by both Twitter: <a href=\"http://twitter.com/hzlzh\">@hzlzh</a> and Email: <a href=\"mailto:hzlzh.dev@gmail.com\">hzlzh.dev@gmail.com</a> ========="
+msgstr ""
+
+#: theme-options.php:146
 msgid "Created, Developed and maintained by <a href=\"http://zlz.im/\">HzlzH</a><br>If you like the <code>Dot-B</code> theme, please donate. It will help in developing new features and versions."
 msgstr ""
 
-#: theme-options.php:167
+#: theme-options.php:166
 msgid "Alipay"
-msgstr "Alipay"
+msgstr ""

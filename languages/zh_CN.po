@@ -3,9 +3,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dot-B 1.7.2\n"
-"Report-Msgid-Bugs-To: http://zlz.im/dot-b/\n"
-"POT-Creation-Date: 2011-07-27 14:19+0800\n"
-"PO-Revision-Date: 2011-07-27 14:20+0800\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-27 15:04+0800\n"
+"PO-Revision-Date: 2011-07-27 15:05+0800\n"
 "Last-Translator: hzlzh <hzlzh.com@gmail.com>\n"
 "Language-Team: hzlzh <http://zlz.im/>\n"
 "MIME-Version: 1.0\n"
@@ -255,60 +255,69 @@ msgstr "显示顶部和底部彩色加载条"
 msgid "Display SQL count at footer?"
 msgstr "页面底部显示SQL数据查询信息"
 
-#: theme-options.php:134
+#: theme-options.php:132
 msgid "Some Tips Here"
 msgstr "一些技巧"
 
-#: theme-options.php:136
+#: theme-options.php:134
 msgid "1.Customize your Social Media (Facebook, Twitter, Google+ .etc) according to this"
 msgstr "1.自定义你的社交媒体图标 (腾讯微博, 新浪微薄, 人人网, Facebook, Twitter, Google+, ...等等) ，配置方法请看"
 
-#: theme-options.php:136
+#: theme-options.php:134
+#: theme-options.php:138
 msgid "Instructions"
 msgstr "说明文档"
 
-#: theme-options.php:137
+#: theme-options.php:135
 msgid "2.Your threaded (nested) comments"
 msgstr "2.你目前的嵌套是"
 
-#: theme-options.php:137
+#: theme-options.php:135
 msgid "levels deep, change it here"
 msgstr "层深，在这里设置"
 
-#: theme-options.php:137
+#: theme-options.php:135
 msgid "Settings"
 msgstr "设置"
 
-#: theme-options.php:137
+#: theme-options.php:135
 msgid "Discussion"
 msgstr "讨论"
 
-#: theme-options.php:138
+#: theme-options.php:136
 msgid "3.Change <code>&lt;Body&gt;</code> background image here"
 msgstr "3.自定义 <code>&lt;主体&gt;</code> 背景图片"
 
-#: theme-options.php:138
-#: theme-options.php:139
+#: theme-options.php:136
+#: theme-options.php:137
 msgid "Appearance"
 msgstr "外观"
 
-#: theme-options.php:138
+#: theme-options.php:136
 msgid "Background"
 msgstr "背景"
 
-#: theme-options.php:139
+#: theme-options.php:137
 msgid "4.Customize <code>&lt;Header&gt;</code> image here"
 msgstr "4.自定义 <code>&lt;顶部&gt;</code> 图像"
 
-#: theme-options.php:139
+#: theme-options.php:137
 msgid "Header"
 msgstr "顶部"
 
-#: theme-options.php:147
+#: theme-options.php:138
+msgid "5.Download & Customize <code>Social Media Icons</code> from PSD source files here"
+msgstr "5.定制 <code>社交媒体图标</code> 在这里下载 PSD 源文件"
+
+#: theme-options.php:139
+msgid "========= Feel free to get my help by both Twitter: <a href=\"http://twitter.com/hzlzh\">@hzlzh</a> and Email: <a href=\"mailto:hzlzh.dev@gmail.com\">hzlzh.dev@gmail.com</a> ========="
+msgstr "========= 有任何疑问或反馈，请联系我的腾讯微博: <a href=\"http://t.qq.com/hzlzh-com\">@hzlzh-com</a> 或 Email: <a href=\"mailto:hzlzh.dev@gmail.com\">hzlzh.dev@gmail.com</a> ========="
+
+#: theme-options.php:146
 msgid "Created, Developed and maintained by <a href=\"http://zlz.im/\">HzlzH</a><br>If you like the <code>Dot-B</code> theme, please donate. It will help in developing new features and versions."
 msgstr "本主题由 <a href=\"http://zlz.im/\">HzlzH</a> 创建、开发和维护，<br>如果你喜欢 <code>Dot-B</code> 并希望我今后能为它添加更多更好的功能和不断更新的新版本，请捐赠这个项目，非常感谢！"
 
-#: theme-options.php:167
+#: theme-options.php:166
 msgid "Alipay"
 msgstr "支付宝"
 
