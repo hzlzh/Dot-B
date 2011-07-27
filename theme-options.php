@@ -150,7 +150,7 @@ function dotb_theme_options_page() {
 				<td style="width:200px;">
 					<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 					<input type="hidden" name="cmd" value="_donations">
-					<input type="hidden" name="business" value="admin@hzlzh.com">
+					<input type="hidden" name="business" value="hzlzh.dev@gmail.com">
 					<input type="hidden" name="lc" value="US">
 					<input type="hidden" name="item_name" value="HzlzH's WordPress Dev">
 					<input type="hidden" name="item_number" value="thanks 02">
@@ -162,7 +162,9 @@ function dotb_theme_options_page() {
 					</form>
 				</td>
 			</tr>
-		</tbody></table>
+			</tbody>
+		</table>
+		<div style="color:#777"><strong><?php _e('Alipay', 'dot-b');?>:</strong> hzlzh.dev@gmail.com</div>
 	</div>
 </div>
 	</div>
@@ -198,29 +200,6 @@ function dotb_validate_options( $input ) {
 	// We verify if the input is a boolean value
 	$input['dotb_is_colorbar'] = ( $input['dotb_is_colorbar'] == 1 ? 1 : 0 );
 	
-	// We strip all tags from the text field, to avoid vulnerablilties like XSS
-	//$input['dotb_analytics_code'] = wp_filter_post_kses( $input['dotb_analytics_code'] );
-	
-	// We select the previous value of the field, to restore it in case an invalid entry has been given
-	/*
-	$prev = $settings['featured_cat'];
-	// We verify if the given value exists in the categories array
-	
-	if ( !array_key_exists( $input['featured_cat'], $dotb_categories ) )
-		$input['featured_cat'] = $prev;
-	
-	// We select the previous value of the field, to restore it in case an invalid entry has been given
-	$prev = $settings['layout_view'];
-	// We verify if the given value exists in the layouts array
-	if ( !array_key_exists( $input['layout_view'], $dotb_layouts ) )
-		$input['layout_view'] = $prev;
-
-	// If the checkbox has not been checked, we void it
-	if ( ! isset( $input['author_credits'] ) )
-		$input['author_credits'] = null;
-	// We verify if the input is a boolean value
-	$input['author_credits'] = ( $input['author_credits'] == 1 ? 1 : 0 );
-		*/
 	return $input;
 }
 

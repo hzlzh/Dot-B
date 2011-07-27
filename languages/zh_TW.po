@@ -3,9 +3,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dot-B 1.7.2\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: http://zlz.im/dot-b/\n"
 "POT-Creation-Date: 2011-07-22 17:46+0800\n"
-"PO-Revision-Date: 2011-07-22 17:49+0800\n"
+"PO-Revision-Date: 2011-07-27 14:20+0800\n"
 "Last-Translator: hzlzh <hzlzh.com@gmail.com>\n"
 "Language-Team: hzlzh <http://zlz.im/>\n"
 "MIME-Version: 1.0\n"
@@ -307,4 +307,8 @@ msgstr "頂部"
 #: theme-options.php:147
 msgid "Created, Developed and maintained by <a href=\"http://zlz.im/\">HzlzH</a><br>If you like the <code>Dot-B</code> theme, please donate. It will help in developing new features and versions."
 msgstr "本主題由<a href=\"http://zlz.im/\">HzlzH</a> 創建、開發和維護，<br>如果你喜歡<code>Dot-B</code> 並希望我今後能為它添加更多更好的功能和不斷更新的新版本，請捐贈這個項目，非常感謝！"
+
+#: theme-options.php:167
+msgid "Alipay"
+msgstr "支付寶"
 

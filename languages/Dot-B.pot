@@ -9,8 +9,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
-"Last-Translator: hzlzh <hzlzh.com@gmail.com>\n"
-"Language-Team: LANGUAGE <hzlzh.com@gmail.com>\n"
+"Last-Translator: hzlzh <hzlzh.dev@gmail.com>\n"
+"Language-Team: LANGUAGE <hzlzh.dev@gmail.com>\n"
 
 #: comments.php:6
 msgid "This post is password protected. Enter the password to view comments."
@@ -300,3 +300,7 @@ msgstr ""
 #: theme-options.php:147
 msgid "Created, Developed and maintained by <a href=\"http://zlz.im/\">HzlzH</a><br>If you like the <code>Dot-B</code> theme, please donate. It will help in developing new features and versions."
 msgstr ""
+
+#: theme-options.php:167
+msgid "Alipay"
+msgstr "Alipay"
