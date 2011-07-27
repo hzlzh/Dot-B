@@ -2,7 +2,7 @@
 <div id="main">
 	<div id="content">
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		<div class="post">
+		<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 			<h2 class="post_title_h2"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 			<div class="post_info_top">
 				<div class="post_info_date"> <?php printf( __('Posted on %s ', 'dot-b'), get_the_date(get_option( 'date_format' ))); ?></div>
@@ -23,7 +23,7 @@
 			<div class="next_post"><?php if (get_previous_post()) : ?><?php previous_post_link('%link') ?><?php else: ?><?php _e('Already the last post!', 'dot-b'); ?><?php endif; ?></div>
 		</div>
 	<?php endwhile; else: ?>
-		<div class="post">
+		<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 			<h2 class="post_title_h2"><?php _e("Nothing Found"); ?></h2>
 		</div>
 	<?php endif; ?>

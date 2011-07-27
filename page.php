@@ -2,7 +2,7 @@
 <div id="main">
 	<div id="content">
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		<div class="post">
+		<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 			<h2 class="post_title_h2"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 			<div class="post_info_top">
 				<div class="post_info_date"> <?php printf( __('Posted on %s ', 'dot-b'), get_the_date(get_option( 'date_format' ))); ?></div>
@@ -19,7 +19,7 @@
 			<div class="post_readmore"><?php comments_popup_link(__('Leave a Reply ?', 'dot-b'),__('[ 1 Reply ]', 'dot-b'),__('[ % Replies ]', 'dot-b')); ?></div>	
 		</div>		
 	<?php endwhile; else: ?>
-		<div class="post">
+		<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 			<h2 class="post_title_h2"><?php _e("Nothing Found"); ?></h2>
 		</div>
 	<?php endif; ?>

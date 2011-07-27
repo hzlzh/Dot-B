@@ -1,6 +1,10 @@
 <?php
 load_theme_textdomain( 'dot-b', TEMPLATEPATH . '/languages' );
 require_once ( get_stylesheet_directory() . '/theme-options.php' );
+
+// Add default posts and comments RSS feed links to head
+add_theme_support( 'automatic-feed-links' );
+
 // This theme allows users to set a custom background
 add_custom_background();
 
