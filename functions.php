@@ -26,6 +26,9 @@ define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'dotb_header_image_height', 198 ) 
 // Larger images will be auto-cropped to fit, smaller ones will be ignored. See header.php.
 set_post_thumbnail_size( HEADER_IMAGE_WIDTH, HEADER_IMAGE_HEIGHT, true );
 
+if ( ! isset( $content_width ) )
+	$content_width = 670;
+	
 // Don't support text inside the header image.
 if ( ! defined( 'NO_HEADER_TEXT' ) )
 	define( 'NO_HEADER_TEXT', true );
@@ -99,7 +102,6 @@ if ( ! function_exists( 'dotb_admin_header_style' ) ) :
  *
  * Referenced via add_custom_image_header() in dotb_setup().
  *
- * @since Twenty Ten 1.0
  */
 function dotb_admin_header_style() {
 ?>
