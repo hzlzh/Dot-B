@@ -7,7 +7,7 @@ $dotb_settings = get_option( 'dotb_options', $dotb_options ); ?>
 			</div>
 			<div id="site-generator">
 				Powered by <a href="http://wordpress.org/">WordPress</a>
-				 | Theme <abbr title="Dot-B v<?php echo $dotb_settings['dotb_version'];?>">Dot-B</abbr> by <a href="http://zlz.im/" >HzlzH</a> <?php if ($dotb_settings['dotb_is_sqlcount']) 
+				 | Theme <abbr title="Dot-B v<?php echo $dotb_settings['dotb_version'];?>">Dot-B</abbr> by <a href="http://zlz.im/" >hzlzh</a> <?php if ($dotb_settings['dotb_is_sqlcount']) 
 				{ echo '{ '.get_num_queries().' '.__('queries in', 'dot-b').' '.timer_stop(0,3).' '.__('seconds', 'dot-b').' }';}?>
 			</div>
 		</div><!-- #copyright -->

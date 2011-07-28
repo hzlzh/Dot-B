@@ -1,4 +1,4 @@
-= DOT-B v1.7.3=
+= DOT-B v1.7.4=
 
 Created, Developed and maintained by HzlzH http://zlz.im/
 
@@ -21,20 +21,24 @@ http://zlz.im/dot-b-social-media-icons-set-release/
 -Smaller PNG files.
 
 == SVN & DEV LOGS ==
+-- 2011.07.28 --
+	1. Fix some style CSS of <img>
 
+	1. ä¿®å¤äº†æ–‡ç« ä¸­<img>æ ‡ç­¾çš„ä¸€ç‚¹æ ·å¼
+	
 -- 2011.07.28 --
 	1. Dot-B v1.7.3 released
 	2. Add sina icon & Remove PSD files from theme ZIP package
 
-	1. Dot-B v1.7.3 ·¢²¼
-	2. Ìí¼Ó ĞÂÀËÎ¢²©Ğ¡Í¼±ê£¬ÒÆ³ıÖ÷ÌâZIP°üÖĞµÄPSDÎÄ¼ş
+	1. Dot-B v1.7.3 å‘å¸ƒ
+	2. æ·»åŠ  æ–°æµªå¾®åšå°å›¾æ ‡ï¼Œç§»é™¤ä¸»é¢˜ZIPåŒ…ä¸­çš„PSDæ–‡ä»¶
 
 -- 2011.07.28 --
 	1. Released the first public version Dot-B v1.7.2
 	2. Uploaded to WordPress Theme Directory waiting for approve
 
-	1. ·¢²¼ÁËµÚÒ»¸ö¹«¿ª°æ±¾ Dot-B v1.7.2
-	2. ÒÑÌá½»µ½WordPress¹Ù·½Ö÷ÌâÄ¿Â¼£¬µÈ´ıÉóºËÍ¨¹ı
+	1. å‘å¸ƒäº†ç¬¬ä¸€ä¸ªå…¬å¼€ç‰ˆæœ¬ Dot-B v1.7.2
+	2. å·²æäº¤åˆ°WordPresså®˜æ–¹ä¸»é¢˜ç›®å½•ï¼Œç­‰å¾…å®¡æ ¸é€šè¿‡
 
 -- SVN --
 https://hzlzh.googlecode.com/svn/trunk/Dot-B
