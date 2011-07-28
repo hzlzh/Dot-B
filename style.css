@@ -85,6 +85,7 @@ pre{border:1px solid #CCC;background:#EEEFFF;overflow:hidden;white-space:pre-wra
 .post_title_h2 a{line-height:20px;padding:4px 0;}
 .post{margin-top:10px;}
 .post_content{line-height:20px;margin:10px 5px;}
+.post_content img{ background: #FFFFFF;border: 1px solid #DDDDDD;padding: 4px;}
 .post_title_h2 a,.post_title_h2 a:visited{color:#555;display:inline-block;}
 .post_info_top{height:19px;line-height:19px;color:#999;margin:0 10px;}
 .post_info{overflow:hidden;margin:0 6px;}
@@ -151,6 +152,7 @@ ol.commentlist li div.reply,ol .commentlist li .atclass{background:none repeat s
 ol.commentlist li ul.children li{padding-bottom:0;border-bottom:none;}
 ol.commentlist li ul.children li.depth-2{margin:0 0 0 50px;}
 ol.commentlist li ul.children li div.comment-author{overflow:hidden;display:block;height:16px;border:none;border-bottom:1px dashed #DDD;}
+ol.commentlist li ul.children li div.comment-body{margin-top:15px;}
 ol.commentlist li ul.children .by-post-author div.vcard img.avatar{position:absolute;right:0;float:right;border:1px dashed #ddd;height:24px;margin-top:2px;width:24px;}
 ol.commentlist li ul.children .by-post-author div.vcard cite.fn{margin-left:10px;float:right;margin-right:32px;}
 ol.commentlist li ul.children .by-post-author span.comment-meta{position:absolute;right:31px;top:16px;left:auto;}
@@ -190,7 +192,7 @@ img.size-auto,img.size-full,img.size-large,img.size-medium,.attachment img{heigh
 .aligncenter,img.aligncenter{clear:both;display:block;margin-left:auto;margin-right:auto;}
 img.alignleft,img.alignright,img.aligncenter{margin-bottom:12px;}
 .wp-caption{background:none repeat scroll 0 0 #FFF;line-height:18px;margin-bottom:20px;max-width:632px !important;text-align:center;padding:4px;}
-.wp-caption img{margin:5px 5px 0;}
+.wp-caption img{padding:5px 5px 0;}
 .wp-caption p.wp-caption-text{color:#888;font-size:12px;margin:5px;}
 .gallery{margin:0 auto 18px;}
 .gallery .gallery-item{float:left;margin-top:0;text-align:center;width:33%;}
