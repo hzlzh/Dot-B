@@ -1,9 +1,9 @@
-<?php get_header(); ?>
+﻿<?php get_header(); ?>
 <div id="main">
-	<div id="content">
+	<div id="content">aaaa
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-			<h2 class="post_title_h2"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+			<h2 class="post_title_h2"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 			<div class="post_info_top">
 				<div class="post_info_date"> <?php printf( __('Posted on %s ', 'dot-b'), get_the_date(get_option( 'date_format' ))); ?></div>
 				<div class="post_info_author"> <?php _e('by', 'dot-b'); ?> <?php the_author_posts_link(); ?></div>
@@ -20,7 +20,7 @@
 		</div>		
 	<?php endwhile; else: ?>
 		<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-			<h2 class="post_title_h2"><?php _e("Nothing Found"); ?></h2>
+			<h2 class="post_title_h2"><?php _e('Nothing Found', 'dot-b'); ?></h2>
 		</div>
 	<?php endif; ?>
 		<div id="comments_wrapper">

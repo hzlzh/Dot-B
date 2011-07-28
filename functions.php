@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 load_theme_textdomain( 'dot-b', TEMPLATEPATH . '/languages' );
 require_once ( get_stylesheet_directory() . '/theme-options.php' );
 
@@ -8,7 +8,7 @@ add_theme_support( 'automatic-feed-links' );
 // This theme allows users to set a custom background
 add_custom_background();
 
-// Your changeable header business starts here
+// Your changeable header business starts here.
 if ( ! defined( 'HEADER_TEXTCOLOR' ) )
 	define( 'HEADER_TEXTCOLOR', '' );
 
@@ -29,6 +29,17 @@ set_post_thumbnail_size( HEADER_IMAGE_WIDTH, HEADER_IMAGE_HEIGHT, true );
 if ( ! isset( $content_width ) )
 	$content_width = 670;
 	
+// This theme uses post thumbnails
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'extra-featured-image', 620, 200, true );
+function dotb_featured_content($content) {
+	if (is_single() || is_home() || is_archive()) {
+		the_post_thumbnail( 'extra-featured-image' );
+	}
+	return $content;
+}
+add_filter( 'the_content', 'dotb_featured_content',1 );
+
 // Don't support text inside the header image.
 if ( ! defined( 'NO_HEADER_TEXT' ) )
 	define( 'NO_HEADER_TEXT', true );

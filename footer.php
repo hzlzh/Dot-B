@@ -1,4 +1,4 @@
-<?php global $dotb_options;
+﻿<?php global $dotb_options;
 $dotb_settings = get_option( 'dotb_options', $dotb_options ); ?>
 	<div id="footer">
 		<div id="copyright">
@@ -16,7 +16,7 @@ $dotb_settings = get_option( 'dotb_options', $dotb_options ); ?>
 </div><!-- #wrapper -->
 <?php if($dotb_settings['dotb_is_colorbar']) : ?><div id="bottom-bar"></div><?php endif;?>
 <?php wp_footer(); ?>
-<script type="text/javascript" src="<?php bloginfo("template_directory");?>/all.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/all.js"></script>
 <?php if (!$dotb_settings['dotb_is_ga']) echo $dotb_settings['dotb_analytics_code']; ?>
 </body>
 </html>

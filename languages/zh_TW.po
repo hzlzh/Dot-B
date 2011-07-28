@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dot-B 1.7.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-27 15:06+0800\n"
-"PO-Revision-Date: 2011-07-27 15:08+0800\n"
+"POT-Creation-Date: 2011-07-28 09:02+0800\n"
+"PO-Revision-Date: 2011-07-28 09:02+0800\n"
 "Last-Translator: hzlzh <hzlzh.com@gmail.com>\n"
 "Language-Team: hzlzh <http://zlz.im/>\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgid "This post is password protected. Enter the password to view comments."
 msgstr "這篇文章受密碼保護。查看評論請輸入密碼。"
 
 #: comments.php:13
-#: index.php:22
+#: index.php:23
 #: page.php:19
 #: single.php:19
 msgid "Leave a Reply ?"
@@ -48,61 +48,61 @@ msgstr "回到頂部"
 msgid "Top"
 msgstr "頂部"
 
-#: functions.php:37
+#: functions.php:55
 msgid "House"
 msgstr "木屋"
 
-#: functions.php:43
+#: functions.php:61
 msgid "Inkwell"
 msgstr "墨漬"
 
-#: functions.php:49
+#: functions.php:67
 msgid "Willow"
 msgstr "垂柳"
 
-#: functions.php:55
+#: functions.php:73
 msgid "Shore"
 msgstr "海邊"
 
-#: functions.php:61
+#: functions.php:79
 msgid "Sky"
 msgstr "藍天"
 
-#: functions.php:67
+#: functions.php:85
 msgid "Path"
 msgstr "小道"
 
-#: functions.php:76
+#: functions.php:94
 msgid "Header Menu"
 msgstr "頂部導航"
 
-#: functions.php:77
+#: functions.php:95
 msgid "Custom Social Media"
 msgstr "自定義社交媒體"
 
-#: functions.php:149
+#: functions.php:166
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s at %2$s"
 
-#: functions.php:149
-#: functions.php:173
+#: functions.php:166
+#: functions.php:190
 msgid "(Edit)"
 msgstr "(編輯)"
 
-#: functions.php:154
+#: functions.php:171
 msgid "Your comment is awaiting moderation."
 msgstr "您的評論正等待審核。"
 
-#: functions.php:183
+#: functions.php:200
 msgid "Display Colorful Tags Cloud"
 msgstr "顯示彩色標籤雲"
 
-#: functions.php:184
+#: functions.php:201
 msgid "Colorful Tag Cloud"
 msgstr "彩色標籤雲"
 
-#: functions.php:212
+#: functions.php:229
 msgid "Title"
 msgstr "標題"
 
@@ -115,40 +115,40 @@ msgstr "Page %s"
 msgid "RSS Feed"
 msgstr "RSS Feed"
 
-#: index.php:11
+#: index.php:12
 #, php-format
 msgid "Posted on %s"
 msgstr "發佈於 %s"
 
-#: index.php:12
+#: index.php:13
 #: page.php:9
 #: single.php:9
 msgid "by"
 msgstr "by"
 
-#: index.php:13
+#: index.php:14
 #: page.php:10
 #: single.php:10
 msgid "[ Edit ]"
 msgstr "[ 編輯 ]"
 
-#: index.php:16
+#: index.php:17
 msgid "Read more &raquo;"
 msgstr "閱讀更多 &raquo;"
 
-#: index.php:22
+#: index.php:23
 #: page.php:19
 #: single.php:19
 msgid "[ 1 Reply ]"
 msgstr "[ 1 條評論 ]"
 
-#: index.php:22
+#: index.php:23
 #: page.php:19
 #: single.php:19
 msgid "[ % Replies ]"
 msgstr "[ % 條評論 ]"
 
-#: index.php:26
+#: index.php:27
 #: page.php:23
 #: single.php:27
 msgid "Nothing Found"

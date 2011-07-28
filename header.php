@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 global $dotb_options;
 $dotb_settings = get_option( 'dotb_options', $dotb_options );
 ?>
@@ -7,12 +7,12 @@ $dotb_settings = get_option( 'dotb_options', $dotb_options );
 <head>
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <title><?php
-        // Logic of printing the <title> tag
+        // Logic of printing the <title> tag 
         global $page, $paged;
         echo trim(wp_title( '', false, 'right' ));
         if ( !is_home() ) echo " | ";
 			bloginfo( 'name' );
-        // Add the blog description only for home
+        // Add the blog description only for home.
         $site_description = get_bloginfo( 'description', 'display' );
         if ( $site_description && is_home() && !$paged )
             echo " | $site_description";

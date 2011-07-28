@@ -17,7 +17,7 @@ msgid "This post is password protected. Enter the password to view comments."
 msgstr ""
 
 #: comments.php:13
-#: index.php:22
+#: index.php:23
 #: page.php:19
 #: single.php:19
 msgid "Leave a Reply ?"
@@ -41,61 +41,61 @@ msgstr ""
 msgid "Top"
 msgstr ""
 
-#: functions.php:37
+#: functions.php:55
 msgid "House"
 msgstr ""
 
-#: functions.php:43
+#: functions.php:61
 msgid "Inkwell"
 msgstr ""
 
-#: functions.php:49
+#: functions.php:67
 msgid "Willow"
 msgstr ""
 
-#: functions.php:55
+#: functions.php:73
 msgid "Shore"
 msgstr ""
 
-#: functions.php:61
+#: functions.php:79
 msgid "Sky"
 msgstr ""
 
-#: functions.php:67
+#: functions.php:85
 msgid "Path"
 msgstr ""
 
-#: functions.php:76
+#: functions.php:94
 msgid "Header Menu"
 msgstr ""
 
-#: functions.php:77
+#: functions.php:95
 msgid "Custom Social Media"
 msgstr ""
 
-#: functions.php:149
+#: functions.php:166
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: functions.php:149
-#: functions.php:173
+#: functions.php:166
+#: functions.php:190
 msgid "(Edit)"
 msgstr ""
 
-#: functions.php:154
+#: functions.php:171
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: functions.php:183
+#: functions.php:200
 msgid "Display Colorful Tags Cloud"
 msgstr ""
 
-#: functions.php:184
+#: functions.php:201
 msgid "Colorful Tag Cloud"
 msgstr ""
 
-#: functions.php:212
+#: functions.php:229
 msgid "Title"
 msgstr ""
 
@@ -108,40 +108,40 @@ msgstr ""
 msgid "RSS Feed"
 msgstr ""
 
-#: index.php:11
+#: index.php:12
 #, php-format
 msgid "Posted on %s"
 msgstr ""
 
-#: index.php:12
+#: index.php:13
 #: page.php:9
 #: single.php:9
 msgid "by"
 msgstr ""
 
-#: index.php:13
+#: index.php:14
 #: page.php:10
 #: single.php:10
 msgid "[ Edit ]"
 msgstr ""
 
-#: index.php:16
+#: index.php:17
 msgid "Read more &raquo;"
 msgstr ""
 
-#: index.php:22
+#: index.php:23
 #: page.php:19
 #: single.php:19
 msgid "[ 1 Reply ]"
 msgstr ""
 
-#: index.php:22
+#: index.php:23
 #: page.php:19
 #: single.php:19
 msgid "[ % Replies ]"
 msgstr ""
 
-#: index.php:26
+#: index.php:27
 #: page.php:23
 #: single.php:27
 msgid "Nothing Found"

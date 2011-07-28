@@ -1,4 +1,4 @@
-	<div id="sidebar" class="widget-area">
+﻿	<div id="sidebar" class="widget-area">
 		<ul class="xoxo">
 		<?php
 		/* When we call the dynamic_sidebar() function, it'll spit out
@@ -9,7 +9,7 @@
 		if ( is_active_sidebar( 'right-sidebar' ) ) dynamic_sidebar('right-sidebar'); else { ?>
 
 			<li id="calendar" class="widget-container">
-				<?php the_widget('WP_Widget_Calendar'); ?> 
+				<?php the_widget('WP_Widget_Calendar');?> 
 			</li>
 
 			<li id="recent-post" class="widget-container">
@@ -44,5 +44,6 @@
 			</li>
 
 		<?php }// end primary widget area ?>
+		
 		</ul>
 	</div><!-- #sidebar -->

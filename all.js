@@ -1,4 +1,4 @@
-// All the jQuery function that WordPress used
+﻿// All the jQuery function that WordPress used
 // Add empty span tag at menu which have drop-down meun
 jQuery("ul.sub-menu:not(.sub-menu .sub-menu)").parent().append('<div class="menu-mark" ></div>');
 // Drop down menu slide function
