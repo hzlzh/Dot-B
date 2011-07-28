@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 global $wp_rewrite;
 $paginate_base = get_pagenum_link(1);

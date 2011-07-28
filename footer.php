@@ -1,4 +1,4 @@
-﻿<?php global $dotb_options;
+<?php global $dotb_options;
 $dotb_settings = get_option( 'dotb_options', $dotb_options ); ?>
 	<div id="footer">
 		<div id="copyright">

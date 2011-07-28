@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 load_theme_textdomain( 'dot-b', TEMPLATEPATH . '/languages' );
 require_once ( get_stylesheet_directory() . '/theme-options.php' );
 

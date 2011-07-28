@@ -1,4 +1,4 @@
-﻿= DOT-B =
+= DOT-B =
 
 Created, Developed and maintained by HzlzH http://zlz.im/
 
