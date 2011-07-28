@@ -1,4 +1,4 @@
-= DOT-B =
+= DOT-B v1.7.3=
 
 Created, Developed and maintained by HzlzH http://zlz.im/
 
@@ -21,6 +21,23 @@ http://zlz.im/dot-b-social-media-icons-set-release/
 -Smaller PNG files.
 
 == SVN & DEV LOGS ==
+
+-- 2011.07.28 --
+	1. Dot-B v1.7.3 released
+	2. Add sina icon & Remove PSD files from theme ZIP package
+
+	1. Dot-B v1.7.3 发布
+	2. 添加 新浪微博小图标，移除主题ZIP包中的PSD文件
+
+-- 2011.07.28 --
+	1. Released the first public version Dot-B v1.7.2
+	2. Uploaded to WordPress Theme Directory waiting for approve
+
+	1. 发布了第一个公开版本 Dot-B v1.7.2
+	2. 已提交到WordPress官方主题目录，等待审核通过
+
+-- SVN --
 https://hzlzh.googlecode.com/svn/trunk/Dot-B
 
--Originally Created :  02/04/2011 
+-- Originally Created --
+02/04/2011
