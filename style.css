@@ -58,8 +58,10 @@ pre{border:1px solid #CCC;background:#EEEFFF;overflow:hidden;white-space:pre-wra
 .gplus:hover a{background-position:-192px -48px;}
 .picasa a{background-position:-240px -88px;}
 .picasa:hover a{background-position:-240px -48px;}
-.tencent a{background-position:-288px -88px;}
-.tencent:hover a{background-position:-288px -48px;}
+.tencent a{background-position: -289px -87px;}
+.tencent:hover a{background-position: -289px -48px;}
+.sina a {background-position: -476px -87px;}
+.sina:hover a {background-position: -476px -48px;}
 .rss a{background-position:-336px -88px;}
 .rss:hover a{background-position:-336px -48px;}
 .facebook1 a{background-position:-384px -88px;}
