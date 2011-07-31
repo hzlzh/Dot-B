@@ -195,16 +195,16 @@ function mytheme_comment( $comment, $args, $depth ) {
 
 ?>
 <?php
-class widget_test extends WP_Widget {
-    function widget_test() {
+class widget_colorfultagcloud extends WP_Widget {
+    function widget_colorfultagcloud() {
         $widget_ops = array('description' => 'Dot-B'.__( 'Display Colorful Tags Cloud', 'dot-b'));
-        $this->WP_Widget('widget_test', 'Dot-B'.__( 'Colorful Tag Cloud', 'dot-b'), $widget_ops);
+        $this->WP_Widget('widget_colorfultagcloud', 'Dot-B'.__( 'Colorful Tag Cloud', 'dot-b'), $widget_ops);
     }
     function widget($args, $instance) {
         extract($args);
         $title = apply_filters('widget_title', esc_attr($instance['title']));
         echo $before_widget.$before_title.$title.$after_title;
-        echo '<ul>';
+        echo '<div class="colorfultagcloud">';
 		add_filter('wp_tag_cloud', 'ColorfuTaglCloud', 1);
 		wp_tag_cloud();
         echo '</ul>';
@@ -221,9 +221,8 @@ class widget_test extends WP_Widget {
     }
     function form($instance) {
         global $wpdb;
-        $instance = wp_parse_args((array) $instance, array('title' => ''));
+        $instance = wp_parse_args((array) $instance, array('title' => __( 'Tag Cloud', 'dot-b')));
         $title = esc_attr($instance['title']);
-
 ?>
         <p>
             <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e( 'Title', 'dot-b'); ?>:<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" /></label>
@@ -232,8 +231,8 @@ class widget_test extends WP_Widget {
 <?php
     }
 }
-add_action('widgets_init', 'widget_test_init');
-function widget_test_init() {
-    register_widget('widget_test');
+add_action('widgets_init', 'widget_colorfultagcloud_init');
+function widget_colorfultagcloud_init() {
+    register_widget('widget_colorfultagcloud');
 }
 ?>

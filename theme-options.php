@@ -8,6 +8,7 @@ $temp_copyright = 'Copyright &copy; '.date("Y").' '.'<a href="'.home_url( '/' ).
 $dotb_options = array(
 	'dotb_rss_url' => get_bloginfo('rss2_url'),
 	'dotb_is_excerpt' => false,
+	'dotb_excerpt_length' => 55,
 	'dotb_is_ga' => false,
 	'dotb_analytics_code' => '',
 	'dotb_footer' => $temp_copyright,
@@ -33,6 +34,26 @@ function dotb_theme_options() {
 }
 
 add_action( 'admin_menu', 'dotb_theme_options' );
+
+function new_excerpt_length($length) {
+	return $dotb_excerpt_length;
+}
+add_filter('excerpt_length', 'new_excerpt_length');
+
+
+function dotb_default_options() {
+     global $dotb_options;
+     $dotb_options_temp = $dotb_options;
+     $options = get_option( 'dotb_options', $dotb_options );
+	foreach ( $dotb_options as $dotb_option_key => $dotb_option_value ) {
+		if ( isset($options[$dotb_option_key])) {
+			$dotb_options[$dotb_option_key] = $options[$dotb_option_key];
+		}
+	}
+     $dotb_options['dotb_version'] = $dotb_options_temp['dotb_version'];
+     update_option( 'dotb_options', $dotb_options );
+}
+add_action( 'init', 'dotb_default_options' );
 
 // Function to generate options page
 function dotb_theme_options_page() {
@@ -77,7 +98,10 @@ function dotb_theme_options_page() {
 	<tr valign="top"><th scope="row"><?php _e( 'Enable Excerpt','dot-b' ); ?></th>
 	<td><label for="dotb_is_excerpt">
 	<input type="checkbox" id="dotb_is_excerpt" name="dotb_options[dotb_is_excerpt]" value="1" <?php checked( true, $settings['dotb_is_excerpt'] ); ?> />
-	<?php _e( 'Show excerpt in Home and Archives','dot-b' ); ?></label>
+	<?php _e( 'Show excerpt in Home and Archives with','dot-b' ); ?></label> 
+	<label for="dotb_excerpt_length">
+	<input type="text" id="dotb_excerpt_length" style="width:50px;" name="dotb_options[dotb_excerpt_length]" value="<?php esc_attr_e($settings['dotb_excerpt_length']); ?>" /> 
+	<?php _e( 'length','dot-b' ); ?>.</label>
 	</td>
 	</tr>
 	
@@ -143,7 +167,7 @@ function dotb_theme_options_page() {
 <div style="text-align: center;">
 		<span style="font-size: 20px;margin: 5px 0;display: block;"><a href="http://zlz.im/">Dot-B v<?php echo esc_attr_e($settings['dotb_version']);?></a></span>
 		<br>
-		<?php _e('Created, Developed and maintained by <a href="http://zlz.im/">HzlzH</a><br>If you like the <code>Dot-B</code> theme, please donate. It will help in developing new features and versions.','dot-b' ); ?>
+		<?php _e('Created, Developed and maintained by <a href="http://zlz.im/">hzlzh</a><br>If you like the <code>Dot-B</code> theme, please donate. It will help in developing new features and versions.','dot-b' ); ?>
 		<table style="margin:0 auto;">
 			<tbody><tr>
 				<td style="width:200px;">
@@ -151,7 +175,7 @@ function dotb_theme_options_page() {
 					<input type="hidden" name="cmd" value="_donations">
 					<input type="hidden" name="business" value="hzlzh.dev@gmail.com">
 					<input type="hidden" name="lc" value="US">
-					<input type="hidden" name="item_name" value="HzlzH's WordPress Dev">
+					<input type="hidden" name="item_name" value="hzlzh's WordPress Dev">
 					<input type="hidden" name="item_number" value="thanks 02">
 					<input type="hidden" name="no_note" value="0">
 					<input type="hidden" name="currency_code" value="USD">

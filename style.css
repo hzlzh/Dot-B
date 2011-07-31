@@ -4,7 +4,7 @@ Theme URI: http://zlz.im/dot-b/
 Description: A simple, fresh and dot-decorated looking theme with a lot of basic theme-custom options  prepared for you to start you site. You can use those features : custom-background, custom-menu, drop-down menus, custom-header, widgets... and much more. Also you can recreate you child themes based on Dot-B. Compatible with WordPress 2.9+, valid XHTML & CSS + WP3 ready and Multi-language supported.
 Author: hzlzh
 Author URI: http://zlz.im/
-Version: 1.7.4
+Version: 1.7.5
 License: GNU General Public License, v3 (or newer)
 License URI: http://www.opensource.org/licenses/gpl-3.0.html
 Tags: two-columns, gray, white, fixed-width, custom-header, custom-background, custom-menu, threaded-comments, custom-colors, theme-options, threaded-comments, translation-ready, right-sidebar, light
@@ -25,12 +25,12 @@ ol{margin:0 20px 1em;}
 ol li{line-height:normal;padding:0 0 5px;}
 form,table,input,textarea,dl,dt,dd{border:none;outline:none;}
 #calendar_wrap table{border:thick dashed #E3E3E3;border-collapse:collapse;width:100%;}
-blockquote{background:none repeat scroll 0 0 #EEE;padding-left:6px;border-color:#999;border-style:solid;border-width:0 0 0 2px;}
+blockquote{background:none repeat scroll 0 0 #EEE;padding:2px 6px;border-color:#999;border-style:solid;border-width:0 0 0 2px;}
 blockquote:hover{border-color:#06c;}
-pre{border:1px solid #CCC;background:#EEEFFF;overflow:hidden;white-space:pre-wrap;margin:0 0 1em;padding:10px;}
-#top-bar,#bottom-bar,#social a,#rss,.menu-mark,.post_info_date,.post_info_author,.post_info_edit,.post_title_h2,.post_meta,.previous_post,.next_post,#comments-title,#sidebar ul li ul li,#header_search_area,#reply-title{background-image:url("images/all.png");}
-#top-bar{background-position:0 -632px;height:4px;font-size:0;width:20%;}
-#bottom-bar{background-position:0 bottom;height:4px;font-size:0;}
+pre{background: none no-repeat scroll 0 -664px #EAEAEA;border: 1px solid #999999;color: #333333;display: block;line-height: 120%;max-height: 200px;overflow: auto;margin:0 10px;padding: 10px 10px 10px 20px;}
+#top-bar,#bottom-bar,#social a,#rss,.menu-mark,.post_info_date,.post_info_author,.post_info_edit,.post_title_h2,.post_meta,.previous_post,.next_post,#comments-title,#sidebar ul li ul li,#header_search_area,#reply-title,pre{background-image:url("images/all.png");}
+#top-bar{background-position:0 -632px;height:4px;font-size:0;width:20%;background-color:#F1F1F1;}
+#bottom-bar{background-position:0 -639px;height:4px;font-size:0;background-color:#F1F1F1;}
 #wrapper{background:none repeat scroll 0 0 #F1F1F1;width:960px;margin:0 auto;}
 #header{background:none repeat scroll 0 0 #F1F1F1;border-left:1px solid #E8E8E8;border-right:1px solid #E8E8E8;}
 #header #logo{display:inline;float:left;margin:20px 10px;}
@@ -47,31 +47,31 @@ pre{border:1px solid #CCC;background:#EEEFFF;overflow:hidden;white-space:pre-wra
 #header #social a{display:inline;float:left;height:32px;width:32px;text-indent:-9999px;margin:2px;}
 #header #social ul li{display:inline;}
 .facebook a{background-position:0 -88px;}
-.facebook:hover a{background-position:0 -48px;}
+.facebook a:hover{background-position:0 -48px;}
 .twitter a{background-position:-48px -88px;}
-.twitter:hover a{background-position:-48px -48px;}
+.twitter a:hover{background-position:-48px -48px;}
 .flickr a{background-position:-96px -88px;}
-.flickr:hover a{background-position:-96px -48px;}
+.flickr a:hover{background-position:-96px -48px;}
 .delicious a{background-position:-144px -88px;}
-.delicious:hover a{background-position:-144px -48px;}
+.delicious a:hover{background-position:-144px -48px;}
 .gplus a{background-position:-192px -88px;}
-.gplus:hover a{background-position:-192px -48px;}
+.gplus a:hover{background-position:-192px -48px;}
 .picasa a{background-position:-240px -88px;}
-.picasa:hover a{background-position:-240px -48px;}
+.picasa a:hover{background-position:-240px -48px;}
 .tencent a{background-position: -289px -87px;}
-.tencent:hover a{background-position: -289px -48px;}
+.tencent a:hover{background-position: -289px -48px;}
 .sina a {background-position: -476px -87px;}
-.sina:hover a {background-position: -476px -48px;}
+.sina a:hover {background-position: -476px -48px;}
 .rss a{background-position:-336px -88px;}
-.rss:hover a{background-position:-336px -48px;}
+.rss a:hover{background-position:-336px -48px;}
 .facebook1 a{background-position:-384px -88px;}
-.facebook1:hover a{background-position:-384px -48px;}
+.facebook1 a:hover{background-position:-384px -48px;}
 .twitter1 a{background-position:-432px -88px;}
-.twitter1:hover a{background-position:-432px -48px;}
+.twitter1 a:hover{background-position:-432px -48px;}
 .header_menu{border-bottom:1px solid #CCC;border-top:2px dashed #CCC;clear:both;height:36px;padding:0 10px;}
 .header_menu ul{list-style:none;float:left;margin:0;padding:0;}
 .header_menu ul li{float:left;position:relative;margin:0;padding:0 15px 0 0;}
-.header_menu ul li a{color:#555;display:block;text-decoration:none;float:left;padding:10px 5px;}
+.header_menu ul li a{color:#555;display:block;text-decoration:none;float:left;padding:10px 5px;cursor: pointer;}
 .header_menu ul li a:hover{background:url(menu_hover.png) no-repeat center top;color:#06c;}
 .header_menu .menu-mark{background-position:-721px -14px;float:left;height:16px;width:10px;margin:13px 0 7px;}
 .header_menu ul li span.subhover{background-position:center bottom;cursor:pointer;}
@@ -79,19 +79,19 @@ pre{border:1px solid #CCC;background:#EEEFFF;overflow:hidden;white-space:pre-wra
 .header_menu ul li ul li{border-bottom:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #ccc;clear:both;width:170px;margin:0;padding:0;}
 .header_menu ul ul ul{left:100%;top:-1px;}
 .header_menu ul ul li:first-child{border-top:1px solid #ccc;}
-#main{background:none repeat scroll 0 0 #F1F1F1;border-left:1px solid #E8E8E8;border-right:1px solid #E8E8E8;clear:both;margin:5px 0 0;padding:0;}
+#main{background:none repeat scroll 0 0 #F1F1F1;border-left:1px solid #E8E8E8;border-right:1px solid #E8E8E8;clear:both;padding:5px 0 0;}
 #content{border-right:4px dashed #FFF;display:inline;float:left;width:680px;}
-.post_title_h2,#reply-title{background-position:0 -125px;color:#555;font-size:15px;font-weight:400;text-indent:4px;margin:0;}
-.post_title_h2 a{line-height:20px;padding:4px 0;}
+.page-title{margin: 2px;text-align: center;}
+.post_title_h2,#reply-title{background-position:0 -125px;color:#555;font-size:15px;font-weight:400;text-indent:4px;margin:0;padding: 4px 0;line-height:20px;}
 .post{margin-top:10px;}
-.post_content{line-height:20px;margin:10px 5px;}
-.post_content img{ background: #FFFFFF;border: 1px solid #DDDDDD;padding: 4px;}
+.post_content{line-height:20px;margin:10px;}
+.post_content img{ background: #F1F1F1;border: 1px solid #DDDDDD;padding: 4px;}
 .post_title_h2 a,.post_title_h2 a:visited{color:#555;display:inline-block;}
 .post_info_top{height:19px;line-height:19px;color:#999;margin:0 10px;}
 .post_info{overflow:hidden;margin:0 6px;}
 .post_info_date{background-position:-23px -174px;float:left;display:inline;padding:0 0 0 10px;}
-.post_info_author{background-position:-19px -188px;display:inline;margin:0 0 0 6px;padding:0 0 0 10px;}
-.post_info_edit{background-position:-7px -226px;display:inline;margin:0 0 0 6px;padding:0 0 0 10px;}
+.post_info_author{background-position:-19px -186px;display:inline;margin:0 0 0 6px;padding:0 0 0 10px;}
+.post_info_edit{background-position:-7px -224px;display:inline;margin:0 0 0 6px;padding:0 0 0 10px;}
 .post_info_bootom{overflow:hidden;clear:both;margin:10px 0 10px -7px;padding:0 0 0 7px;}
 .post_meta{float:left;width:550px;display:inline;background-position:right -441px;overflow:hidden;height:19px;margin:0 0 0 -7px;padding:0 0 0 7px;}
 .post_meta ul{line-height:100%;}
@@ -103,10 +103,10 @@ pre{border:1px solid #CCC;background:#EEEFFF;overflow:hidden;white-space:pre-wra
 #sidebar{display:inline;float:right;width:260px;margin:6px 6px 6px 8px;padding:0;}
 #sidebar a{color:#666;line-height:20px;}
 #sidebar a:hover{color:#06C;}
-#sidebar ul li ul li{background-position:-28px -162px;color:#666;font-size:12px;margin-left:5px;padding-left:10px;font-style:italic;font-family:Microsoft YaHei;}
+#sidebar ul li ul li{background-position:-28px -162px;color:#666;font-size:12px;margin-left:5px;padding-left:10px;font-family:Microsoft YaHei;}
 #sidebar ul li ul li a{font-style:normal;}
 #sidebar ul li ul li:hover{background-position:-32px -148px;color:#06C;}
-#sidebar li{line-height:100%;margin:0 0 1em;}
+#sidebar li{line-height:100%;margin:0 0 1em;list-style:none;}
 #sidebar li li{line-height:20px;margin:0 0 4px;}
 #sidebar li li:hover{background-position:0 -204px;}
 .widget_title{color:#777;background-color:#EEE;border-left:2px solid #999;font-size:13px;font-weight:bolder;line-height:100%;margin:0 0 0.7em;padding:5px;}
@@ -202,9 +202,9 @@ img.alignleft,img.alignright,img.aligncenter{margin-bottom:12px;}
 .gallery-columns-2 .attachment-medium{height:auto;max-width:92%;}
 .gallery-columns-4 .attachment-thumbnail{height:auto;max-width:84%;}
 .gallery .gallery-caption{color:#888;font-size:12px;margin:0 0 12px;}
-.navigation{color:#888;font-size:12px;line-height:18px;overflow:hidden;}
-.navigation a:link,.navigation a:visited{color:#888;text-decoration:none;}
-.navigation a:active,.navigation a:hover{color:#FF4B33;}
+.navigation{text-align:center; color:#888;font-size:12px;line-height:18px;overflow:hidden;}
+.navigation a {border: 2px dashed #DDDDDD;color: #AAAAAA;line-height: 30px;padding: 1px 4px;}
+.navigation a:hover {background-color: #E9E9E9;border: 2px dashed #AAAAAA;color: #2089CC;}
 .nav-previous{float:left;width:50%;}
 .nav-next{float:right;text-align:right;width:50%;}
 #nav-above{display:none;margin:0 0 18px;}
@@ -222,6 +222,7 @@ object,#content .attachment img{display:block;margin:0 auto;}
 #footer a,#wp-calendar th,ol.commentlist li div.vcard cite.fn a.url:hover{color:#555;}
 ol.commentlist li span.comment-meta a,.page-numbers dots{color:#AAA;}
 ol.commentlist li span.comment-meta a:hover,ol.commentlist li div.reply a:hover,ol.commentlist li .atclass a:hover{color:#222;}
-ol.commentlist li ul.children .by-post-author p,ol.commentlist li ul.children p{padding:3px 0 3px 31px;}
+ol.commentlist li ul.children .by-post-author p,ol.commentlist li ul.children p{padding:3px 31px 3px 31px;}
 #respond .comment-form-comment label,.gallery br + br{display:none;}
 .wp-smiley,.gallery dl{margin:0;}
+#widget_calendar .widget_title{display:none;}
