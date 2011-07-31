@@ -24,7 +24,7 @@ $dotb_settings = get_option( 'dotb_options', $dotb_options );
 					<?php _e( 'Blog Archives', 'dot-b' ); ?>
 				<?php endif; ?>
 			</h1>
-		<?php: while ( have_posts() ) : the_post(); ?>
+		<?php while ( have_posts() ) : the_post(); ?>
 		<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 			<h2 class="post_title_h2"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 			<div class="post_info_top">
