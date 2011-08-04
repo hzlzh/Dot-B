@@ -27,7 +27,7 @@
 			<h2 class="post_title_h2"><?php _e('Nothing Found', 'dot-b'); ?></h2>
 		</div>
 	<?php endif; ?>
-		<div id="comments_wrapper">
+		<div id="comments">
 		 <?php comments_template( '', true ); ?>
 		</div>
 	</div><!-- #content -->

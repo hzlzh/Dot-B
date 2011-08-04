@@ -13,11 +13,11 @@
 			</li>
 
 			<li id="recent-post" class="widget-container">
-				<?php the_widget('WP_Widget_Recent_Posts', 'number=25&title='.__('Recent Post','dot-b'), 'before_title=<h3 class="widget_title">&after_title=</h3>&widget_id=1212'); ?> 
+				<?php the_widget('WP_Widget_Recent_Posts', 'number=7&title='.__('Recent Post','dot-b'), 'before_title=<h3 class="widget_title">&after_title=</h3>&widget_id=1000'); ?> 
 			</li>
 			
 			<li id="recent-comments" class="widget-container">
-				<?php the_widget('WP_Widget_Recent_Comments', 'number=25&title='.__('Recent Comments','dot-b'), 'before_title=<h3 class="widget_title">&after_title=</h3>&widget_id=1212'); ?> 
+				<?php the_widget('WP_Widget_Recent_Comments', 'number=7&title='.__('Recent Comments','dot-b'), 'before_title=<h3 class="widget_title">&after_title=</h3>&widget_id=1001'); ?> 
 			</li>
 			
 			<li id="archives" class="widget-container">
