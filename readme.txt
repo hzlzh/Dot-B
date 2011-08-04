@@ -12,10 +12,13 @@ http://zlz.im/dot-b-social-media-icons-set-release/
 
 == LOGS == for more detials check here http://www.evernote.com/shard/s50/sh/be76162e-f05a-401d-8581-c3aaae0069a4/12af08a1a0aff663c0768d681e869f49
 
--- v1.7.6  -- 2011.07.30
-A small bug fixed.
+-- v1.7.7  -- 2011.08.04
+A lot of changes made within style.css | 大幅添加和修改了样式表
 
--- v1.7.5  -- 2011.07.30
+-- v1.7.6  -- 2011.07.31
+A small bug fixed | 修复了一个小bug
+
+-- v1.7.5  -- 2011.07.31
 
 Add <pre> style with background image| 增加 <pre> 标签背景图片样式
 Add comments page_nav CSS style| 增加 评论分页 CSS样式
