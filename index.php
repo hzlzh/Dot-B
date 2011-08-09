@@ -9,7 +9,7 @@ $dotb_settings = get_option( 'dotb_options', $dotb_options );
 		<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 			<h2 class="post_title_h2"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 			<div class="post_info_top">
-				<div class="post_info_date"> <?php printf( __('Posted on %s', 'dot-b'), get_the_date(get_option( 'date_format' ))); ?></div>
+				<div class="post_info_date"> <a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>" rel="bookmark"><?php printf( __('Posted on %s', 'dot-b'), get_the_date(get_option( 'date_format' ))); ?></a></div>
 				<div class="post_info_author"> <?php _e('by', 'dot-b'); ?> <?php the_author_posts_link(); ?></div>
 				<?php edit_post_link(__('[ Edit ]', 'dot-b'),'<span class="post_info_edit">','</span>'); ?>
 			</div>

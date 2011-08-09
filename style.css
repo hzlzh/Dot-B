@@ -46,7 +46,7 @@ ins{background:none repeat scroll 0 0 #FFF9C0; text-decoration:none}
 sup, sub{font-size:10px; height:0; line-height:1; position:relative; vertical-align:baseline}
 sup{bottom:1ex}
 sub{top:0.5ex}
-#top-bar, #bottom-bar, #social a, #rss, .menu-mark, .post_info_date, .post_info_author, .post_info_edit, .post_title_h2, .post_meta, .previous_post, .next_post, #comments-title, #sidebar ul li ul li, #header_search_area, #reply-title, pre{background-image:url("images/all.png")}
+#top-bar, #bottom-bar, #social a, #rss, .menu-mark, .post_info_date, .post_info_author, .post_info_cat, .post_info_edit, .post_title_h2, .post_meta, .previous_post, .next_post, #comments-title, #sidebar ul li ul li, #header_search_area, #reply-title, pre{background-image:url("images/all.png")}
 #top-bar{background-position:0 -632px; height:4px; font-size:0; width:20%; background-color:#F1F1F1}
 #bottom-bar{background-position:0 -639px; height:4px; font-size:0; background-color:#F1F1F1}
 #wrapper{background:none repeat scroll 0 0 #F1F1F1; width:960px; margin:0 auto}
@@ -104,14 +104,12 @@ sub{top:0.5ex}
 .post{margin-top:10px}
 .post_content{line-height:20px; margin:10px}
 .post_content img{background:#F1F1F1; border:1px solid #DDD; padding:4px}
-.post_content h1, .post_content h2, .comment-content h1, .comment-content h2{color:#000; font-weight:bold; margin:0 0 0.8125em}
-.post_content h3, .comment-content h3{font-size:10px; letter-spacing:0.1em; line-height:2.6em; text-transform:uppercase}
-.post_content table, .comment-content table{border-bottom:1px solid #DDD; margin:0 0 1.625em; width:100%}
-.post_content th, .comment-content th{color:#666; font-size:10px; font-weight:500; letter-spacing:0.1em; line-height:2.6em; text-transform:uppercase}
-.post_content td, .comment-content td{border-top:1px solid #DDD; padding:6px 10px 6px 0}
+.post_content h1, .post_content h2{color:#000; font-weight:bold; margin:0 0 0.8125em}
+.post_content h3{font-size:10px; letter-spacing:0.1em; line-height:2.6em; text-transform:uppercase}
+.post_content table{border-bottom:1px solid #DDD; margin:0 0 1.625em; width:100%}
+.post_content th{color:#666; font-size:10px; font-weight:500; letter-spacing:0.1em; line-height:2.6em; text-transform:uppercase}
+.post_content td{border-top:1px solid #DDD; padding:6px 10px 6px 0}
 .post_content #s{width:75%}
-.comment-content ul, .comment-content ol{margin-bottom:1.625em}
-.comment-content ul ul, .comment-content ol ol, .comment-content ul ol, .comment-content ol ul{margin-bottom:0}
 .post_content ul, .post_content ol{margin:0 0 1em 2em}
 .post_content ul{list-style:square outside none}
 .post_content ol{list-style-type:decimal}
@@ -120,7 +118,8 @@ sub{top:0.5ex}
 .post_info{overflow:hidden; margin:0 6px}
 .post_info_date{background-position:-23px -175px; display:inline; padding:0 0 0 10px}
 .post_info_author{background-position:-19px -187px; display:inline; margin:0 0 0 6px; padding:0 0 0 10px}
-.post_info_edit{background-position:-7px -225px; display:inline; margin:0 0 0 6px; padding:0 0 0 10px}
+.post_info_cat{background-position:-7px -225px; display:inline; margin:0 0 0 6px; padding:0 0 0 10px}
+.post_info_edit{background-position:-2px -239px; display:inline; margin:0 0 0 6px; padding:0 0 0 10px}
 .post_info_bootom{overflow:hidden; clear:both; margin:10px 0 10px -7px; padding:0 0 0 7px}
 .post_meta{float:left; width:550px; display:inline; background-position:right -441px; overflow:hidden; height:19px; margin:0 0 0 -7px; padding:0 0 0 7px}
 .post_meta ul{margin:0; line-height:100%}
@@ -158,6 +157,16 @@ sub{top:0.5ex}
 #wp-calendar tbody a{background-color:#eee}
 #wp-calendar tbody a:hover{background-color:#e7e7e7}
 #comments{margin-top:30px}
+#comments h1, #comments h2{color:#000; font-weight:bold; margin:0 0 0.8125em}
+#comments h3{font-size:10px; letter-spacing:0.1em; line-height:2.6em; text-transform:uppercase}
+#comments table{border-bottom:1px solid #DDD; margin:0 0 1.625em; width:100%}
+#comments th{color:#666; font-size:10px; font-weight:500; letter-spacing:0.1em; line-height:2.6em; text-transform:uppercase}
+#comments td{border-top:1px solid #DDD; padding:6px 10px 6px 0}
+#comments ul, #comments ol{margin:0 0 1em 2em}
+#comments ul{list-style:square outside none}
+#comments ul li{list-style:square outside none!important;margin:0;padding:0}
+#comments ol{list-style-type:decimal}
+#comments ol li{list-style-type:decimal;margin:0;padding:0}
 #thecomments{margin-right:20px; width:640px}
 #comments-title{background-position:0 -421px; font-size:14px; font-weight:700; text-align:center; margin:5px 20px 20px; padding:5px 0}
 #comments-title span{background:#f1f1f1; color:#888; padding:0 4px}
@@ -181,7 +190,7 @@ ol.commentlist li div.reply, ol .commentlist li .atclass{background:none repeat 
 ol.commentlist li ul.children li{padding-bottom:0; border-bottom:none}
 ol.commentlist li ul.children li.depth-2{margin:0 0 0 50px}
 ol.commentlist li ul.children li div.comment-author{overflow:hidden; display:block; height:16px; border:none; border-bottom:1px dashed #DDD}
-ol.commentlist li ul.children li div.comment-content{margin-top:15px}
+ol.commentlist li ul.children li div#comments{margin-top:15px}
 ol.commentlist li ul.children .by-post-author div.vcard img.avatar{position:absolute; right:0; float:right; border:1px dashed #ddd; height:24px; margin-top:2px; width:24px}
 ol.commentlist li ul.children .by-post-author div.vcard cite.fn{margin-left:10px; float:right; margin-right:32px}
 ol.commentlist li ul.children .by-post-author span.comment-meta{position:absolute; right:31px; top:16px; left:auto}
@@ -253,5 +262,6 @@ ol.commentlist li span.comment-meta a, .page-numbers dots{color:#AAA}
 ol.commentlist li span.comment-meta a:hover, ol.commentlist li div.reply a:hover, ol.commentlist li .atclass a:hover{color:#222}
 ol.commentlist li ul.children .by-post-author p, ol.commentlist li ul.children p{padding:3px 31px 3px 31px}
 #respond .comment-form-comment label, .gallery br+br{display:none}
-.wp-smiley, .gallery dl{margin:0}
+.gallery dl{margin:0}
+img.wp-smiley{margin:0;padding:0;border:none}
 #widget_calendar .widget_title{display:none}

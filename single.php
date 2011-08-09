@@ -7,6 +7,7 @@
 			<div class="post_info_top">
 				<div class="post_info_date"> <?php printf( __('Posted on %s ', 'dot-b'), get_the_date(get_option( 'date_format' ))); ?></div>
 				<div class="post_info_author"> <?php _e('by', 'dot-b'); ?> <?php the_author_posts_link(); ?></div>
+				<div class="post_info_cat"> <?php _e('in', 'dot-b'); ?> <?php the_category(', '); ?></div>
 				<?php edit_post_link(__('[ Edit ]', 'dot-b'),'<span class="post_info_edit">','</span>'); ?>
 			</div>
 			<div class="post_content">
