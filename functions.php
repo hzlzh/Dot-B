@@ -131,11 +131,11 @@ function dotb_admin_header_style() {
 endif;
 
 // Wp_tag_cloud Widget
-function ColorfuTaglCloud($text) { 
-	$text = preg_replace_callback('|<a (.+?)>|i', 'ColorfuTaglCloudCallback', $text);
+function dotb_colorfultagcloud($text) { 
+	$text = preg_replace_callback('|<a (.+?)>|i', 'dotb_colorfultagcloudcallback', $text);
 	return $text;
 	}
-function ColorfuTaglCloudCallback($matches) { 
+function dotb_colorfultagcloudcallback($matches) { 
 	$text = $matches[1];
 	$color = dechex(rand(0,16777215));// Here you can control the color of tags
 	$pattern = '/style=(\'|\")(.*)(\'|\")/i';
@@ -145,7 +145,7 @@ function ColorfuTaglCloudCallback($matches) {
 
 
 // Custom Comments List.
-function mytheme_comment( $comment, $args, $depth ) {
+function dotb_mytheme_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
 	if ( $post = get_post($post_id) ) {
                        if ( $comment->user_id === $post->post_author )
@@ -199,17 +199,17 @@ function mytheme_comment( $comment, $args, $depth ) {
 
 ?>
 <?php
-class widget_colorfultagcloud extends WP_Widget {
-    function widget_colorfultagcloud() {
-        $widget_ops = array('description' => 'Dot-B'.__( 'Display Colorful Tags Cloud', 'dot-b'));
-        $this->WP_Widget('widget_colorfultagcloud', 'Dot-B'.__( 'Colorful Tag Cloud', 'dot-b'), $widget_ops);
+class dotb_widget_colorfultagcloud extends WP_Widget {
+    function dotb_widget_colorfultagcloud() {
+        $widget_ops = array('description' => 'Dot-B '.__( 'Display Colorful Tags Cloud', 'dot-b'));
+        $this->WP_Widget('dotb_widget_colorfultagcloud', 'Dot-B '.__( 'Colorful Tag Cloud', 'dot-b'), $widget_ops);
     }
     function widget($args, $instance) {
         extract($args);
         $title = apply_filters('widget_title', esc_attr($instance['title']));
         echo $before_widget.$before_title.$title.$after_title;
         echo '<div class="colorfultagcloud">';
-		add_filter('wp_tag_cloud', 'ColorfuTaglCloud', 1);
+		add_filter('wp_tag_cloud', 'dotb_colorfultagcloud', 1);
 		wp_tag_cloud();
         echo '</ul>';
         echo $after_widget;
@@ -235,8 +235,8 @@ class widget_colorfultagcloud extends WP_Widget {
 <?php
     }
 }
-add_action('widgets_init', 'widget_colorfultagcloud_init');
-function widget_colorfultagcloud_init() {
-    register_widget('widget_colorfultagcloud');
+add_action('widgets_init', 'dotb_widget_colorfultagcloud_init');
+function dotb_widget_colorfultagcloud_init() {
+    register_widget('dotb_widget_colorfultagcloud');
 }
 ?>

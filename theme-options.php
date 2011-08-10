@@ -17,6 +17,57 @@ $dotb_options = array(
 	'dotb_version' => $theme_data['Version']
 );
 
+function dotb_validate_options( $input ) {
+	global $dotb_options;
+
+	$settings = get_option( 'dotb_options', $dotb_options );
+	
+	if ( ! isset( $input['dotb_rss_url'] ) )
+	$input['dotb_rss_url'] = null;
+	$input['dotb_rss_url'] = esc_url_raw( $input['dotb_rss_url'] );
+	
+	if ( ! isset( $input['dotb_is_excerpt'] ) )
+	$input['dotb_is_excerpt'] = null;
+	$input['dotb_is_excerpt'] = ( $input['dotb_is_excerpt'] == 1 ? 1 : 0 );
+	
+	if ( ! isset( $input['dotb_excerpt_length'] ) )
+	$input['dotb_excerpt_length'] = null;
+	$input['dotb_excerpt_length'] = intval($input['dotb_excerpt_length']);
+	
+	if ( ! isset( $input['dotb_is_ga'] ) )
+	$input['dotb_is_ga'] = null;
+	$input['dotb_is_ga'] = ( $input['dotb_is_ga'] == 1 ? 1 : 0 );
+	
+	if ( ! isset( $input['dotb_analytics_code'] ) )
+	$input['dotb_analytics_code'] = null;
+	$input['dotb_analytics_code'] = balanceTags($input['dotb_analytics_code']);
+	
+	if ( ! isset( $input['dotb_footer'] ) )
+	$input['dotb_footer'] = null;
+	$input['dotb_footer'] = balanceTags($input['dotb_footer']);
+
+	if ( ! isset( $input['dotb_is_colorbar'] ) )
+	$input['dotb_is_colorbar'] = null;
+	$input['dotb_is_colorbar'] = ( $input['dotb_is_colorbar'] == 1 ? 1 : 0 );
+	
+	if ( ! isset( $input['dotb_is_sqlcount'] ) )
+	$input['dotb_is_sqlcount'] = null;
+	$input['dotb_is_sqlcount'] = ( $input['dotb_is_sqlcount'] == 1 ? 1 : 0 );
+	
+	if ( ! isset( $input['dotb_version'] ) )
+	$input['dotb_version'] = null;
+	$input['dotb_version'] = intval( $input['dotb_version'] );
+	
+	return $input;
+}
+
+function dotb_excerpt_length($length) {
+global $dotb_options;
+$settings = get_option( 'dotb_options', $dotb_options );
+	return $settings['dotb_excerpt_length'];
+}
+add_filter('excerpt_length', 'dotb_excerpt_length');
+
 if ( is_admin() ) : // Load only if we are viewing an admin page
 
 function dotb_register_settings() {
@@ -35,10 +86,7 @@ function dotb_theme_options() {
 
 add_action( 'admin_menu', 'dotb_theme_options' );
 
-function new_excerpt_length($length) {
-	return $dotb_excerpt_length;
-}
-add_filter('excerpt_length', 'new_excerpt_length');
+
 
 
 function dotb_default_options() {
@@ -129,7 +177,7 @@ function dotb_theme_options_page() {
 	<tr valign="top"><th scope="row"><?php _e( 'Display colourful bar on header and footer?','dot-b' ); ?></th>
 	<td><label for="dotb_is_colorbar">
 	<input type="checkbox" id="dotb_is_colorbar" name="dotb_options[dotb_is_colorbar]" value="1" <?php checked( true, $settings['dotb_is_colorbar'] ); ?> />
-	<strong><?php _e( 'Preview','dot-b' ); ?>:&nbsp;&nbsp;</strong><span style="color:#0065cc;">▄▄▄▄</span><span style="color:#0fabff;">▄▄▄</span><span style="color:#2a5599;">▄▄▄</span><span style="color:#ff6f6f;">▄▄▄</span><span style="color:#ff0f00;">▄▄</span><span style="color:#be0800;">▄▄</span><span style="color:#5b1301;">▄▄</span><span style="color:#edb012">▄</span><span style="color:#9fcf67">▄</span><span style="color:#0b9938">▄</span>
+	<strong><?php _e( 'Preview','dot-b' ); ?>:&nbsp;&nbsp;</strong><span style="color:#0065cc;">&bull;&bull;&bull;&bull;</span><span style="color:#0fabff;">&bull;&bull;&bull;</span><span style="color:#2a5599;">&bull;&bull;&bull;</span><span style="color:#ff6f6f;">&bull;&bull;&bull;</span><span style="color:#ff0f00;">&bull;&bull;</span><span style="color:#be0800;">&bull;&bull;</span><span style="color:#5b1301;">&bull;&bull;</span><span style="color:#edb012">&bull;</span><span style="color:#9fcf67">&bull;</span><span style="color:#0b9938">&bull;</span>
 	</label>
 	</td>
 	</tr>
@@ -195,35 +243,6 @@ function dotb_theme_options_page() {
 	<?php
 }
 
-function dotb_validate_options( $input ) {
-	global $dotb_options;
 
-	$settings = get_option( 'dotb_options', $dotb_options );
-	
-	// We strip all tags from the text field, to avoid vulnerablilties like XSS
-	$input['dotb_rss_url'] = wp_filter_nohtml_kses( $input['dotb_rss_url'] );
-	
-	if ( ! isset( $input['dotb_is_excerpt'] ) )
-	$input['dotb_is_excerpt'] = null;
-	// We verify if the input is a boolean value
-	$input['dotb_is_excerpt'] = ( $input['dotb_is_excerpt'] == 1 ? 1 : 0 );
-	
-	if ( ! isset( $input['dotb_is_ga'] ) )
-	$input['dotb_is_ga'] = null;
-	// We verify if the input is a boolean value
-	$input['dotb_is_ga'] = ( $input['dotb_is_ga'] == 1 ? 1 : 0 );
-	
-	if ( ! isset( $input['dotb_is_sqlcount'] ) )
-	$input['dotb_is_sqlcount'] = null;
-	// We verify if the input is a boolean value
-	$input['dotb_is_sqlcount'] = ( $input['dotb_is_sqlcount'] == 1 ? 1 : 0 );
-
-	if ( ! isset( $input['dotb_is_colorbar'] ) )
-	$input['dotb_is_colorbar'] = null;
-	// We verify if the input is a boolean value
-	$input['dotb_is_colorbar'] = ( $input['dotb_is_colorbar'] == 1 ? 1 : 0 );
-	
-	return $input;
-}
 
 endif;  // EndIf is_admin()

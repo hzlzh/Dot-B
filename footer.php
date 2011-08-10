@@ -11,12 +11,11 @@ $dotb_settings = get_option( 'dotb_options', $dotb_options ); ?>
 				{ echo '{ '.get_num_queries().' '.__('queries in', 'dot-b').' '.timer_stop(0,3).' '.__('seconds', 'dot-b').' }';}?>
 			</div>
 		</div><!-- #copyright -->
-		<a id="return_top" href="#wrapper" rel="nofollow" title="<?php _e('Back to top', 'dot-b'); ?>"> Δ <?php _e('Top', 'dot-b'); ?></a>
+		<a id="return_top" href="#wrapper" rel="nofollow" title="<?php _e('Back to top', 'dot-b'); ?>"> &Delta;  <?php _e('Top', 'dot-b'); ?></a>
 	</div><!-- #footer -->
 </div><!-- #wrapper -->
 <?php if($dotb_settings['dotb_is_colorbar']) : ?><div id="bottom-bar"></div><?php endif;?>
-<?php wp_footer(); ?>
-<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/all.js"></script>
 <?php if (!$dotb_settings['dotb_is_ga']) echo $dotb_settings['dotb_analytics_code']; ?>
+<?php wp_footer(); ?>
 </body>
 </html>
