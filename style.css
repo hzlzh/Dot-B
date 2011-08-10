@@ -157,16 +157,16 @@ sub{top:0.5ex}
 #wp-calendar tbody a{background-color:#eee}
 #wp-calendar tbody a:hover{background-color:#e7e7e7}
 #comments{margin-top:30px}
-#comments h1, #comments h2{color:#000; font-weight:bold; margin:0 0 0.8125em}
-#comments h3{font-size:10px; letter-spacing:0.1em; line-height:2.6em; text-transform:uppercase}
-#comments table{border-bottom:1px solid #DDD; margin:0 0 1.625em; width:100%}
-#comments th{color:#666; font-size:10px; font-weight:500; letter-spacing:0.1em; line-height:2.6em; text-transform:uppercase}
-#comments td{border-top:1px solid #DDD; padding:6px 10px 6px 0}
-#comments ul, #comments ol{margin:0 0 1em 2em}
-#comments ul{list-style:square outside none}
-#comments ul li{list-style:square outside none!important;margin:0;padding:0}
-#comments ol{list-style-type:decimal}
-#comments ol li{list-style-type:decimal;margin:0;padding:0}
+.comment-content h1, .comment-content h2{color:#000; font-weight:bold; margin:0 0 0.8125em}
+.comment-content h3{font-size:10px; letter-spacing:0.1em; line-height:2.6em; text-transform:uppercase}
+.comment-content table{border-bottom:1px solid #DDD; margin:0 0 1.625em; width:100%}
+.comment-content th{color:#666; font-size:10px; font-weight:500; letter-spacing:0.1em; line-height:2.6em; text-transform:uppercase}
+.comment-content td{border-top:1px solid #DDD; padding:6px 10px 6px 0}
+.comment-content ul, .comment-content ol{margin:0 0 1em 2em}
+.comment-content ul{list-style:square outside none}
+.comment-content ul li{list-style:square outside none!important;margin:0!important;padding:0}
+.comment-content ol{list-style-type:decimal}
+.comment-content ol li{list-style-type:decimal!important;margin:0!important;padding:0}
 #thecomments{margin-right:20px; width:640px}
 #comments-title{background-position:0 -421px; font-size:14px; font-weight:700; text-align:center; margin:5px 20px 20px; padding:5px 0}
 #comments-title span{background:#f1f1f1; color:#888; padding:0 4px}
@@ -213,9 +213,11 @@ ol.commentlist li ul.children div.reply, ol .commentlist li .atclass{top:6px; ri
 #comment{width:330px; margin:0 10px 0 0}
 #submit{background-color:#888; border:medium none; color:#DDD; padding:2px 5px}
 #submit:hover{background-color:#666}
-.trackbacks-pingbacks h3{font-weight:700; margin-bottom:10px; border-bottom:1px solid #CCC; color:#555; padding:3px 0}
-.trackbacks-pingbacks ul{list-style-type:circle; margin:5px 20px 15px}
-.trackbacks-pingbacks ul li{margin-bottom:4px}
+ol.pingslist h3{font-weight:700; margin-bottom:10px; border-bottom:1px solid #CCC; color:#555; padding:3px 0}
+ol.pingslist{list-style-type:none; margin:5px 20px 15px}
+ol.pingslist li{color:#AAA;margin:0}
+ol.pingslist a{color: #555;outline: medium none;text-decoration: none;}
+#pings-title{font-size: 14px;font-weight: 700;margin: 5px;padding: 5px 0;color:#888888}
 .feed{background:url("images/all.png") no-repeat scroll 0 -155px transparent; float:right; font-size:13px; height:18px; padding-left:20px}
 .page_navi{text-align:center; margin:20px}
 .page_navi li{line-height:0; display:inline; font-size:13px}

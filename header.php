@@ -58,5 +58,5 @@ wp_enqueue_script('jquery','/wp-includes/js/jquery/jquery.js','','','true'); ?>
 		<?php if ( get_header_image() ) : ?>
 		<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
 		<?php endif; ?>
-		<div class="header_menu"><?php wp_nav_menu('link_before=<span>&link_after=</span>'); ?></div>
+		<div class="header_menu"><?php if(has_nav_menu( 'primary' )) : wp_nav_menu(array('theme_location' => 'primary','depth' => '1', 'fallback_cb' => false)); else : wp_nav_menu('link_before=<span>&link_after=</span>'); endif;?></div>
 	</div>

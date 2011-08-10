@@ -16,7 +16,7 @@
 		</div>
 		<div class="post_info_bootom">
 			<div class="post_meta"><?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?></div>  
-			<div class="post_readmore"><?php comments_popup_link(__('Leave a Reply ?', 'dot-b'),__('[ 1 Reply ]', 'dot-b'),__('[ % Replies ]', 'dot-b')); ?></div>	
+			<div class="post_readmore"><?php comments_popup_link(__('Leave a Reply ?', 'dot-b'),__('[ 1 Reply ]', 'dot-b'),__('[ % Replies ]', 'dot-b'), '', ''); ?></div>	
 		</div>		
 	<?php endwhile; else: ?>
 		<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">

@@ -86,7 +86,6 @@ add_custom_image_header( '', 'dotb_admin_header_style' );
 		),
 	) );
 
-
 // Register nav_menu
 if ( function_exists('register_nav_menu') ) { 
 	register_nav_menus(
@@ -184,10 +183,15 @@ function mytheme_comment( $comment, $args, $depth ) {
 	<?php
 			break;
 		case 'pingback'  :
+	?>
+	<li class="pings pingback">
+        <?php comment_author_link(); ?> - Pingback on <?php echo mysql2date('Y/m/d/ H:i', $comment->comment_date); ?>
+	<?php
+			break;
 		case 'trackback' :
 	?>
-	<li class="post pingback">
-		<p><?php comment_author_link(); ?> - <?php echo $comment->comment_type; ?> on <?php echo date("Y/m/d H:i",$comment->comment_date);?><?php edit_comment_link( __('(Edit)', 'dot-b'), ' ' ); ?></p>
+	<li class="pings trackback">
+        <?php comment_author_link(); ?> - Trackback on <?php echo mysql2date('Y/m/d/ H:i', $comment->comment_date); ?>
 	<?php
 			break;
 	endswitch;
