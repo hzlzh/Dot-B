@@ -191,6 +191,7 @@ ol.commentlist li div.reply, ol .commentlist li .atclass{background:none repeat 
 ol.commentlist li ul.children li{padding-bottom:0; border-bottom:none}
 ol.commentlist li ul.children li.depth-2{margin:0 0 0 50px}
 ol.commentlist li ul.children li div.comment-author{overflow:hidden; display:block; height:16px; border:none; border-bottom:1px dashed #DDD}
+ol.commentlist li ul.children li div.comment-content {padding-top:5px}
 ol.commentlist li ul.children li div#comments{margin-top:15px}
 ol.commentlist li ul.children .by-post-author div.vcard img.avatar{position:absolute; right:0; float:right; border:1px dashed #ddd; height:24px; margin-top:2px; width:24px}
 ol.commentlist li ul.children .by-post-author div.vcard cite.fn{margin-left:10px; float:right; margin-right:32px}
@@ -209,7 +210,7 @@ ol.commentlist li ul.children div.reply, ol .commentlist li .atclass{top:6px; ri
 #commentform p{overflow:hidden; margin:0 0 10px; padding:0; clear:both}
 #commentform textarea, #author, #email, #url{height:16px; float:left; border:1px dashed #DDD; margin-right:5px; color:#333; padding:3px}
 #commentform textarea:hover, #author:hover, #email:hover, #url:hover{border:1px dashed #bbb}
-#commentform textarea{height:130px; background:url("images/comment-bg.png") no-repeat scroll center center #FFF}
+#commentform textarea{height:130px;}
 #commentform .form-allowed-tags{color:#888; font-size:12px; line-height:1.2em}
 #comment{width:330px; margin:0 10px 0 0}
 #submit{background-color:#888; border:medium none; color:#DDD; padding:2px 5px}
@@ -219,7 +220,6 @@ ol.pingslist{list-style-type:none; margin:5px 20px 15px}
 ol.pingslist li{color:#AAA;margin:0}
 ol.pingslist a{color: #555;outline: medium none;text-decoration: none;}
 #pings-title{font-size: 14px;font-weight: 700;margin: 5px;padding: 5px 0;color:#888888}
-.feed{background:url("images/all.png") no-repeat scroll 0 -155px transparent; float:right; font-size:13px; height:18px; padding-left:20px}
 .page_navi{text-align:center; margin:20px}
 .page_navi li{line-height:0; display:inline; font-size:13px}
 .page_navi a{border:2px dashed #DDD; color:#AAA; line-height:30px; padding:1px 4px}
