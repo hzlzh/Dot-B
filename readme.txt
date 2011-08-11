@@ -1,4 +1,4 @@
-== DOT-B 1.7.6 ==
+== DOT-B 1.7.9 ==
 
 Created, Developed and maintained by hzlzh http://zlz.im/
 
@@ -13,6 +13,9 @@ http://zlz.im/dot-b-social-media-icons-set-release/
 3.Please note that posts with a lot of tags will only show a partial tag listing.
 
 == LOGS == for more detials check here: http://www.evernote.com/shard/s50/sh/be76162e-f05a-401d-8581-c3aaae0069a4/12af08a1a0aff663c0768d681e869f49
+
+-- 1.7.9  -- 2011.08.11
+Layout under iPad & iPhone optimized | 优化了主题在iPad 和iPhone 下的细节展示
 
 -- 1.7.8  -- 2011.08.11
 Fix items in offical theme review ticket: http://themes.trac.wordpress.org/ticket/4837 | 修复了官网审核ticket中提到的所有项目
