@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Dot-B package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Dot-B 1.7.9\n"
+"Project-Id-Version: Dot-B 1.8.0\n"
 "Report-Msgid-Bugs-To: http://zlz.im/dot-b/\n"
 "POT-Creation-Date: 2011-07-14 22:47:23+00:00\n"
 "MIME-Version: 1.0\n"

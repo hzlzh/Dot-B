@@ -1,4 +1,4 @@
-== DOT-B 1.7.9 ==
+== DOT-B 1.8.0 ==
 
 Created, Developed and maintained by hzlzh http://zlz.im/
 
@@ -14,7 +14,7 @@ http://zlz.im/dot-b-social-media-icons-set-release/
 
 == LOGS == for more detials check here: http://www.evernote.com/shard/s50/sh/be76162e-f05a-401d-8581-c3aaae0069a4/12af08a1a0aff663c0768d681e869f49
 
--- 1.7.9  -- 2011.08.11
+-- 1.8.0  -- 2011.08.11
 Layout under iPad & iPhone optimized | 优化了主题在iPad 和iPhone 下的细节展示
 
 -- 1.7.8  -- 2011.08.11
