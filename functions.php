@@ -211,7 +211,7 @@ class dotb_widget_colorfultagcloud extends WP_Widget {
         echo '<div class="colorfultagcloud">';
 		add_filter('wp_tag_cloud', 'dotb_colorfultagcloud', 1);
 		wp_tag_cloud();
-        echo '</ul>';
+        echo '</div>';
         echo $after_widget;
     }
     function update($new_instance, $old_instance) {

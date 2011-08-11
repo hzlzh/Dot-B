@@ -1,4 +1,4 @@
-== DOT-B v1.7.6 ==
+== DOT-B 1.7.6 ==
 
 Created, Developed and maintained by hzlzh http://zlz.im/
 
@@ -12,15 +12,18 @@ http://zlz.im/dot-b-social-media-icons-set-release/
 
 3.Please note that posts with a lot of tags will only show a partial tag listing.
 
-== LOGS == for more detials check here http://www.evernote.com/shard/s50/sh/be76162e-f05a-401d-8581-c3aaae0069a4/12af08a1a0aff663c0768d681e869f49
+== LOGS == for more detials check here: http://www.evernote.com/shard/s50/sh/be76162e-f05a-401d-8581-c3aaae0069a4/12af08a1a0aff663c0768d681e869f49
 
--- v1.7.7  -- 2011.08.04
+-- 1.7.8  -- 2011.08.11
+Fix items in offical theme review ticket: http://themes.trac.wordpress.org/ticket/4837 | 修复了官网审核ticket中提到的所有项目
+
+-- 1.7.7  -- 2011.08.04
 A lot of changes made within style.css | 大幅添加和修改了样式表
 
--- v1.7.6  -- 2011.07.31
+-- 1.7.6  -- 2011.07.31
 A small bug fixed | 修复了一个小bug
 
--- v1.7.5  -- 2011.07.31
+-- 1.7.5  -- 2011.07.31
 
 Add <pre> style with background image| 增加 <pre> 标签背景图片样式
 Add comments page_nav CSS style| 增加 评论分页 CSS样式
@@ -35,14 +38,14 @@ Remove italic font style in sidebar| 取消侧边栏字体斜体样式
 Set Css style for widget calendar: #widget_calendar .widget_title{display:none;}| 默认隐藏侧边栏日历挂件的标题 #widget_calendar .widget_title{display:none;}
 Recode the way of getting theme version| 重写主题版本获取初始化函数
 
--- v1.7.4 -- 2011.07.29
+-- 1.7.4 -- 2011.07.29
 Fix some style CSS of <img> | 修复了文章中<img>标签的一点样式
 	
--- v1.7.3 -- 2011.07.28
+-- 1.7.3 -- 2011.07.28
 Add sina icon & Remove PSD files from theme ZIP package | 添加 新浪微博小图标，移除主题ZIP包中的PSD文件
 
--- v1.7.2 -- 2011.07.28
-Released the first public version Dot-B v1.7.2 | 发布了第一个公开版本 Dot-B v1.7.2
+-- 1.7.2 -- 2011.07.28
+Released the first public version Dot-B 1.7.2 | 发布了第一个公开版本 Dot-B 1.7.2
 Uploaded to WordPress Theme Directory waiting for approve | 已提交到WordPress官方主题目录，等待审核通过
 Fix jQuery -> Search function | 修复搜索框 jQuery  方法
 Optimize HTML&CSS&JS structure | 优化了 HTML&CSS&JS 结构

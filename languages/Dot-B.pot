@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Dot-B package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Dot-B 1.7.7\n"
+"Project-Id-Version: Dot-B 1.7.8\n"
 "Report-Msgid-Bugs-To: http://zlz.im/dot-b/\n"
 "POT-Creation-Date: 2011-07-14 22:47:23+00:00\n"
 "MIME-Version: 1.0\n"
@@ -13,18 +13,22 @@ msgstr ""
 "Language-Team: LANGUAGE <hzlzh.dev@gmail.com>\n"
 
 #: 404.php:12
+#: index.php:27
 msgid "This is somewhat embarrassing, isn&rsquo;t it?"
 msgstr ""
 
 #: 404.php:15
+#: index.php:30
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help."
 msgstr ""
 
 #: 404.php:19
+#: index.php:34
 msgid "Most Used Categories"
 msgstr ""
 
 #: 404.php:27
+#: index.php:42
 msgid "Try looking in the monthly archives."
 msgstr ""
 
@@ -63,7 +67,7 @@ msgstr ""
 #: archive.php:33
 #: index.php:14
 #: page.php:10
-#: single.php:10
+#: single.php:11
 msgid "[ Edit ]"
 msgstr ""
 
@@ -73,45 +77,44 @@ msgid "Read more &raquo;"
 msgstr ""
 
 #: archive.php:42
-#: comments.php:13
+#: comments.php:10
 #: index.php:23
 #: page.php:19
-#: single.php:19
+#: single.php:20
 msgid "Leave a Reply ?"
 msgstr ""
 
 #: archive.php:42
 #: index.php:23
 #: page.php:19
-#: single.php:19
+#: single.php:20
 msgid "[ 1 Reply ]"
 msgstr ""
 
 #: archive.php:42
 #: index.php:23
 #: page.php:19
-#: single.php:19
+#: single.php:20
 msgid "[ % Replies ]"
 msgstr ""
 
 #: archive.php:46
-#: index.php:27
 #: page.php:23
-#: single.php:27
+#: single.php:28
 msgid "Nothing Found"
 msgstr ""
 
-#: comments.php:6
+#: comments.php:3
 msgid "This post is password protected. Enter the password to view comments."
 msgstr ""
 
 #: footer.php:11
-#: theme-options.php:140
+#: theme-options.php:188
 msgid "queries in"
 msgstr ""
 
 #: footer.php:11
-#: theme-options.php:140
+#: theme-options.php:188
 msgid "seconds"
 msgstr ""
 
@@ -147,41 +150,40 @@ msgstr ""
 msgid "Path"
 msgstr ""
 
-#: functions.php:94
+#: functions.php:93
 msgid "Header Menu"
 msgstr ""
 
-#: functions.php:95
+#: functions.php:94
 msgid "Custom Social Media"
 msgstr ""
 
-#: functions.php:166
+#: functions.php:165
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: functions.php:166
-#: functions.php:190
+#: functions.php:165
 msgid "(Edit)"
 msgstr ""
 
-#: functions.php:171
+#: functions.php:170
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: functions.php:200
+#: functions.php:204
 msgid "Display Colorful Tags Cloud"
 msgstr ""
 
-#: functions.php:201
+#: functions.php:205
 msgid "Colorful Tag Cloud"
 msgstr ""
 
-#: functions.php:224
+#: functions.php:228
 msgid "Tag Cloud"
 msgstr ""
 
-#: functions.php:228
+#: functions.php:232
 msgid "Title"
 msgstr ""
 
@@ -190,7 +192,7 @@ msgstr ""
 msgid "Page %s"
 msgstr ""
 
-#: header.php:44
+#: header.php:48
 msgid "RSS Feed"
 msgstr ""
 
@@ -228,139 +230,152 @@ msgstr ""
 msgid "Meta"
 msgstr ""
 
-#: single.php:22
-msgid "Already the latest post!"
+#: single.php:10
+msgid "in"
 msgstr ""
 
 #: single.php:23
+msgid "Already the latest post!"
+msgstr ""
+
+#: single.php:24
 msgid "Already the last post!"
 msgstr ""
 
-#: theme-options.php:33
-#: theme-options.php:72
+#: theme-options.php:84
+#: theme-options.php:120
 msgid "Theme Options"
 msgstr ""
 
-#: theme-options.php:75
+#: theme-options.php:123
 msgid "Options reset successfully!"
 msgstr ""
 
-#: theme-options.php:77
+#: theme-options.php:125
 msgid "Options saved successfully!"
 msgstr ""
 
-#: theme-options.php:92
+#: theme-options.php:140
 msgid "Rss Feed URL"
 msgstr ""
 
-#: theme-options.php:94
+#: theme-options.php:142
 msgid "( With \"<code>http://</code>\" )   Keep blank to use WordPress default Rss Feed URL."
 msgstr ""
 
-#: theme-options.php:98
+#: theme-options.php:146
 msgid "Enable Excerpt"
 msgstr ""
 
-#: theme-options.php:101
+#: theme-options.php:149
 msgid "Show excerpt in Home and Archives with"
 msgstr ""
 
-#: theme-options.php:104
+#: theme-options.php:152
 msgid "length"
 msgstr ""
 
-#: theme-options.php:109
+#: theme-options.php:157
 msgid "Use Google Analytics?"
 msgstr ""
 
-#: theme-options.php:112
+#: theme-options.php:160
 msgid "You can get you <code>Google Analytics</code> code <a target=\"_blank\" href=\"https://www.google.com/analytics/settings/check_status_profile_handler\">here</a>."
 msgstr ""
 
-#: theme-options.php:117
+#: theme-options.php:165
 msgid "Analytics Code"
 msgstr ""
 
-#: theme-options.php:123
+#: theme-options.php:171
 msgid "Footer Copyright"
 msgstr ""
 
-#: theme-options.php:125
-#: theme-options.php:132
-#: theme-options.php:140
+#: theme-options.php:173
+#: theme-options.php:180
+#: theme-options.php:188
 msgid "Preview"
 msgstr ""
 
-#: theme-options.php:129
+#: theme-options.php:177
 msgid "Display colourful bar on header and footer?"
 msgstr ""
 
-#: theme-options.php:137
+#: theme-options.php:185
 msgid "Display SQL count at footer?"
 msgstr ""
 
-#: theme-options.php:156
+#: theme-options.php:204
 msgid "Some Tips Here"
 msgstr ""
 
-#: theme-options.php:158
+#: theme-options.php:206
 msgid "1.Customize your Social Media (Facebook, Twitter, Google+ .etc) according to this"
 msgstr ""
 
-#: theme-options.php:158
-#: theme-options.php:162
+#: theme-options.php:206
+#: theme-options.php:210
 msgid "Instructions"
 msgstr ""
 
-#: theme-options.php:159
+#: theme-options.php:207
 msgid "2.Your threaded (nested) comments"
 msgstr ""
 
-#: theme-options.php:159
+#: theme-options.php:207
 msgid "levels deep, change it here"
 msgstr ""
 
-#: theme-options.php:159
+#: theme-options.php:207
 msgid "Settings"
 msgstr ""
 
-#: theme-options.php:159
+#: theme-options.php:207
 msgid "Discussion"
 msgstr ""
 
-#: theme-options.php:160
+#: theme-options.php:208
 msgid "3.Change <code>&lt;Body&gt;</code> background image here"
 msgstr ""
 
-#: theme-options.php:160
-#: theme-options.php:161
+#: theme-options.php:208
+#: theme-options.php:209
+#: theme-options.php:211
 msgid "Appearance"
 msgstr ""
 
-#: theme-options.php:160
+#: theme-options.php:208
 msgid "Background"
 msgstr ""
 
-#: theme-options.php:161
+#: theme-options.php:209
 msgid "4.Customize <code>&lt;Header&gt;</code> image here"
 msgstr ""
 
-#: theme-options.php:161
+#: theme-options.php:209
 msgid "Header"
 msgstr ""
 
-#: theme-options.php:162
+#: theme-options.php:210
 msgid "5.Download & Customize <code>Social Media Icons</code> from PSD source files here"
 msgstr ""
 
-#: theme-options.php:163
+#: theme-options.php:211
+msgid "6.Use <code>Dot-B Colorful Tag Cloud</code> widget at sidebar"
+msgstr ""
+
+#: theme-options.php:211
+msgid "Widgets"
+msgstr ""
+
+#: theme-options.php:212
 msgid "========= Feel free to get my help by both Twitter: <a href=\"http://twitter.com/hzlzh\">@hzlzh</a> and Email: <a href=\"mailto:hzlzh.dev@gmail.com\">hzlzh.dev@gmail.com</a> ========="
 msgstr ""
 
-#: theme-options.php:170
+#: theme-options.php:219
 msgid "Created, Developed and maintained by <a href=\"http://zlz.im/\">hzlzh</a><br>If you like the <code>Dot-B</code> theme, please donate. It will help in developing new features and versions."
 msgstr ""
 
-#: theme-options.php:190
+#: theme-options.php:239
 msgid "Alipay"
 msgstr ""

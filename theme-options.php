@@ -207,7 +207,8 @@ function dotb_theme_options_page() {
 		<li><?php _e( '2.Your threaded (nested) comments','dot-b' ); ?> <strong>[<?php echo get_option('thread_comments_depth');?>]</strong> <?php _e( 'levels deep, change it here','dot-b' ); ?> -> <a target="_blank" href="./options-discussion.php">[<?php _e('Settings','dot-b' ); ?>]->[<?php _e('Discussion','dot-b' ); ?>]</a></li>
 		<li><?php _e( '3.Change <code>&lt;Body&gt;</code> background image here','dot-b' ); ?> -> <a target="_blank" href="./themes.php?page=custom-background">[<?php _e('Appearance','dot-b' ); ?>]->[<?php _e('Background','dot-b' ); ?>]</a></li>
 		<li><?php _e( '4.Customize <code>&lt;Header&gt;</code> image here','dot-b' ); ?> -> <a target="_blank" href="./themes.php?page=custom-header">[<?php _e('Appearance','dot-b' ); ?>]->[<?php _e('Header','dot-b' ); ?>]</a></li>
-		<li><?php _e( '5.Download & Customize <code>Social Media Icons</code> from PSD source files here','dot-b' ); ?> -> <a href="http://zlz.im/dot-b-social-media-icons-set-release/">[<?php _e( 'Instructions','dot-b' ); ?>]</a></li>
+		<li><?php _e( '5.Download & Customize <code>Social Media Icons</code> from PSD source files here','dot-b' ); ?> -> <a target="_blank" href="http://zlz.im/dot-b-social-media-icons-set-release/">[<?php _e( 'Instructions','dot-b' ); ?>]</a></li>
+		<li><?php _e( '6.Use <code>Dot-B Colorful Tag Cloud</code> widget at sidebar','dot-b' ); ?> -> <a href="./widgets.php">[<?php _e('Appearance','dot-b' ); ?>]->[<?php _e( 'Widgets','dot-b' ); ?>]</a></li>
 		<li><?php _e( '========= Feel free to get my help by both Twitter: <a href="http://twitter.com/hzlzh">@hzlzh</a> and Email: <a href="mailto:hzlzh.dev@gmail.com">hzlzh.dev@gmail.com</a> =========','dot-b' ); ?></li>
 	</ul>
 	</div>
