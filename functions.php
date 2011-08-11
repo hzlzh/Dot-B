@@ -143,7 +143,6 @@ function dotb_colorfultagcloudcallback($matches) {
 	return "<a $text>";
 }
 
-
 // Custom Comments List.
 function dotb_mytheme_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
@@ -170,8 +169,6 @@ function dotb_mytheme_comment( $comment, $args, $depth ) {
 			<em><?php _e( 'Your comment is awaiting moderation.', 'dot-b' ); ?></em>
 			<br />
 		<?php endif; ?>
-
-
 
 		<div class="comment-content"><?php comment_text(); ?></div>
 

@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dot-B 1.7.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-08-11 11:20+0800\n"
-"PO-Revision-Date: 2011-08-11 11:20+0800\n"
+"POT-Creation-Date: 2011-08-11 14:20+0800\n"
+"PO-Revision-Date: 2011-08-11 14:20+0800\n"
 "Last-Translator: hzlzh <hzlzh.com@gmail.com>\n"
 "Language-Team: hzlzh <http://zlz.im/>\n"
 "MIME-Version: 1.0\n"
@@ -165,32 +165,32 @@ msgstr "頂部導航"
 msgid "Custom Social Media"
 msgstr "自定義社交媒體"
 
-#: functions.php:165
+#: functions.php:164
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s at %2$s"
 
-#: functions.php:165
+#: functions.php:164
 msgid "(Edit)"
 msgstr "(編輯)"
 
-#: functions.php:170
+#: functions.php:169
 msgid "Your comment is awaiting moderation."
 msgstr "您的評論正等待審核。"
 
-#: functions.php:204
+#: functions.php:201
 msgid "Display Colorful Tags Cloud"
 msgstr "顯示彩色標籤雲"
 
-#: functions.php:205
+#: functions.php:202
 msgid "Colorful Tag Cloud"
 msgstr "彩色標籤雲"
 
-#: functions.php:228
+#: functions.php:225
 msgid "Tag Cloud"
 msgstr "標籤雲"
 
-#: functions.php:232
+#: functions.php:229
 msgid "Title"
 msgstr "標題"
 

@@ -158,32 +158,32 @@ msgstr ""
 msgid "Custom Social Media"
 msgstr ""
 
-#: functions.php:165
+#: functions.php:164
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: functions.php:165
+#: functions.php:164
 msgid "(Edit)"
 msgstr ""
 
-#: functions.php:170
+#: functions.php:169
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: functions.php:204
+#: functions.php:201
 msgid "Display Colorful Tags Cloud"
 msgstr ""
 
-#: functions.php:205
+#: functions.php:202
 msgid "Colorful Tag Cloud"
 msgstr ""
 
-#: functions.php:228
+#: functions.php:225
 msgid "Tag Cloud"
 msgstr ""
 
-#: functions.php:232
+#: functions.php:229
 msgid "Title"
 msgstr ""
 
