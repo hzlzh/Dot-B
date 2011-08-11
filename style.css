@@ -117,10 +117,10 @@ sub{top:0.5ex}
 .post_title_h2 a, .post_title_h2 a:visited{color:#555; display:inline-block}
 .post_info_top{height:19px; line-height:19px; color:#999; margin:0 10px}
 .post_info{overflow:hidden; margin:0 6px}
-.post_info_date{background-position:-23px -175px; display:block; padding:0 0 0 10px;line-height:17px;height:17px;float:left}
-.post_info_author{background-position:-19px -187px; display:block; margin:0 0 0 6px; padding:0 0 0 10px;line-height:17px;height:17px;float:left}
-.post_info_cat{background-position:-7px -225px; display:block; margin:0 0 0 6px; padding:0 0 0 10px;line-height:17px;height:17px;float:left}
-.post_info_edit{background-position:-2px -239px; display:block; margin:0 0 0 6px; padding:0 0 0 10px;line-height:17px;height:17px;float:left}
+.post_info_date{background-position:-23px -175px; display:block; padding:0 0 0 10px;line-height:17px;float:left}
+.post_info_author{background-position:-19px -187px; display:block; margin:0 0 0 6px; padding:0 0 0 10px;line-height:17px;float:left}
+.post_info_cat{background-position:-8px -225px; display:block; margin:0 0 0 6px; padding:0 0 0 10px;line-height:17px;float:left}
+.post_info_edit{background-position:-2px -239px; display:block; margin:0 0 0 6px; padding:0 0 0 10px;line-height:17px;float:left}
 .post_info_bootom{overflow:hidden; clear:both; margin:10px 0 10px -7px; padding:0 0 0 7px}
 .post_meta{float:left; width:550px; display:inline; background-position:right -441px; overflow:hidden; height:19px; margin:0 0 0 -7px; padding:0 0 0 7px}
 .post_meta ul{margin:0; line-height:100%}
@@ -132,11 +132,11 @@ sub{top:0.5ex}
 #sidebar{display:inline; float:right; width:260px; margin:6px 6px 6px 8px; padding:0}
 #sidebar a{color:#666; line-height:19px}
 #sidebar a:hover{color:#06C}
-#sidebar ul li ul li{background-position:-28px -163px; color:#666; font-size:12px; margin-left:5px; padding-left:10px; line-height:17px;height:17px}
+#sidebar ul li ul li{background-position:-32px -163px; color:#666; font-size:12px; margin-left:5px; padding-left:10px; line-height:17px}
 #sidebar ul li ul li a{font-style:normal}
-#sidebar ul li ul li:hover{background-position:-32px -149px; color:#06C}
+#sidebar ul li ul li:hover{background-position:-36px -149px; color:#06C}
 #sidebar li{line-height:100%; margin:0 0 1em; list-style:none}
-#sidebar li li{line-height:19px; margin:0 0 6px}
+#sidebar li li{line-height:19px; margin:0 0 4px}
 #sidebar li li:hover{background-position:0 -204px}
 .widget_title{color:#777; background-color:#EEE; border-left:2px solid #999; font-size:13px; font-weight:bolder; line-height:100%; margin:0 0 0.7em; padding:5px}
 .widget_title:hover{background-color:#EEE; border-left:2px solid #06c}
