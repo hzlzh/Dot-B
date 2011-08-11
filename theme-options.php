@@ -177,7 +177,7 @@ function dotb_theme_options_page() {
 	<tr valign="top"><th scope="row"><?php _e( 'Display colourful bar on header and footer?','dot-b' ); ?></th>
 	<td><label for="dotb_is_colorbar">
 	<input type="checkbox" id="dotb_is_colorbar" name="dotb_options[dotb_is_colorbar]" value="1" <?php checked( true, $settings['dotb_is_colorbar'] ); ?> />
-	<strong><?php _e( 'Preview','dot-b' ); ?>:&nbsp;&nbsp;</strong><span style="color:#0065cc;">&bull;&bull;&bull;&bull;</span><span style="color:#0fabff;">&bull;&bull;&bull;</span><span style="color:#2a5599;">&bull;&bull;&bull;</span><span style="color:#ff6f6f;">&bull;&bull;&bull;</span><span style="color:#ff0f00;">&bull;&bull;</span><span style="color:#be0800;">&bull;&bull;</span><span style="color:#5b1301;">&bull;&bull;</span><span style="color:#edb012">&bull;</span><span style="color:#9fcf67">&bull;</span><span style="color:#0b9938">&bull;</span>
+	<strong><?php _e( 'Preview','dot-b' ); ?>:&nbsp;&nbsp;</strong><div style="font-size: 20px;font-weight: bolder;"><span style="color:#0065cc;">&bull;&bull;&bull;&bull;</span><span style="color:#0fabff;">&bull;&bull;&bull;</span><span style="color:#2a5599;">&bull;&bull;&bull;</span><span style="color:#ff6f6f;">&bull;&bull;&bull;</span><span style="color:#ff0f00;">&bull;&bull;</span><span style="color:#be0800;">&bull;&bull;</span><span style="color:#5b1301;">&bull;&bull;</span><span style="color:#edb012">&bull;</span><span style="color:#9fcf67">&bull;</span><span style="color:#0b9938">&bull;</span></div>
 	</label>
 	</td>
 	</tr>
