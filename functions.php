@@ -149,7 +149,7 @@ function dotb_mytheme_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
 	if ( $post = get_post($post_id) ) {
                        if ( $comment->user_id === $post->post_author )
-                               $bypostauthor = 'by-post-author';
+                               $bypostauthor = 'by-post-author'; else $bypostauthor = 'by-vistor';
                }
 	switch ( $comment->comment_type ) :
 		case '' :
