@@ -4,7 +4,7 @@ Theme URI: http://zlz.im/dot-b/
 Description: A simple, fresh and dot-decorated looking theme with a lot of basic theme-custom options  prepared for you to start you site. You can use those features : custom-background, custom-menu, drop-down menus, custom-header, widgets... and much more. Also you can recreate you child themes based on Dot-B. Compatible with WordPress 2.9+, valid XHTML & CSS + WP3 ready and Multi-language supported.
 Author: hzlzh
 Author URI: http://zlz.im/
-Version: 1.8.0
+Version: 1.8.1
 License: GNU General Public License, v3 (or newer)
 License URI: http://www.opensource.org/licenses/gpl-3.0.html
 Tags: two-columns, gray, white, fixed-width, custom-header, custom-background, custom-menu, threaded-comments, custom-colors, theme-options, threaded-comments, translation-ready, right-sidebar, light
@@ -134,7 +134,7 @@ sub{top:0.5ex}
 #sidebar a:hover{color:#06C}
 #sidebar ul li ul li{background-position:-32px -163px; color:#666; font-size:12px; margin-left:5px; padding-left:10px; line-height:17px}
 #sidebar ul li ul li a{font-style:normal}
-#sidebar ul li ul li:hover{background-position:-36px -149px; color:#06C}
+#sidebar ul li ul li:hover{background-position:-38px -149px; color:#06C}
 #sidebar li{line-height:100%; margin:0 0 1em; list-style:none}
 #sidebar li li{line-height:19px; margin:0 0 4px}
 #sidebar li li:hover{background-position:0 -204px}
