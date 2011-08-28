@@ -1,4 +1,4 @@
-== DOT-B 1.8.1 ==
+== DOT-B 1.8.2 ==
 
 Created, Developed and maintained by hzlzh http://zlz.im/
 
@@ -14,49 +14,52 @@ http://zlz.im/dot-b-social-media-icons-set-release/
 
 == LOGS == for more detials check here: http://www.evernote.com/shard/s50/sh/be76162e-f05a-401d-8581-c3aaae0069a4/12af08a1a0aff663c0768d681e869f49
 
+-- 1.8.2  -- 2011.08.28
+Fix 2 layout problems via  ticket: http://themes.trac.wordpress.org/ticket/4954| ĞŞ¸´ÁË¹Ù·½ticketÖĞÒªÇóµÄÁ½´¦ÎÊÌâ
+
 -- 1.8.1  -- 2011.08.12
-A layout bug fixed | ä¿®å¤äº†ä¸€ä¸ªç•Œé¢ä¸Šçš„bug
+A layout bug fixed | ĞŞ¸´ÁËÒ»¸ö½çÃæÉÏµÄbug
 
 -- 1.8.0  -- 2011.08.11
-Layout under iPad & iPhone optimized | ä¼˜åŒ–äº†ä¸»é¢˜åœ¨iPad å’ŒiPhone ä¸‹çš„ç»†èŠ‚å±•ç¤º
+Layout under iPad & iPhone optimized | ÓÅ»¯ÁËÖ÷ÌâÔÚiPad ºÍiPhone ÏÂµÄÏ¸½ÚÕ¹Ê¾
 
 -- 1.7.8  -- 2011.08.11
-Fix items in offical theme review ticket: http://themes.trac.wordpress.org/ticket/4837 | ä¿®å¤äº†å®˜ç½‘å®¡æ ¸ticketä¸­æåˆ°çš„æ‰€æœ‰é¡¹ç›®
+Fix items in offical theme review ticket: http://themes.trac.wordpress.org/ticket/4837 | ĞŞ¸´ÁË¹ÙÍøÉóºËticketÖĞÌáµ½µÄËùÓĞÏîÄ¿
 
 -- 1.7.7  -- 2011.08.04
-A lot of changes made within style.css | å¤§å¹…æ·»åŠ å’Œä¿®æ”¹äº†æ ·å¼è¡¨
+A lot of changes made within style.css | ´ó·ùÌí¼ÓºÍĞŞ¸ÄÁËÑùÊ½±í
 
 -- 1.7.6  -- 2011.07.31
-A small bug fixed | ä¿®å¤äº†ä¸€ä¸ªå°bug
+A small bug fixed | ĞŞ¸´ÁËÒ»¸öĞ¡bug
 
 -- 1.7.5  -- 2011.07.31
 
-Add <pre> style with background image| å¢åŠ  <pre> æ ‡ç­¾èƒŒæ™¯å›¾ç‰‡æ ·å¼
-Add comments page_nav CSS style| å¢åŠ  è¯„è®ºåˆ†é¡µ CSSæ ·å¼
-Add 404.php & achieve.php| å¢åŠ  404.php å’Œ achieve.php ä¸¤ä¸ªä¸»é¢˜æ–‡ä»¶
-Suport setting of excerpt's length in Home and Archives| å¢åŠ åå°æ§åˆ¶æ–‡ç« æ‘˜è¦è¾“å‡ºå­—æ•°é€‰é¡¹
-Fixed Colorful Tags Cloud widget| ä¿®å¤ Colorful Tags Cloud å°æŒ‚ä»¶
-Recreate tag.png to | é‡åšäº† tag.png ä»¥è¾¾åˆ°åœ¨ä»»ä½•èƒŒæ™¯å›¾ç‰‡çš„æ˜¾ç¤ºå…¼å®¹æ€§
-Rebuilt PNGs that is Optimized by Google Page Speed Tools for editing problem| è¿˜åŸäº†æ›¾ Google Page Speed Tools å¯¹å›¾ç‰‡çš„å‹ç¼©ä¼˜åŒ–ï¼Œç”¨æ¥ä¿æŒå›¾ç‰‡çš„å¯ç¼–è¾‘æ€§
-Fixed social media icons hover bug under IE6| ä¿®å¤äº† ç¤¾äº¤åª’ä½“ å›¾æ ‡åœ¨ IE6 ä¸‹çš„æ˜¾ç¤ºé—®é¢˜
-Add background-color for the colorful bar| ä¸ºä¸Šä¸‹å½©è‰²åŠ è½½æ¡æ·»åŠ èƒŒæ™¯é¢œè‰²
-Remove italic font style in sidebar| å–æ¶ˆä¾§è¾¹æ å­—ä½“æ–œä½“æ ·å¼
-Set Css style for widget calendar: #widget_calendar .widget_title{display:none;}| é»˜è®¤éšè—ä¾§è¾¹æ æ—¥å†æŒ‚ä»¶çš„æ ‡é¢˜ #widget_calendar .widget_title{display:none;}
-Recode the way of getting theme version| é‡å†™ä¸»é¢˜ç‰ˆæœ¬è·å–åˆå§‹åŒ–å‡½æ•°
+Add <pre> style with background image| Ôö¼Ó <pre> ±êÇ©±³¾°Í¼Æ¬ÑùÊ½
+Add comments page_nav CSS style| Ôö¼Ó ÆÀÂÛ·ÖÒ³ CSSÑùÊ½
+Add 404.php & achieve.php| Ôö¼Ó 404.php ºÍ achieve.php Á½¸öÖ÷ÌâÎÄ¼ş
+Suport setting of excerpt's length in Home and Archives| Ôö¼ÓºóÌ¨¿ØÖÆÎÄÕÂÕªÒªÊä³ö×ÖÊıÑ¡Ïî
+Fixed Colorful Tags Cloud widget| ĞŞ¸´ Colorful Tags Cloud Ğ¡¹Ò¼ş
+Recreate tag.png to | ÖØ×öÁË tag.png ÒÔ´ïµ½ÔÚÈÎºÎ±³¾°Í¼Æ¬µÄÏÔÊ¾¼æÈİĞÔ
+Rebuilt PNGs that is Optimized by Google Page Speed Tools for editing problem| »¹Ô­ÁËÔø Google Page Speed Tools ¶ÔÍ¼Æ¬µÄÑ¹ËõÓÅ»¯£¬ÓÃÀ´±£³ÖÍ¼Æ¬µÄ¿É±à¼­ĞÔ
+Fixed social media icons hover bug under IE6| ĞŞ¸´ÁË Éç½»Ã½Ìå Í¼±êÔÚ IE6 ÏÂµÄÏÔÊ¾ÎÊÌâ
+Add background-color for the colorful bar| ÎªÉÏÏÂ²ÊÉ«¼ÓÔØÌõÌí¼Ó±³¾°ÑÕÉ«
+Remove italic font style in sidebar| È¡Ïû²à±ßÀ¸×ÖÌåĞ±ÌåÑùÊ½
+Set Css style for widget calendar: #widget_calendar .widget_title{display:none;}| Ä¬ÈÏÒş²Ø²à±ßÀ¸ÈÕÀú¹Ò¼şµÄ±êÌâ #widget_calendar .widget_title{display:none;}
+Recode the way of getting theme version| ÖØĞ´Ö÷Ìâ°æ±¾»ñÈ¡³õÊ¼»¯º¯Êı
 
 -- 1.7.4 -- 2011.07.29
-Fix some style CSS of <img> | ä¿®å¤äº†æ–‡ç« ä¸­<img>æ ‡ç­¾çš„ä¸€ç‚¹æ ·å¼
+Fix some style CSS of <img> | ĞŞ¸´ÁËÎÄÕÂÖĞ<img>±êÇ©µÄÒ»µãÑùÊ½
 	
 -- 1.7.3 -- 2011.07.28
-Add sina icon & Remove PSD files from theme ZIP package | æ·»åŠ  æ–°æµªå¾®åšå°å›¾æ ‡ï¼Œç§»é™¤ä¸»é¢˜ZIPåŒ…ä¸­çš„PSDæ–‡ä»¶
+Add sina icon & Remove PSD files from theme ZIP package | Ìí¼Ó ĞÂÀËÎ¢²©Ğ¡Í¼±ê£¬ÒÆ³ıÖ÷ÌâZIP°üÖĞµÄPSDÎÄ¼ş
 
 -- 1.7.2 -- 2011.07.28
-Released the first public version Dot-B 1.7.2 | å‘å¸ƒäº†ç¬¬ä¸€ä¸ªå…¬å¼€ç‰ˆæœ¬ Dot-B 1.7.2
-Uploaded to WordPress Theme Directory waiting for approve | å·²æäº¤åˆ°WordPresså®˜æ–¹ä¸»é¢˜ç›®å½•ï¼Œç­‰å¾…å®¡æ ¸é€šè¿‡
-Fix jQuery -> Search function | ä¿®å¤æœç´¢æ¡† jQuery  æ–¹æ³•
-Optimize HTML&CSS&JS structure | ä¼˜åŒ–äº† HTML&CSS&JS ç»“æ„
-Get though the Google Page Speed Tools | é«˜åˆ†é€šè¿‡ Google Page Speed tools æµ‹è¯„
-Smaller PNG files |ä¼˜åŒ–äº† PNG æ–‡ä»¶
+Released the first public version Dot-B 1.7.2 | ·¢²¼ÁËµÚÒ»¸ö¹«¿ª°æ±¾ Dot-B 1.7.2
+Uploaded to WordPress Theme Directory waiting for approve | ÒÑÌá½»µ½WordPress¹Ù·½Ö÷ÌâÄ¿Â¼£¬µÈ´ıÉóºËÍ¨¹ı
+Fix jQuery -> Search function | ĞŞ¸´ËÑË÷¿ò jQuery  ·½·¨
+Optimize HTML&CSS&JS structure | ÓÅ»¯ÁË HTML&CSS&JS ½á¹¹
+Get though the Google Page Speed Tools | ¸ß·ÖÍ¨¹ı Google Page Speed tools ²âÆÀ
+Smaller PNG files |ÓÅ»¯ÁË PNG ÎÄ¼ş
 
 -- SVN --
 https://hzlzh.googlecode.com/svn/trunk/Dot-B
