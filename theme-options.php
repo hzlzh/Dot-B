@@ -1,20 +1,24 @@
 <?php
 $theme_data = get_theme_data(TEMPLATEPATH.'/style.css');
 // Get author information
-
+global $dotb_options;
+$settings = get_option( 'dotb_options', $dotb_options );
 // Default options values
 $temp_copyright = 'Copyright &copy; '.date("Y").' '.'<a href="'.home_url( '/' ).'" title="'.esc_attr( get_bloginfo( 'name') ).'" rel="home">'.esc_attr( get_bloginfo( 'name') ).'</a>';
+$temp_readmore = __('Read more' , 'dot-b');
 
 $dotb_options = array(
 	'dotb_rss_url' => get_bloginfo('rss2_url'),
 	'dotb_is_excerpt' => false,
 	'dotb_excerpt_length' => 55,
+	'dotb_readmore' => $temp_readmore,
 	'dotb_is_ga' => false,
 	'dotb_analytics_code' => '',
 	'dotb_footer' => $temp_copyright,
 	'dotb_is_colorbar' => true,
 	'dotb_is_sqlcount' => false,
-	'dotb_version' => $theme_data['Version']
+	'dotb_version' => $theme_data['Version'],
+	'dotb_is_comment_note' => true
 );
 
 function dotb_validate_options( $input ) {
@@ -33,6 +37,10 @@ function dotb_validate_options( $input ) {
 	if ( ! isset( $input['dotb_excerpt_length'] ) )
 	$input['dotb_excerpt_length'] = null;
 	$input['dotb_excerpt_length'] = intval($input['dotb_excerpt_length']);
+	
+	if ( ! isset( $input['dotb_readmore'] ) )
+	$input['dotb_readmore'] = null;
+	$input['dotb_readmore'] = balanceTags($input['dotb_readmore']);
 	
 	if ( ! isset( $input['dotb_is_ga'] ) )
 	$input['dotb_is_ga'] = null;
@@ -58,15 +66,47 @@ function dotb_validate_options( $input ) {
 	$input['dotb_version'] = null;
 	$input['dotb_version'] = intval( $input['dotb_version'] );
 	
+	if ( ! isset( $input['dotb_is_comment_note'] ) )
+	$input['dotb_is_comment_note'] = null;
+	$input['dotb_is_comment_note'] = ( $input['dotb_is_comment_note'] == 1 ? 1 : 0 );
+	
 	return $input;
 }
 
+// Custom excerpt number
 function dotb_excerpt_length($length) {
-global $dotb_options;
-$settings = get_option( 'dotb_options', $dotb_options );
+global $settings;
+
 	return $settings['dotb_excerpt_length'];
 }
 add_filter('excerpt_length', 'dotb_excerpt_length');
+
+// Custom excerpt read more text
+function dotb_continue_reading_link() {
+	global $settings;
+	return '<p class="read-more"><a href="'. get_permalink() . '">' . $settings['dotb_readmore'] . '</a></p>';
+}
+
+function dotb_auto_excerpt_more( $more ) {
+	return ' ...' . dotb_continue_reading_link();
+}
+add_filter( 'excerpt_more', 'dotb_auto_excerpt_more' );
+
+function dotb_custom_excerpt_more( $output ) {
+	if ( has_excerpt() && ! is_attachment() ) {
+		$output .= dotb_continue_reading_link();
+	}
+	return $output;
+}
+add_filter( 'get_the_excerpt', 'dotb_custom_excerpt_more' );
+
+//
+
+function dotb_changing_comment_form_defaults($defaults){
+  $defaults['comment_notes_after']='';
+  return $defaults;
+}
+if(!$settings['dotb_is_comment_note']) add_filter('comment_form_defaults','dotb_changing_comment_form_defaults');
 
 if ( is_admin() ) : // Load only if we are viewing an admin page
 
@@ -153,6 +193,11 @@ function dotb_theme_options_page() {
 	</td>
 	</tr>
 	
+	<tr valign="top"><th scope="row"><?php _e( 'Text of Read More link','dot-b' ); ?></th>
+	<td><label for="dotb_readmore">
+	<input id="dotb_readmore" name="dotb_options[dotb_readmore]" type="text" value="<?php esc_attr_e($settings['dotb_readmore']); ?>" /><p><strong><?php _e( 'Preview','dot-b' ); ?>:&nbsp;&nbsp;</strong><?php echo '<a>'.stripslashes($settings['dotb_readmore']).'</a>'; ?></p></label>
+	</td>
+	</tr>
 	
 	<tr valign="top"><th scope="row"><?php _e( 'Use Google Analytics?','dot-b' ); ?></th>
 	<td><label for="dotb_is_ga">
@@ -189,6 +234,15 @@ function dotb_theme_options_page() {
 	</label>
 	</td>
 	</tr>
+	
+	<tr valign="top"><th scope="row"><?php _e( 'Display Comment Note below comment form?','dot-b' ); ?></th>
+	<td><label for="dotb_is_comment_note">
+	<input type="checkbox" id="dotb_is_comment_note" name="dotb_options[dotb_is_comment_note]" value="1" <?php checked( true, $settings['dotb_is_comment_note'] ); ?> />
+	<strong><?php _e( 'Preview','dot-b' ); ?>:&nbsp;&nbsp;</strong><code>You may use these <abbr title="HyperText Markup Language">HTML</abbr> &lt;a href=&quot;&quot; title=&quot;&quot;  ...</code>
+	</label>
+	</td>
+	</tr>
+	
 	</table>
 	<input name="dotb_options[dotb_version]" type="hidden" value="<?php echo $settings['dotb_version']; ?>">
 	<p class="submit"><input type="submit" class="button-primary" value="Save Options" /></p>
@@ -243,7 +297,5 @@ function dotb_theme_options_page() {
 
 	<?php
 }
-
-
 
 endif;  // EndIf is_admin()

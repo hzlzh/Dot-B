@@ -236,4 +236,9 @@ add_action('widgets_init', 'dotb_widget_colorfultagcloud_init');
 function dotb_widget_colorfultagcloud_init() {
     register_widget('dotb_widget_colorfultagcloud');
 }
+// Redirect to theme options page after theme activation.
+global $pagenow;
+if(is_admin() && isset($_GET['activated']) && $pagenow = 'themes.php') {
+	header('Location: '.admin_url().'themes.php?page=theme_options' );
+}
 ?>

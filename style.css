@@ -55,7 +55,7 @@ ins{background:none repeat scroll 0 0 #FFF9C0; text-decoration:none}
 sup, sub{font-size:10px; height:0; line-height:1; position:relative; vertical-align:baseline}
 sup{bottom:1ex}
 sub{top:0.5ex}
-#top-bar, #bottom-bar, #social a, #rss, .menu-mark, .post_info_date, .post_info_author, .post_info_cat, .post_info_edit, .post_title_h2, .post_meta, .previous_post, .next_post, #comments-title, #sidebar ul li ul li, #header_search_area, #reply-title, pre{background-image:url("images/all.png")}
+#top-bar, #bottom-bar, #social a, #rss, .menu-mark, .menu-mark2, .post_info_date, .post_info_author, .post_info_cat, .post_info_edit, .post_title_h2, .post_meta, .previous_post, .next_post, #comments-title, #sidebar ul li ul li, #header_search_area, #reply-title, pre{background-image:url("images/all.png")}
 #top-bar{background-position:0 -632px; height:4px; font-size:0; width:20%; background-color:#F1F1F1}
 #bottom-bar{background-position:0 -639px; height:4px; font-size:0; background-color:#F1F1F1}
 #wrapper{background:none repeat scroll 0 0 #F1F1F1; width:960px; margin:0 auto}
@@ -101,6 +101,7 @@ sub{top:0.5ex}
 .header_menu ul li a{color:#555; display:block; text-decoration:none; float:left; padding:10px 5px; cursor:pointer}
 .header_menu ul li a:hover{background:url(menu_hover.png) no-repeat center top; color:#06c}
 .header_menu .menu-mark{background-position:-721px -14px; float:left; height:16px; width:10px; margin:13px 0 7px}
+.header_menu .menu-mark2{background-position:-893px -14px; float:left; height:16px; width:10px; margin:13px 0 7px}
 .header_menu ul li span.subhover{background-position:center bottom; cursor:pointer}
 .header_menu ul li ul{list-style:none; position:absolute; left:0; top:36px; background:#F1F1F1; display:none; float:left; margin:0; padding:0;z-index:999}
 .header_menu ul li ul li{border-bottom:1px solid #ccc; border-left:1px solid #ccc; border-right:1px solid #ccc; clear:both; width:170px; margin:0; padding:0}
@@ -121,13 +122,15 @@ sub{top:0.5ex}
 .post_content ul{list-style:square outside none}
 .post_content ol{list-style-type:decimal}
 .post_title_h2 a, .post_title_h2 a:visited{color:#555; display:inline-block}
-.post_info_top{height:19px; line-height:19px; color:#999; margin:0 10px}
+.post_info_top{ color:#999; margin:0 10px;overflow:hidden;}
 .post_info{overflow:hidden; margin:0 6px}
-.post_info_date{background-position:-23px -175px; display:block; padding:0 0 0 10px;line-height:17px;float:left}
-.post_info_author{background-position:-19px -187px; display:block; margin:0 0 0 6px; padding:0 0 0 10px;line-height:17px;float:left}
-.post_info_cat{background-position:-8px -225px; display:block; margin:0 0 0 6px; padding:0 0 0 10px;line-height:17px;float:left}
-.post_info_edit{background-position:-2px -239px; display:block; margin:0 0 0 6px; padding:0 0 0 10px;line-height:17px;float:left}
+.post_info_date{background-position:-24px -175px; display:block; padding:0 0 0 10px;margin:0 6px 0 0;line-height:17px;float:left}
+.post_info_author{background-position:-20px -187px; display:block; margin:0 6px 0 0; padding:0 0 0 10px;line-height:17px;float:left}
+.post_info_cat{background-position:-8px -225px; display:block; margin:0 6px 0 0; padding:0 0 0 10px;line-height:17px;float:left}
+.post_info_edit{background-position:-3px -239px; display:block; margin:0 6px 0 0; padding:0 0 0 10px;line-height:17px;float:left}
 .post_info_bootom{overflow:hidden; clear:both; margin:10px 0 10px -7px; padding:0 0 0 7px}
+.single .post_meta{height:auto;}
+.single .post_meta li{margin-top: 2px;}
 .post_meta{float:left; width:550px; display:inline; background-position:right -441px; overflow:hidden; height:19px; margin:0 0 0 -7px; padding:0 0 0 7px}
 .post_meta ul{margin:0; line-height:100%}
 .post_meta li{float:left; position:relative; background:url("images/tag.png") no-repeat scroll transparent; margin-left:-7px; background-position:-12px 0; padding:0 0 0 7px}
@@ -270,5 +273,5 @@ ol.commentlist li span.comment-meta a:hover, ol.commentlist li div.reply a:hover
 ol.commentlist li ul.children .by-post-author p, ol.commentlist li ul.children p{padding:3px 31px 3px 31px}
 #respond .comment-form-comment label, .gallery br+br{display:none}
 .gallery dl{margin:0}
-img.wp-smiley{margin:0;padding:0;border:none}
+img.wp-smiley{background:none;margin:0;padding:0;border:none}
 #widget_calendar .widget_title{display:none}
