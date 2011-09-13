@@ -10,7 +10,6 @@ http://zlz.im/how-to-control-social-media-icons-display-with-wordpress-menu-func
 2.Download & Customize Social Media Icons from PSD source files here ->
 http://zlz.im/dot-b-social-media-icons-set-release/
 
-3.Please note that posts with a lot of tags will only show a partial tag listing.
 
 == LOGS == for more detials check here: http://www.evernote.com/shard/s50/sh/be76162e-f05a-401d-8581-c3aaae0069a4/12af08a1a0aff663c0768d681e869f49
 
