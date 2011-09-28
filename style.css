@@ -113,7 +113,7 @@ sub{top:0.5ex}
 .post_title_h2, #reply-title{background-position:0 -125px; color:#555; font-size:15px; font-weight:400; text-indent:4px; margin:0; padding:4px 0; line-height:20px}
 .post{margin-top:10px}
 .post_content{line-height:20px; margin:10px}
-.post_content img{background:#FFF; border:1px solid #DDD; padding:4px}
+.post_content img{}
 .post_content table{border-bottom:1px solid #DDD; margin:0 0 1.625em; width:100%}
 .post_content th{color:#666; font-size:10px; font-weight:500; letter-spacing:0.1em; line-height:2.6em; text-transform:uppercase}
 .post_content td{border-top:1px solid #DDD; padding:6px 10px 6px 0}
@@ -275,3 +275,96 @@ ol.commentlist li ul.children .by-post-author p, ol.commentlist li ul.children p
 .gallery dl{margin:0}
 img.wp-smiley{background:none;margin:0;padding:0;border:none}
 #widget_calendar .widget_title{display:none}
+
+img[class*="align"], img[class*="wp-image-"] {
+    height: auto;
+}
+img.size-full {
+    max-width: 97.5%;
+    width: auto;
+}
+.entry-content img.wp-smiley {
+    border: medium none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+img.alignleft, img.alignright, img.aligncenter {
+    margin-bottom: 1.625em;
+}
+p img, .wp-caption {
+    margin-top: 0.4em;
+}
+.wp-caption {
+    background: none repeat scroll 0 0 #fff;
+    margin-bottom: 1.625em;
+    max-width: 96%;
+}
+.wp-caption img {
+    display: block;
+    margin: 0 auto;
+    max-width: 98%;
+}
+.wp-caption .wp-caption-text, .gallery-caption {
+    color: #666666;
+    font-family: Georgia,serif;
+    font-size: 12px;
+}
+.wp-caption .wp-caption-text {
+    margin-bottom: 0.6em;
+    position: relative;
+}
+.wp-caption .wp-caption-text:before {
+    color: #666666;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    left: 10px;
+    margin-right: 5px;
+    position: absolute;
+    top: 7px;
+}
+#content .gallery {
+    margin: 0 auto 1.625em;
+}
+#content .gallery a img {
+    border: medium none;
+}
+img#wpstats {
+    display: block;
+    margin: 0 auto 1.625em;
+}
+#content .gallery-columns-4 .gallery-item {
+    padding-right: 2%;
+    width: 23%;
+}
+#content .gallery-columns-4 .gallery-item img {
+    height: auto;
+    width: 100%;
+}
+img[class*="align"], img[class*="wp-image-"], #content .gallery .gallery-icon img {
+	background:#fff;
+    padding: 6px;border: 1px solid #DDDDDD;
+}
+.wp-caption img {
+    border-color: #DDDDDD;
+	border:none;
+}
+a:focus img[class*="align"], a:hover img[class*="align"], a:active img[class*="align"], a:focus img[class*="wp-image-"], a:hover img[class*="wp-image-"], a:active img[class*="wp-image-"], #content .gallery .gallery-icon a:focus img, #content .gallery .gallery-icon a:hover img, #content .gallery .gallery-icon a:active img {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #DDDDDD;
+}
+.wp-caption a:focus img, .wp-caption a:active img, .wp-caption a:hover img {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #DDDDDD;
+}
+.post-password-required .entry-header .comments-link {
+    margin: 1.625em 0 0;
+}
+.post-password-required input[type="password"] {
+    margin: 0.8125em 0;
+}
+.post-password-required input[type="password"]:focus {
+    background: none repeat scroll 0 0 #F7F7F7;
+}
+.attachment-extra-featured-image{background:#FFF;border: 1px solid #DDDDDD;padding: 4px;}

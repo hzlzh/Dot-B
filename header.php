@@ -25,7 +25,7 @@ $dotb_settings = get_option( 'dotb_options', $dotb_options );
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php 
 if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' );
-wp_enqueue_script('jquery','/wp-includes/js/jquery/jquery.js','','','true'); ?>
+wp_enqueue_script('jquery','/wp-includes/js/jquery/jquery.js','','',''); ?>
 <?php
 wp_register_script('dotb_js', get_template_directory_uri().'/all.js', array(), NULL, 1);
 wp_enqueue_script('dotb_js');

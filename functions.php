@@ -98,14 +98,23 @@ if ( function_exists('register_nav_menu') ) {
 
 // Register sidebar
 register_sidebar(array(
-	'before_widget' => '<li class="widget-container" id="%2$s">'."\n",
+	'before_widget' => '<li id="%1$s" class="widget %2$s">'."\n",
 	'after_widget' => "</li>\n",
 	'before_title' => '<h3 class="widget_title">',
 	'after_title' => "</h3>\n",
-	'name' => 'Sidebar',
+	'name' => __('SideBar', 'dot-b' ),
 	'id' => 'right-sidebar'
 ));
-	
+
+register_sidebar(array(
+	'before_widget' => '<li id="%1$s" class="widget %2$s">'."\n",
+	'after_widget' => "</li>\n",
+	'before_title' => '<h3 class="widget_title">',
+	'after_title' => "</h3>\n",
+	'name' => __('FooterBar', 'dot-b' ),
+	'id' => 'Footer-bar'
+));
+
 if ( ! function_exists( 'dotb_admin_header_style' ) ) :
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
