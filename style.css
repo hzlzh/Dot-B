@@ -274,7 +274,7 @@ ol.commentlist li ul.children .by-post-author p, ol.commentlist li ul.children p
 #respond .comment-form-comment label, .gallery br+br{display:none}
 .gallery dl{margin:0}
 img.wp-smiley{background:none; margin:0; padding:0; border:none}
-#widget_calendar .widget_title{display:none}
+.widget_calendar .widget_title{display:none}
 img[class*="align"], img[class*="wp-image-"]{ height:auto}
 img.size-full{ max-width:97.5%;  width:auto}
 
