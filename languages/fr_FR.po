@@ -1,80 +1,87 @@
-# Copyright (C) 2010 Dot-B
+# Copyright (C) 2010 Dot-B in French
 # This file is distributed under the same license as the Dot-B package.
 msgid ""
 msgstr ""
 "Project-Id-Version: Dot-B 1.8.3\n"
-"Report-Msgid-Bugs-To: http://zlz.im/dot-b/\n"
-"POT-Creation-Date: 2011-09-28 22:47:23+00:00\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-09-28 15:28+0800\n"
+"PO-Revision-Date: 2011-09-28 15:28+0800\n"
+"Last-Translator: hzlzh <hzlzh.com@gmail.com>\n"
+"Language-Team: Wolforg <contact@wolforg.eu>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
-"Last-Translator: hzlzh <hzlzh.dev@gmail.com>\n"
-"Language-Team: LANGUAGE <hzlzh.dev@gmail.com>\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SearchPath-0: .\n"
 
 #: 404.php:12
 #: index.php:27
 msgid "This is somewhat embarrassing, isn&rsquo;t it?"
-msgstr ""
+msgstr "Il se passe quelque chose d’embarrassant, non?"
 
 #: 404.php:15
 #: index.php:30
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help."
-msgstr ""
+msgstr "Il semble que nous ne puissions trouver ce que vous cherchez. Peut-être qu'une recherche vous aiderait ou bien cliquez sur l'un des liens suivants."
 
 #: 404.php:19
 #: index.php:34
 msgid "Most Used Categories"
-msgstr ""
+msgstr "Catégories les plus utilisées"
 
 #: 404.php:27
 #: index.php:42
 msgid "Try looking in the monthly archives."
-msgstr ""
+msgstr "Essayez de chercher dans les archives mensuelles."
 
 #: archive.php:18
 #, php-format
 msgid "Daily Archives: %s"
-msgstr ""
+msgstr "Archives du Jour : %s"
 
 #: archive.php:20
 #, php-format
 msgid "Monthly Archives: %s"
-msgstr ""
+msgstr "Archives du Mois : %s"
 
 #: archive.php:22
 #, php-format
 msgid "Yearly Archives: %s"
-msgstr ""
+msgstr "Archives de l'An : %s"
 
 #: archive.php:24
 msgid "Blog Archives"
-msgstr ""
+msgstr "Archives du Blog"
 
 #: archive.php:31
 #: index.php:12
 #, php-format
 msgid "Posted on %s"
-msgstr ""
+msgstr "Publié le %s"
 
 #: archive.php:32
 #: index.php:13
 #: page.php:9
 #: single.php:9
 msgid "by"
-msgstr ""
+msgstr "par"
 
 #: archive.php:33
 #: index.php:14
 #: page.php:10
 #: single.php:11
 msgid "[ Edit ]"
-msgstr ""
+msgstr "[Modifier]"
 
 #: archive.php:36
 #: index.php:17
 msgid "Read more &raquo;"
-msgstr ""
+msgstr "Lire Plus &raquo;"
 
 #: archive.php:42
 #: comments.php:10
@@ -82,214 +89,214 @@ msgstr ""
 #: page.php:19
 #: single.php:20
 msgid "Leave a Reply ?"
-msgstr ""
+msgstr "Laisser une réponse?"
 
 #: archive.php:42
 #: index.php:23
 #: page.php:19
 #: single.php:20
 msgid "[ 1 Reply ]"
-msgstr ""
+msgstr "[1 réponse]"
 
 #: archive.php:42
 #: index.php:23
 #: page.php:19
 #: single.php:20
 msgid "[ % Replies ]"
-msgstr ""
+msgstr "[% Réponses]"
 
 #: archive.php:46
 #: page.php:23
 #: single.php:28
 msgid "Nothing Found"
-msgstr ""
+msgstr "Rien de trouvé"
 
 #: comments.php:3
 msgid "This post is password protected. Enter the password to view comments."
-msgstr ""
+msgstr "Cet article est protégé par un mot de passe. Entrez le pour voir les commentaires."
 
 #: footer.php:11
 #: theme-options.php:233
 msgid "queries in"
-msgstr ""
+msgstr "requêtes en"
 
 #: footer.php:11
 #: theme-options.php:233
 msgid "seconds"
-msgstr ""
+msgstr "secondes"
 
 #: footer.php:14
 msgid "Back to top"
-msgstr ""
+msgstr "Haut de Page"
 
 #: footer.php:14
 msgid "Top"
-msgstr ""
+msgstr "Haut de page"
 
 #: functions.php:55
 msgid "House"
-msgstr ""
+msgstr "House"
 
 #: functions.php:61
 msgid "Inkwell"
-msgstr ""
+msgstr "Inkwell"
 
 #: functions.php:67
 msgid "Willow"
-msgstr ""
+msgstr "Willow"
 
 #: functions.php:73
 msgid "Shore"
-msgstr ""
+msgstr "Shore"
 
 #: functions.php:79
 msgid "Sky"
-msgstr ""
+msgstr "Sky"
 
 #: functions.php:85
 msgid "Path"
-msgstr ""
+msgstr "Path"
 
 #: functions.php:93
 msgid "Header Menu"
-msgstr ""
+msgstr "Menu Header"
 
 #: functions.php:94
 msgid "Custom Social Media"
-msgstr ""
+msgstr "Média Sociaux Perso"
 
 #: functions.php:105
 msgid "SideBar"
-msgstr ""
+msgstr "SideBar"
 
 #: functions.php:114
 msgid "FooterBar"
-msgstr ""
+msgstr "FooterBar"
 
 #: functions.php:173
 #, php-format
 msgid "%1$s at %2$s"
-msgstr ""
+msgstr "%1$s à %2$s"
 
 #: functions.php:173
 msgid "(Edit)"
-msgstr ""
+msgstr "(Modifier)"
 
 #: functions.php:178
 msgid "Your comment is awaiting moderation."
-msgstr ""
+msgstr "Votre commentaire est en attente de validation."
 
 #: functions.php:210
 msgid "Display Colorful Tags Cloud"
-msgstr ""
+msgstr "Affiche un nuage de mots-clés coloré"
 
 #: functions.php:211
 msgid "Colorful Tag Cloud"
-msgstr ""
+msgstr "Nuage Coloré"
 
 #: functions.php:234
 msgid "Tag Cloud"
-msgstr ""
+msgstr "Nuage de mots-clés"
 
 #: functions.php:238
 msgid "Title"
-msgstr ""
+msgstr "Titre"
 
 #: header.php:21
 #, php-format
 msgid "Page %s"
-msgstr ""
+msgstr "Page %s"
 
 #: header.php:48
 msgid "RSS Feed"
-msgstr ""
+msgstr "Flux RSS"
 
 #: page.php:8
 #: single.php:8
 #, php-format
 msgid "Posted on %s "
-msgstr ""
+msgstr "Publié le %s"
 
 #: searchform.php:3
 msgid "type, hit enter"
-msgstr ""
+msgstr "Rechercher..."
 
 #: searchform.php:4
 msgid "SEARCH"
-msgstr ""
+msgstr "RECHERCHER"
 
 #: sidebar.php:16
 msgid "Recent Post"
-msgstr ""
+msgstr "Articles Récents"
 
 #: sidebar.php:20
 msgid "Recent Comments"
-msgstr ""
+msgstr "Commentaires Récents"
 
 #: sidebar.php:24
 msgid "Archives"
-msgstr ""
+msgstr "Archives"
 
 #: sidebar.php:31
 msgid "Tags"
-msgstr ""
+msgstr "Mots-Clés"
 
 #: sidebar.php:38
 msgid "Meta"
-msgstr ""
+msgstr "Meta"
 
 #: single.php:10
 msgid "in"
-msgstr ""
+msgstr "dans"
 
 #: single.php:23
 msgid "Already the latest post!"
-msgstr ""
+msgstr "Déjà le dernier article!"
 
 #: single.php:24
 msgid "Already the last post!"
-msgstr ""
+msgstr "Déjà le dernier article!"
 
 #: theme-options.php:8
 msgid "Read more"
-msgstr ""
+msgstr "Lire Plus &raquo;"
 
 #: theme-options.php:124
 #: theme-options.php:160
 msgid "Theme Options"
-msgstr ""
+msgstr "Options du Thème"
 
 #: theme-options.php:163
 msgid "Options reset successfully!"
-msgstr ""
+msgstr "Options remises à zéro!"
 
 #: theme-options.php:165
 msgid "Options saved successfully!"
-msgstr ""
+msgstr "Options enregistrées!"
 
 #: theme-options.php:180
 msgid "Rss Feed URL"
-msgstr ""
+msgstr "URL Flux RSS"
 
 #: theme-options.php:182
 msgid "( With \"<code>http://</code>\" )   Keep blank to use WordPress default Rss Feed URL."
-msgstr ""
+msgstr "( With \"<code>http://</code>\" )  Laisser vide pour utiliser l'URL par défaut du flux RSS de WordPress."
 
 #: theme-options.php:186
 msgid "Enable Excerpt"
-msgstr ""
+msgstr "Activer Extrait"
 
 #: theme-options.php:189
 msgid "Show excerpt in Home and Archives with"
-msgstr ""
+msgstr "Afficher l'extrait sur l'accueil et les archives avec"
 
 #: theme-options.php:192
 msgid "length"
-msgstr ""
+msgstr "caractères"
 
 #: theme-options.php:196
 msgid "Text of Read More link"
-msgstr ""
+msgstr "Texte de lien En savoir plus"
 
 #: theme-options.php:198
 #: theme-options.php:218
@@ -297,107 +304,108 @@ msgstr ""
 #: theme-options.php:233
 #: theme-options.php:241
 msgid "Preview"
-msgstr ""
+msgstr "Aperçu"
 
 #: theme-options.php:202
 msgid "Use Google Analytics?"
-msgstr ""
+msgstr "Utiliser Google Analytics?"
 
 #: theme-options.php:205
 msgid "You can get you <code>Google Analytics</code> code <a target=\"_blank\" href=\"https://www.google.com/analytics/settings/check_status_profile_handler\">here</a>."
-msgstr ""
+msgstr "Vous pouvez avoir votre code <code>Google Analytics</code> code <a target=\"_blank\" href=\"https://www.google.com/analytics/settings/check_status_profile_handler\">ici</a>."
 
 #: theme-options.php:210
 msgid "Analytics Code"
-msgstr ""
+msgstr "Analytics Code"
 
 #: theme-options.php:216
 msgid "Footer Copyright"
-msgstr ""
+msgstr "Copyright de Pied"
 
 #: theme-options.php:222
 msgid "Display colourful bar on header and footer?"
-msgstr ""
+msgstr "Afficher la barre colorée dans l'en-tête et le pied?"
 
 #: theme-options.php:230
 msgid "Display SQL count at footer?"
-msgstr ""
+msgstr "Afficher le compteur SQL dans le pied?"
 
 #: theme-options.php:238
 msgid "Display Comment Note below comment form?"
-msgstr ""
+msgstr "Affichage Commentaire note ci-dessous le formulaire de commentaires?"
 
 #: theme-options.php:258
 msgid "Some Tips Here"
-msgstr ""
+msgstr "Some Tips Here"
 
 #: theme-options.php:260
 msgid "1.Customize your Social Media (Facebook, Twitter, Google+ .etc) according to this"
-msgstr ""
+msgstr "1.Personnalisez vos médias sociaux (Facebook, Twitter, Google+ .etc) en suivant ces"
 
 #: theme-options.php:260
 #: theme-options.php:264
 msgid "Instructions"
-msgstr ""
+msgstr "Instructions"
 
 #: theme-options.php:261
 msgid "2.Your threaded (nested) comments"
-msgstr ""
+msgstr "2.Imbriquez vos commentaires"
 
 #: theme-options.php:261
 msgid "levels deep, change it here"
-msgstr ""
+msgstr "changez ce paramètre ici"
 
 #: theme-options.php:261
 msgid "Settings"
-msgstr ""
+msgstr "Paramètres"
 
 #: theme-options.php:261
 msgid "Discussion"
-msgstr ""
+msgstr "Discussion"
 
 #: theme-options.php:262
 msgid "3.Change <code>&lt;Body&gt;</code> background image here"
-msgstr ""
+msgstr "3.Changez l'image de fond du <code>&lt;Body&gt;</code> ici"
 
 #: theme-options.php:262
 #: theme-options.php:263
 #: theme-options.php:265
 msgid "Appearance"
-msgstr ""
+msgstr "Apparence"
 
 #: theme-options.php:262
 msgid "Background"
-msgstr ""
+msgstr "Fond"
 
 #: theme-options.php:263
 msgid "4.Customize <code>&lt;Header&gt;</code> image here"
-msgstr ""
+msgstr "4.Personnalisez l'image du <code>&lt;Header&gt;</code> ici"
 
 #: theme-options.php:263
 msgid "Header"
-msgstr ""
+msgstr "Header"
 
 #: theme-options.php:264
 msgid "5.Download & Customize <code>Social Media Icons</code> from PSD source files here"
-msgstr ""
+msgstr "5.Téléchargez et personnalisez vos <code>icônes de médias sociaux</code> à partir des fichiers sources (.psd) ici"
 
 #: theme-options.php:265
 msgid "6.Use <code>Dot-B Colorful Tag Cloud</code> widget at sidebar"
-msgstr ""
+msgstr "6.Utilisez <code>le nuage de mots-clés coloré de Dot-B</code> en widget dans la barre latérale"
 
 #: theme-options.php:265
 msgid "Widgets"
-msgstr ""
+msgstr "Widgets"
 
 #: theme-options.php:266
 msgid "========= Feel free to get my help by both Twitter: <a href=\"http://twitter.com/hzlzh\">@hzlzh</a> and Email: <a href=\"mailto:hzlzh.dev@gmail.com\">hzlzh.dev@gmail.com</a> ========="
-msgstr ""
+msgstr "========= N'hésitez pas à demander un coup de main via Twitter: <a href=\"http://twitter.com/hzlzh\">@hzlzh</a> & Email: <a href=\"mailto:hzlzh.dev@gmail.com\">hzlzh.dev@gmail.com</a> ========="
 
 #: theme-options.php:273
 msgid "Created, Developed and maintained by <a href=\"http://zlz.im/\">hzlzh</a><br>If you like the <code>Dot-B</code> theme, please donate. It will help in developing new features and versions."
-msgstr ""
+msgstr "Crée, développé et maintenu par <a href=\"http://zlz.im/\">hzlzh</a>. Traduit par <a href=\"http://www.wolforg.eu\">Wolforg</a>.<br>Si vous appréciez le thème <code>Dot-B</code>, envisagez de faire un don. Cela aidera le développement de nouvelles fonctions et versions."
 
 #: theme-options.php:293
 msgid "Alipay"
-msgstr ""
+msgstr "Alipay"
+

@@ -1,8 +1,8 @@
 // All the jQuery function that WordPress used
 // Add empty span tag at menu which have drop-down meun
-jQuery("ul.sub-menu:not(.sub-menu .sub-menu),ul.children:not(.children .children)").parent().append('<div class="menu-mark" ></div>');
+jQuery("ul.sub-menu:not(.sub-menu .sub-menu)").parent().append('<div class="menu-mark" ></div>');
 
-jQuery("ul.sub-menu ul.sub-menu:not(.sub-menu .sub-menu .sub-menu),ul.children ul.children:not(.children .children .children)").parent().append('<div class="menu-mark2" ></div>');
+jQuery("ul.sub-menu ul.sub-menu:not(.sub-menu .sub-menu .sub-menu)").parent().append('<div class="menu-mark2" ></div>');
 
 // Drop down menu slide function
 var mouseover_tid = [];

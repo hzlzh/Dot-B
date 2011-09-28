@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dot-B 1.8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-08-11 14:20+0800\n"
-"PO-Revision-Date: 2011-08-11 14:20+0800\n"
+"POT-Creation-Date: 2011-09-28 15:28+0800\n"
+"PO-Revision-Date: 2011-09-28 15:28+0800\n"
 "Last-Translator: hzlzh <hzlzh.com@gmail.com>\n"
 "Language-Team: hzlzh <http://zlz.im/>\n"
 "MIME-Version: 1.0\n"
@@ -116,12 +116,12 @@ msgid "This post is password protected. Enter the password to view comments."
 msgstr "這篇文章受密碼保護。查看評論請輸入密碼。"
 
 #: footer.php:11
-#: theme-options.php:188
+#: theme-options.php:233
 msgid "queries in"
 msgstr "次數據查詢"
 
 #: footer.php:11
-#: theme-options.php:188
+#: theme-options.php:233
 msgid "seconds"
 msgstr "秒"
 
@@ -165,32 +165,40 @@ msgstr "頂部導航"
 msgid "Custom Social Media"
 msgstr "自定義社交媒體"
 
-#: functions.php:164
+#: functions.php:105
+msgid "SideBar"
+msgstr "側邊欄"
+
+#: functions.php:114
+msgid "FooterBar"
+msgstr "底部欄"
+
+#: functions.php:173
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s at %2$s"
 
-#: functions.php:164
+#: functions.php:173
 msgid "(Edit)"
 msgstr "(編輯)"
 
-#: functions.php:169
+#: functions.php:178
 msgid "Your comment is awaiting moderation."
 msgstr "您的評論正等待審核。"
 
-#: functions.php:201
+#: functions.php:210
 msgid "Display Colorful Tags Cloud"
 msgstr "顯示彩色標籤雲"
 
-#: functions.php:202
+#: functions.php:211
 msgid "Colorful Tag Cloud"
 msgstr "彩色標籤雲"
 
-#: functions.php:225
+#: functions.php:234
 msgid "Tag Cloud"
 msgstr "標籤雲"
 
-#: functions.php:229
+#: functions.php:238
 msgid "Title"
 msgstr "標題"
 
@@ -249,141 +257,155 @@ msgstr "已經是最新文章！"
 msgid "Already the last post!"
 msgstr "已經是最舊文章！"
 
-#: theme-options.php:84
-#: theme-options.php:120
+#: theme-options.php:8
+msgid "Read more"
+msgstr "閱讀更多 &raquo;"
+
+#: theme-options.php:124
+#: theme-options.php:160
 msgid "Theme Options"
 msgstr "主題選項"
 
-#: theme-options.php:123
+#: theme-options.php:163
 msgid "Options reset successfully!"
 msgstr "選項重置成功！"
 
-#: theme-options.php:125
+#: theme-options.php:165
 msgid "Options saved successfully!"
 msgstr "選項保存成功！"
 
-#: theme-options.php:140
+#: theme-options.php:180
 msgid "Rss Feed URL"
 msgstr "RSS Feed 鏈接"
 
-#: theme-options.php:142
+#: theme-options.php:182
 msgid "( With \"<code>http://</code>\" )   Keep blank to use WordPress default Rss Feed URL."
 msgstr "( 需要\"<code>http://</code>\" ) 留空則顯示WordPress默認Rss Feed 地址"
 
-#: theme-options.php:146
+#: theme-options.php:186
 msgid "Enable Excerpt"
 msgstr "啟用摘要"
 
-#: theme-options.php:149
+#: theme-options.php:189
 msgid "Show excerpt in Home and Archives with"
 msgstr "首頁和歸檔頁使用文章摘要，長度為"
 
-#: theme-options.php:152
+#: theme-options.php:192
 msgid "length"
 msgstr "個字符"
 
-#: theme-options.php:157
-msgid "Use Google Analytics?"
-msgstr "啟用Google Analytics?"
+#: theme-options.php:196
+msgid "Text of Read More link"
+msgstr "閱讀更多鏈接文字"
 
-#: theme-options.php:160
-msgid "You can get you <code>Google Analytics</code> code <a target=\"_blank\" href=\"https://www.google.com/analytics/settings/check_status_profile_handler\">here</a>."
-msgstr "你可以在<a target=\"_blank\" href=\"https://www.google.com/analytics/settings/check_status_profile_handler\">這裡</a>獲取你的<code>Google Analytics< /code>統計代碼，勾選並填寫在下方。"
-
-#: theme-options.php:165
-msgid "Analytics Code"
-msgstr "網站統計代碼"
-
-#: theme-options.php:171
-msgid "Footer Copyright"
-msgstr "頁腳版權信息"
-
-#: theme-options.php:173
-#: theme-options.php:180
-#: theme-options.php:188
+#: theme-options.php:198
+#: theme-options.php:218
+#: theme-options.php:225
+#: theme-options.php:233
+#: theme-options.php:241
 msgid "Preview"
 msgstr "預覽"
 
-#: theme-options.php:177
+#: theme-options.php:202
+msgid "Use Google Analytics?"
+msgstr "啟用Google Analytics?"
+
+#: theme-options.php:205
+msgid "You can get you <code>Google Analytics</code> code <a target=\"_blank\" href=\"https://www.google.com/analytics/settings/check_status_profile_handler\">here</a>."
+msgstr "你可以在<a target=\"_blank\" href=\"https://www.google.com/analytics/settings/check_status_profile_handler\">這裡</a>獲取你的<code>Google Analytics< /code>統計代碼，勾選並填寫在下方。"
+
+#: theme-options.php:210
+msgid "Analytics Code"
+msgstr "網站統計代碼"
+
+#: theme-options.php:216
+msgid "Footer Copyright"
+msgstr "頁腳版權信息"
+
+#: theme-options.php:222
 msgid "Display colourful bar on header and footer?"
 msgstr "顯示頂部和底部彩色加載條"
 
-#: theme-options.php:185
+#: theme-options.php:230
 msgid "Display SQL count at footer?"
 msgstr "頁面底部顯示SQL數據查詢信息"
 
-#: theme-options.php:204
+#: theme-options.php:238
+msgid "Display Comment Note below comment form?"
+msgstr "顯示評論框下方的提示文字"
+
+#: theme-options.php:258
 msgid "Some Tips Here"
 msgstr "一些技巧"
 
-#: theme-options.php:206
+#: theme-options.php:260
 msgid "1.Customize your Social Media (Facebook, Twitter, Google+ .etc) according to this"
 msgstr "1.自定義你的社交媒體圖標(騰訊微博, 新浪微薄, 人人網, Facebook, Twitter, Google+, ...等等) ，配置方法請看"
 
-#: theme-options.php:206
-#: theme-options.php:210
+#: theme-options.php:260
+#: theme-options.php:264
 msgid "Instructions"
 msgstr "說明文檔"
 
-#: theme-options.php:207
+#: theme-options.php:261
 msgid "2.Your threaded (nested) comments"
 msgstr "2.你目前的嵌套是"
 
-#: theme-options.php:207
+#: theme-options.php:261
 msgid "levels deep, change it here"
 msgstr "層深，在這裡設置"
 
-#: theme-options.php:207
+#: theme-options.php:261
 msgid "Settings"
 msgstr "設置"
 
-#: theme-options.php:207
+#: theme-options.php:261
 msgid "Discussion"
 msgstr "討論"
 
-#: theme-options.php:208
+#: theme-options.php:262
 msgid "3.Change <code>&lt;Body&gt;</code> background image here"
 msgstr "3.自定義<code>&lt;主體&gt;</code> 背景圖片"
 
-#: theme-options.php:208
-#: theme-options.php:209
-#: theme-options.php:211
+#: theme-options.php:262
+#: theme-options.php:263
+#: theme-options.php:265
 msgid "Appearance"
 msgstr "外觀"
 
-#: theme-options.php:208
+#: theme-options.php:262
 msgid "Background"
 msgstr "背景"
 
-#: theme-options.php:209
+#: theme-options.php:263
 msgid "4.Customize <code>&lt;Header&gt;</code> image here"
 msgstr "4.自定義<code>&lt;頂部&gt;</code> 圖像"
 
-#: theme-options.php:209
+#: theme-options.php:263
 msgid "Header"
 msgstr "頂部"
 
-#: theme-options.php:210
+#: theme-options.php:264
 msgid "5.Download & Customize <code>Social Media Icons</code> from PSD source files here"
 msgstr "5.定制<code>社交媒體圖標</code> 在這裡下載PSD 源文件"
 
-#: theme-options.php:211
+#: theme-options.php:265
 msgid "6.Use <code>Dot-B Colorful Tag Cloud</code> widget at sidebar"
 msgstr "6.在側邊欄使用 [彩色標籤雲] 小挂件"
 
-#: theme-options.php:211
+#: theme-options.php:265
 msgid "Widgets"
 msgstr "小掛件"
 
-#: theme-options.php:212
+#: theme-options.php:266
 msgid "========= Feel free to get my help by both Twitter: <a href=\"http://twitter.com/hzlzh\">@hzlzh</a> and Email: <a href=\"mailto:hzlzh.dev@gmail.com\">hzlzh.dev@gmail.com</a> ========="
 msgstr "========= 有任何疑問或反饋，請聯繫我的Twitter: <a href=\"http://twitter.com/hzlzh\">@hzlzh</a> 或Email: <a href=\"mailto:hzlzh.dev@gmail.com\">hzlzh.dev@gmail.com</a> ========="
 
-#: theme-options.php:219
+#: theme-options.php:273
 msgid "Created, Developed and maintained by <a href=\"http://zlz.im/\">hzlzh</a><br>If you like the <code>Dot-B</code> theme, please donate. It will help in developing new features and versions."
 msgstr "本主題由<a href=\"http://zlz.im/\">hzlzh</a> 創建、開發和維護，<br>如果你喜歡<code>Dot-B</code> 並希望我今後能為它添加更多更好的功能和不斷更新的新版本，請捐贈這個項目，非常感謝！"
 
-#: theme-options.php:239
+#: theme-options.php:293
 msgid "Alipay"
 msgstr "支付寶"
 
