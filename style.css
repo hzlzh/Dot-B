@@ -55,7 +55,7 @@ ins{background:none repeat scroll 0 0 #FFF9C0; text-decoration:none}
 sup, sub{font-size:10px; height:0; line-height:1; position:relative; vertical-align:baseline}
 sup{bottom:1ex}
 sub{top:0.5ex}
-#top-bar, #bottom-bar, #social a, #rss, .menu-mark, .menu-mark2, .post_info_date, .post_info_author, .post_info_cat, .post_info_edit, .post_title_h2, .post_meta, .previous_post, .next_post, #comments-title, #sidebar ul li ul li, #header_search_area, #reply-title, pre{background-image:url("images/all.png")}
+#top-bar, #bottom-bar, #rss, .menu-mark, .menu-mark2, .post_info_date, .post_info_author, .post_info_cat, .post_info_edit, .post_title_h2, .post_meta, .previous_post, .next_post, #comments-title, #sidebar ul li ul li, #header_search_area, #reply-title, pre{background-image:url("images/all.png")}
 #top-bar{background-position:0 -632px; height:4px; font-size:0; width:20%; background-color:#F1F1F1}
 #bottom-bar{background-position:0 -639px; height:4px; font-size:0; background-color:#F1F1F1}
 #wrapper{background:none repeat scroll 0 0 #F1F1F1; width:960px; margin:0 auto}
@@ -66,12 +66,12 @@ sub{top:0.5ex}
 #header #description{color:#888; font-size:13px; font-weight:400; line-height:13px; margin-top:7px}
 #header #header_meta{float:right; display:inline}
 #header #header_search_area{background-position:-125px 0; float:left; height:20px; position:relative; width:155px; margin:0 91px 0 0; padding:23px 0 0 45px}
-#searchform #s{border-bottom:1px dashed; background:none repeat scroll 0 0 transparent; color:#BBB; display:inline; height:19px; position:absolute; width:65%; margin:2px}
+#searchform #s{border-bottom:1px dashed;border:none;border-left:none;border-right:none;border-top:none; background:none repeat scroll 0 0 transparent; color:#BBB; display:inline; height:19px; position:absolute; width:65%; margin:2px}
 #searchform #searchsubmit{height:16px; position:absolute; right:0; text-indent:-9999px; width:13px; display:none; margin:2px}
 #header #rss{background-position:0 0; float:left; text-indent:-9999px; height:45px; width:48px; margin:7px 10px 0 0; line-height:45px}
 #header #rss:hover{background-position:-58px 0; float:left; text-indent:-9999px; height:45px; width:48px; margin:7px 10px 0 0; line-height:45px}
 #header #social{float:right; margin-right:20px}
-#header #social a{display:inline; float:left; height:32px; width:32px; text-indent:-9999px; margin:3px 2px 2px 2px}
+.facebook a,.twitter a,.flickr a,.delicious a,.gplus a,.picasa a,.tencent a,.sina a,.rss a,.facebook1 a,.twitter1 a{display:inline; float:left; height:32px; width:32px; text-indent:-9999px; margin:3px 2px 2px 2px;background-image:url("images/all.png")}
 #header #social ul li{display:inline}
 .facebook a{background-position:0 -88px}
 .facebook a:hover{background-position:0 -48px}

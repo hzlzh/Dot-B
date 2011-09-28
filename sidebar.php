@@ -9,7 +9,7 @@
 		if ( is_active_sidebar( 'right-sidebar' ) ) dynamic_sidebar('right-sidebar'); else { ?>
 
 			<li id="calendar" class="widget">
-				<?php the_widget('WP_Widget_Calendar');?> 
+				<?php the_widget('WP_Widget_Calendar','','before_title=<h3 class="widget_title">&after_title=</h3>&widget_id=999');?> 
 			</li>
 
 			<li id="recent-post" class="widget">

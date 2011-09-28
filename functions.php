@@ -106,14 +106,6 @@ register_sidebar(array(
 	'id' => 'right-sidebar'
 ));
 
-register_sidebar(array(
-	'before_widget' => '<li id="%1$s" class="widget %2$s">'."\n",
-	'after_widget' => "</li>\n",
-	'before_title' => '<h3 class="widget_title">',
-	'after_title' => "</h3>\n",
-	'name' => __('FooterBar', 'dot-b' ),
-	'id' => 'Footer-bar'
-));
 
 if ( ! function_exists( 'dotb_admin_header_style' ) ) :
 /**
