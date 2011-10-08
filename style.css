@@ -110,7 +110,7 @@ sub{top:0.5ex}
 #main{background:none repeat scroll 0 0 #F1F1F1; border-left:1px solid #E8E8E8; border-right:1px solid #E8E8E8; clear:both; padding:5px 0 0}
 #content{border-right:4px dashed #FFF; display:inline; float:left; width:680px}
 .page-title{margin:2px; text-align:center}
-.post_title_h2, #reply-title{background-position:0 -125px; color:#555; font-size:15px; font-weight:400; text-indent:4px; margin:0; padding:4px 0; line-height:20px}
+.post_title_h2, #reply-title{background-position:-60px -125px; color:#555; font-size:15px; font-weight:400; text-indent:4px; margin:0; padding:4px 0; line-height:20px}
 .post{margin-top:10px}
 .post_content{line-height:20px; margin:10px}
 .post_content img{}

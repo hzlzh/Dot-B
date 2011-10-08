@@ -1,4 +1,4 @@
-== Dot-B 1.8.3 ==
+== Dot-B 1.8.4 ==
 
 Created, Developed and maintained by hzlzh http://zlz.im/
 
@@ -11,6 +11,10 @@ http://zlz.im/how-to-control-social-media-icons-display-with-wordpress-menu-func
 http://zlz.im/dot-b-social-media-icons-set-release/
 
 == LOGS == For more detials check here: http://bit.ly/Dot-B-Dev
+-- 1.8.4  -- 2011.10.08
+
+Long post title background style bug | 修复了标题过长时文章标题样式的显示bug
+Fix items in offical theme review ticket: http://themes.trac.wordpress.org/ticket/5445 | 修复了官网审核ticket
 
 -- 1.8.3  -- 2011.09.27
 

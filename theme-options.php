@@ -195,7 +195,7 @@ function dotb_theme_options_page() {
 	
 	<tr valign="top"><th scope="row"><?php _e( 'Text of Read More link','dot-b' ); ?></th>
 	<td><label for="dotb_readmore">
-	<input id="dotb_readmore" name="dotb_options[dotb_readmore]" type="text" value="<?php esc_attr_e($settings['dotb_readmore']); ?>" /><p><strong><?php _e( 'Preview','dot-b' ); ?>:&nbsp;&nbsp;</strong><?php echo '<a>'.stripslashes($settings['dotb_readmore']).'</a>'; ?></p></label>
+	<input id="dotb_readmore" name="dotb_options[dotb_readmore]" type="text" value="<?php esc_attr_e($settings['dotb_readmore']); ?>" /><p><strong><?php _e( 'Preview','dot-b' ); ?>:&nbsp;&nbsp;</strong><?php echo '<a>'.esc_attr_e($settings['dotb_readmore']).'</a>'; ?></p></label>
 	</td>
 	</tr>
 	
