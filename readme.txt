@@ -1,4 +1,4 @@
-== Dot-B 1.8.4 ==
+== Dot-B 1.8.5 ==
 
 Created, Developed and maintained by hzlzh http://zlz.im/
 
@@ -11,6 +11,9 @@ http://zlz.im/how-to-control-social-media-icons-display-with-wordpress-menu-func
 http://zlz.im/dot-b-social-media-icons-set-release/
 
 == LOGS == For more detials check here: http://bit.ly/Dot-B-Dev
+-- 1.8.5  -- 2011.10.11
+A small fix to support WordPress child theme | 修复了支持创建子主题的错误
+
 -- 1.8.4  -- 2011.10.08
 
 Russian language support | 支持俄语
