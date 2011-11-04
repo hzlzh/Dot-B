@@ -38,9 +38,7 @@ jQuery(document).ready(function() {
 	});
 	// Mouse over search box focus function
 	jQuery("#s").mouseover(function() {
-		jQuery(this).focus().val([""]).mouseout(function() {
-			jQuery(this).blur()
-		})
+		jQuery(this).focus().val([""]);
 	});
 	// Link sparkling function
 	jQuery(".post_meta li,body a:not(.post_meta li a)").hover(function() {

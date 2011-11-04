@@ -4,7 +4,7 @@ Theme URI: http://zlz.im/dot-b/
 Description: A simple, fresh and dot-decorated looking theme with a lot of basic theme-custom options  prepared for you to start you site. You can use those features : custom-background, custom-menu, drop-down menus, custom-header, widgets... and much more. Also you can recreate you child themes based on Dot-B. Compatible with WordPress 2.9+, valid XHTML & CSS + WP3 ready and Multi-language supported.
 Author: hzlzh
 Author URI: http://zlz.im/
-Version: 1.8.5
+Version: 1.8.6
 License: GNU General Public License, v3 (or newer)
 License URI: http://www.opensource.org/licenses/gpl-3.0.html
 Tags: two-columns, gray, white, fixed-width, custom-header, custom-background, custom-menu, threaded-comments, custom-colors, theme-options, threaded-comments, translation-ready, right-sidebar, light
@@ -99,7 +99,7 @@ sub{top:0.5ex}
 .header_menu ul{list-style:none; float:left; margin:0; padding:0}
 .header_menu ul li{float:left; position:relative; margin:0; padding:0 15px 0 0; border-bottom:1px solid #CCC}
 .header_menu ul li a{color:#555; display:block; text-decoration:none; float:left; padding:10px 5px; cursor:pointer}
-.header_menu ul li a:hover{background:url(menu_hover.png) no-repeat center top; color:#06c}
+.header_menu ul li a:hover{color:#06c}
 .header_menu .menu-mark{background-position:-721px -14px; float:left; height:16px; width:10px; margin:13px 0 7px}
 .header_menu .menu-mark2{background-position:-893px -14px; float:left; height:16px; width:10px; margin:13px 0 7px}
 .header_menu ul li span.subhover{background-position:center bottom; cursor:pointer}

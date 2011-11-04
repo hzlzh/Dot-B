@@ -1,4 +1,4 @@
-== Dot-B 1.8.5 ==
+== Dot-B 1.8.6 ==
 
 Created, Developed and maintained by hzlzh http://zlz.im/
 
@@ -11,14 +11,20 @@ http://zlz.im/how-to-control-social-media-icons-display-with-wordpress-menu-func
 http://zlz.im/dot-b-social-media-icons-set-release/
 
 == LOGS == For more detials check here: http://bit.ly/Dot-B-Dev
+-- 1.8.6  -- 2011.11.04
+A small fix of CSS | 修复了一个CSS的错误
+Change the logic of search box mouse function | 改变了搜索框的鼠标焦点事件逻辑
+Romanian language supported | 支持罗马尼亚语
+New french language files | 更新法语语言包
+
 -- 1.8.5  -- 2011.10.11
 A small fix to support WordPress child theme | 修复了支持创建子主题的错误
 
 -- 1.8.4  -- 2011.10.08
 
-Russian language support | 支持俄语
+Russian language supported | 支持俄语
 Long post title background style bug | 修复了标题过长时文章标题样式的显示bug
-Fix items in offical theme review ticket: http://themes.trac.wordpress.org/ticket/5445 | 修复了官网审核ticket
+Fix items in official theme review ticket: http://themes.trac.wordpress.org/ticket/5445 | 修复了官网审核ticket
 
 -- 1.8.3  -- 2011.09.27
 
@@ -54,7 +60,7 @@ A small bug fixed | 修复了一个小bug
 Add <pre> style with background image| 增加 <pre> 标签背景图片样式
 Add comments page_nav CSS style| 增加 评论分页 CSS样式
 Add 404.php & achieve.php| 增加 404.php 和 achieve.php 两个主题文件
-Suport setting of excerpt's length in Home and Archives| 增加后台控制文章摘要输出字数选项
+Support setting of excerpt's length in Home and Archives| 增加后台控制文章摘要输出字数选项
 Fixed Colorful Tags Cloud widget| 修复 Colorful Tags Cloud 小挂件
 Recreate tag.png to | 重做了 tag.png 以达到在任何背景图片的显示兼容性
 Rebuilt PNGs that is Optimized by Google Page Speed Tools for editing problem| 还原了曾 Google Page Speed Tools 对图片的压缩优化，用来保持图片的可编辑性
@@ -78,8 +84,9 @@ Optimize HTML&CSS&JS structure | 优化了 HTML&CSS&JS 结构
 Get though the Google Page Speed Tools | 高分通过 Google Page Speed tools 测评
 Smaller PNG files |优化了 PNG 文件
 
--- SVN --
-https://hzlzh.googlecode.com/svn/trunk/Dot-B
+-- Git & SVN--
+https://github.com/hzlzh/Dot-B
+https://hzlzh.googlecode.com/svn/trunk/Dot-B (Not supported any longer)
 
 == Originally Created ==
 02/04/2011
