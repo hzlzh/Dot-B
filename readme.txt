@@ -84,7 +84,7 @@ Optimize HTML&CSS&JS structure | 优化了 HTML&CSS&JS 结构
 Get though the Google Page Speed Tools | 高分通过 Google Page Speed tools 测评
 Smaller PNG files |优化了 PNG 文件
 
--- Git & SVN--
+-- Git & SVN --
 https://github.com/hzlzh/Dot-B
 https://hzlzh.googlecode.com/svn/trunk/Dot-B (Not supported any longer)
 
