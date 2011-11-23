@@ -5,7 +5,7 @@ global $dotb_options;
 $settings = get_option( 'dotb_options', $dotb_options );
 // Default options values
 $temp_copyright = 'Copyright &copy; '.date("Y").' '.'<a href="'.home_url( '/' ).'" title="'.esc_attr( get_bloginfo( 'name') ).'" rel="home">'.esc_attr( get_bloginfo( 'name') ).'</a>';
-$temp_readmore = __('Read more' , 'dot-b');
+$temp_readmore = __('>>Read more' , 'dot-b');
 
 $dotb_options = array(
 	'dotb_rss_url' => get_bloginfo('rss2_url'),
@@ -195,7 +195,7 @@ function dotb_theme_options_page() {
 	
 	<tr valign="top"><th scope="row"><?php _e( 'Text of Read More link','dot-b' ); ?></th>
 	<td><label for="dotb_readmore">
-	<input id="dotb_readmore" name="dotb_options[dotb_readmore]" type="text" value="<?php esc_attr_e($settings['dotb_readmore']); ?>" /><p><strong><?php _e( 'Preview','dot-b' ); ?>:&nbsp;&nbsp;</strong><?php echo '<a>'.esc_attr_e($settings['dotb_readmore']).'</a>'; ?></p></label>
+	<input id="dotb_readmore" name="dotb_options[dotb_readmore]" type="text" value="<?php echo stripslashes($settings['dotb_readmore']); ?>" /><p><strong><?php _e( 'Preview','dot-b' ); ?>:&nbsp;&nbsp;</strong><?php echo '<a>'.esc_attr_e($settings['dotb_readmore']).'</a>'; ?></p></label>
 	</td>
 	</tr>
 	
@@ -244,7 +244,7 @@ function dotb_theme_options_page() {
 	</tr>
 	
 	</table>
-	<input name="dotb_options[dotb_version]" type="hidden" value="<?php echo $settings['dotb_version']; ?>">
+	<input name="dotb_options[dotb_version]" type="hidden" value="<?php esc_attr_e($settings['dotb_version']); ?>">
 	<p class="submit"><input type="submit" class="button-primary" value="Save Options" /></p>
 	</form>
 	<form method="post">

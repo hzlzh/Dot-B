@@ -23,13 +23,6 @@ $dotb_settings = get_option( 'dotb_options', $dotb_options );
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<?php 
-if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' );
-wp_enqueue_script('jquery','/wp-includes/js/jquery/jquery.js','','',''); ?>
-<?php
-wp_register_script('dotb_js', get_template_directory_uri().'/all.js', array(), NULL, 1);
-wp_enqueue_script('dotb_js');
-?>
 <?php if ($dotb_settings['dotb_is_ga']) echo $dotb_settings['dotb_analytics_code']; ?>
 <?php wp_head(); ?>
 </head>

@@ -2,6 +2,17 @@
 load_theme_textdomain( 'dot-b', TEMPLATEPATH . '/languages' );
 require_once ( TEMPLATEPATH . '/theme-options.php' );
 
+// Add jQuery to the header and theme JS to the footer
+function dotb_scripts_method(){
+if ( is_singular() && get_option( 'thread_comments' ) )
+wp_enqueue_script( 'comment-reply' );
+
+wp_enqueue_script('jquery');
+wp_register_script('dotb_js', get_template_directory_uri().'/all.js', array(), NULL, 1);
+wp_enqueue_script('dotb_js');
+}
+add_action ( 'wp_enqueue_scripts', 'dotb_scripts_method');
+
 // Add default posts and comments RSS feed links to head
 add_theme_support( 'automatic-feed-links' );
 

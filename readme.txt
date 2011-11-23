@@ -1,4 +1,4 @@
-== Dot-B 1.8.6 ==
+== Dot-B 1.8.7 ==
 
 Created, Developed and maintained by hzlzh http://zlz.im/
 
@@ -11,6 +11,9 @@ http://zlz.im/how-to-control-social-media-icons-display-with-wordpress-menu-func
 http://zlz.im/dot-b-social-media-icons-set-release/
 
 == LOGS == For more detials check here: http://bit.ly/Dot-B-Dev
+-- 1.8.7  -- 2011.11.22
+Fix 2 items via ticket: http://themes.trac.wordpress.org/ticket/5728 | 修复了Ticket: ＃5728 中的项目
+
 -- 1.8.6  -- 2011.11.04
 A small fix of CSS | 修复了一个CSS的错误
 Change the logic of search box mouse function | 改变了搜索框的鼠标焦点事件逻辑
@@ -38,7 +41,7 @@ More tags will be displayed in single post | 内页展示所有标签
 Others | 其他
 
 -- 1.8.2  -- 2011.08.28
-Fix 2 layout problems via  ticket: http://themes.trac.wordpress.org/ticket/4954| 修复了官方ticket中要求的两处问题
+Fix 2 layout problems via ticket: http://themes.trac.wordpress.org/ticket/4954| 修复了官方ticket中要求的两处问题
 
 -- 1.8.1  -- 2011.08.12
 A layout bug fixed | 修复了一个界面上的bug
@@ -84,7 +87,7 @@ Optimize HTML&CSS&JS structure | 优化了 HTML&CSS&JS 结构
 Get though the Google Page Speed Tools | 高分通过 Google Page Speed tools 测评
 Smaller PNG files |优化了 PNG 文件
 
--- Git & SVN --
+-- Git & SVN--
 https://github.com/hzlzh/Dot-B
 https://hzlzh.googlecode.com/svn/trunk/Dot-B (Not supported any longer)
 
