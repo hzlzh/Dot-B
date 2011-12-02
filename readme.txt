@@ -1,4 +1,4 @@
-== Dot-B 1.8.7 ==
+== Dot-B 1.8.8 ==
 
 Created, Developed and maintained by hzlzh http://zlz.im/
 
@@ -11,6 +11,9 @@ http://zlz.im/how-to-control-social-media-icons-display-with-wordpress-menu-func
 http://zlz.im/dot-b-social-media-icons-set-release/
 
 == LOGS == For more detials check here: http://bit.ly/Dot-B-Dev
+-- 1.8.8  -- 2011.12.02
+Fix the language files into UTF-8 for chinese users| 修复了中文下的一个字节的乱码
+
 -- 1.8.7  -- 2011.11.22
 Fix 2 items via ticket: http://themes.trac.wordpress.org/ticket/5728 | 修复了Ticket: ＃5728 中的项目
 

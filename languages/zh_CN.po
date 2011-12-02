@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the Dot-B package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Dot-B 1.8.6\n"
+"Project-Id-Version: Dot-B 1.8.8\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-10-08 16:25+0800\n"
-"PO-Revision-Date: 2011-12-02 19:11+0800\n"
+"PO-Revision-Date: 2011-12-02 19:44+0800\n"
 "Last-Translator: hzlzh <hzlzh.dev@gmail.com>\n"
 "Language-Team: hzlzh <http://zlz.im/>\n"
 "MIME-Version: 1.0\n"
