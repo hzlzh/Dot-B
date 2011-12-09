@@ -84,7 +84,7 @@ add_filter('excerpt_length', 'dotb_excerpt_length');
 // Custom excerpt read more text
 function dotb_continue_reading_link() {
 	global $settings;
-	return '<p class="read-more"><a href="'. get_permalink() . '">' . $settings['dotb_readmore'] . '</a></p>';
+	return '<span class="read-more"><a href="'. get_permalink() . '">' . $settings['dotb_readmore'] . '</a></span>';
 }
 
 function dotb_auto_excerpt_more( $more ) {
