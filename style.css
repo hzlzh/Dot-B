@@ -56,9 +56,9 @@ sup, sub{font-size:10px; height:0; line-height:1; position:relative; vertical-al
 sup{bottom:1ex}
 sub{top:0.5ex}
 #top-bar, #bottom-bar, #rss, .menu-mark, .menu-mark2, .post_info_date, .post_info_author, .post_info_cat, .post_info_edit, .post_title_h2, .post_meta, .previous_post, .next_post, #comments-title, #sidebar ul li ul li, #header_search_area, #reply-title, pre{background-image:url("images/all.png")}
-#top-bar{background-position:0 -632px; height:4px; font-size:0; width:20%; background-color:#F1F1F1}
-#bottom-bar{background-position:0 -639px; height:4px; font-size:0; background-color:#F1F1F1}
-#wrapper{background:none repeat scroll 0 0 #F1F1F1; width:960px; margin:0 auto}
+#top-bar{background-position:0 -632px; height:4px; font-size:0; width:20%; background-color:#F1F1F1;position: absolute}
+#bottom-bar{background-position:0 -639px; height:4px; font-size:0; background-color:#F1F1F1;position: absolute;width: 100%}
+#wrapper{background:none repeat scroll 0 0 #F1F1F1; width:960px; margin:0 auto;padding-top: 4px}
 #header{background:none repeat scroll 0 0 #F1F1F1; border-left:1px solid #E8E8E8; border-right:1px solid #E8E8E8}
 #header #logo{display:inline; float:left; margin:20px 10px}
 #header #logo a, #header #logo a:visited{font-size:32px; color:#06c; line-height:32px}
