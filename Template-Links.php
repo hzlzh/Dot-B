@@ -40,10 +40,32 @@ background:#ddd;
 	<div id="content">
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-			<h2 class="post_title_h2"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+			<h2 class="post_title_h2"><a.href=""></a></h2>
 
 			<div class="post_content">
-				<?php the_content(); ?>
+				<div class="post_content">
+								<p>&ndash; Home Page &ndash;</p>
+				<div class="mylink">
+				<ul>
+				<li><a target="_blank".href=""></a></li>
+				<li><a target="_blank".href=""></a></li>
+				<li><a target="_blank".href=""></a></li>
+				<li><a target="_blank".href=""></a></li>
+				</ul>
+				</div>
+				<p>&ndash; Links Page &ndash;</p>
+				<div class="mylink">
+				<ul>
+				<li><a target="_blank".href=""></a></li>
+				<li><a target="_blank".href=""></a></li>
+				<li><a target="_blank".href=""></a></li>
+				<li><a target="_blank".href=""></a></li>
+				</ul>
+				</div>
+				<p>&ndash; Page Rank &ndash;<br>
+				<span style="overflow: hidden;"><span style="float: left; padding-left: 10px;"><a target="_blank".href=""></a>  PR: </span><img width="66" height="13" alt="Page Rank 5" src="http://zlz.im/up/pagerank5.gif" style="background: none repeat scroll 0pt 0pt transparent; border: 0pt none; padding: 0pt 0pt 0pt 33px;"><br>
+				</span></p>
+			</div>
 				<?php wp_link_pages('before=<div id="page-links">&after=</div>'); ?>
 			</div>
 		</div>
