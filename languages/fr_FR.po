@@ -3,9 +3,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dot-B 1.8.6\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-23 11:46+0100\n"
-"PO-Revision-Date: 2011-12-02 19:17+0800\n"
+"Report-Msgid-Bugs-To: http://zlz.im/dot-b/\n"
+"POT-Creation-Date: 2011-09-28 22:47:23+00:00\n"
+"PO-Revision-Date: 2011-12-15 15:52+0100\n"
 "Last-Translator: Li-An <lian00@gmail.com>\n"
 "Language-Team: Wolforg <contact@wolforg.eu>\n"
 "MIME-Version: 1.0\n"
@@ -133,68 +133,68 @@ msgstr "Haut de Page"
 msgid "Top"
 msgstr "Haut de page"
 
-#: functions.php:66
+#: functions.php:55
 msgid "House"
 msgstr "House"
 
-#: functions.php:72
+#: functions.php:61
 msgid "Inkwell"
 msgstr "Inkwell"
 
-#: functions.php:78
+#: functions.php:67
 msgid "Willow"
 msgstr "Willow"
 
-#: functions.php:84
+#: functions.php:73
 msgid "Shore"
 msgstr "Shore"
 
-#: functions.php:90
+#: functions.php:79
 msgid "Sky"
 msgstr "Sky"
 
-#: functions.php:96
+#: functions.php:85
 msgid "Path"
 msgstr "Path"
 
-#: functions.php:104
+#: functions.php:93
 msgid "Header Menu"
 msgstr "Menu Header"
 
-#: functions.php:105
+#: functions.php:94
 msgid "Custom Social Media"
 msgstr "Média Sociaux Perso"
 
-#: functions.php:116
+#: functions.php:105
 msgid "SideBar"
 msgstr "SideBar"
 
-#: functions.php:176
+#: functions.php:165
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s à %2$s"
 
-#: functions.php:176
+#: functions.php:165
 msgid "(Edit)"
 msgstr "(Modifier)"
 
-#: functions.php:181
+#: functions.php:170
 msgid "Your comment is awaiting moderation."
 msgstr "Votre commentaire est en attente de validation."
 
-#: functions.php:213
+#: functions.php:202
 msgid "Display Colorful Tags Cloud"
 msgstr "Affiche un nuage de mots-clés coloré"
 
-#: functions.php:214
+#: functions.php:203
 msgid "Colorful Tag Cloud"
 msgstr "Nuage Coloré"
 
-#: functions.php:237
+#: functions.php:226
 msgid "Tag Cloud"
 msgstr "Nuage de mots-clés"
 
-#: functions.php:241
+#: functions.php:230
 msgid "Title"
 msgstr "Titre"
 
@@ -203,7 +203,7 @@ msgstr "Titre"
 msgid "Page %s"
 msgstr "Page %s"
 
-#: header.php:41
+#: header.php:48
 msgid "RSS Feed"
 msgstr "Flux RSS"
 
@@ -254,8 +254,8 @@ msgid "Already the last post!"
 msgstr "Dernier article !"
 
 #: theme-options.php:8
-msgid ">>Read more"
-msgstr "&raquo; En lire plus "
+msgid "Read more"
+msgstr "En lire plus "
 
 #: theme-options.php:124
 #: theme-options.php:160
