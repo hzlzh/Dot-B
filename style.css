@@ -1,21 +1,303 @@
 /*
-Theme Name: Dot-B Child Theme
+Theme Name: Dot-B
 Theme URI: http://zlz.im/dot-b/
-Description: This is a child theme of Dot-B
+Description: A simple, fresh and dot-decorated looking theme with a lot of basic theme-custom options  prepared for you to start you site. You can use those features : custom-background, custom-menu, drop-down menus, custom-header, widgets... and much more. Also you can recreate you child themes based on Dot-B. Compatible with WordPress 2.9+, valid XHTML & CSS + WP3 ready and Multi-language supported.
 Author: hzlzh
 Author URI: http://zlz.im/
-Template: dot-b
-Version: 0.1.0
+Version: 1.8.8
 License: GNU General Public License, v3 (or newer)
 License URI: http://www.opensource.org/licenses/gpl-3.0.html
 Tags: two-columns, gray, white, fixed-width, custom-header, custom-background, custom-menu, threaded-comments, custom-colors, theme-options, threaded-comments, translation-ready, right-sidebar, light
 */
-/* Import Parent Theme Style */
-@import url(../dot-b/style.css);
-/* for zlz.im below */
-img.wp-smiley{margin:0;padding:0;border:none;width:18px}
-img.browser-icon, img.os-icon {width:12px;height:12px;opacity:0.4}
-img.country-flag {width:12px;margin-bottom: 2px;opacity:0.4}
-img.browser-icon:hover, img.os-icon:hover, img.country-flag:hover {opacity:1}
-#site-host a {background: url("images/MediaTemple.png") no-repeat scroll 0 0 transparent;height: 30px;margin-left: -96px;position: absolute;text-indent: -9999px;width: 60px;}
-.gplus-button {display: inline;margin-left: 10px;}
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td{border:0; font-size:100%; vertical-align:baseline; margin:0; padding:0}
+:focus{outline:0}
+body{font:13px/18px Tahoma,Arial,Helvetica,sans-serif; color:#555; line-height:1}
+#body{background:url("images/body-bg.png") repeat scroll center top transparent}
+.clear{clear:both}
+a img{border:none}
+a, a:visited{text-decoration:none; color:#06c; outline:none}
+a:hover{text-decoration:none; color:#bd0800}
+p{line-height:1.6em; margin:0 0 1em}
+h1, h2, h3, h4, h5, h6{clear:both}
+hr{background-color:#CCC; border:0 none; height:1px; margin-bottom:1.625em}
+ul{list-style-type:none; line-height:100%}
+ul li{line-height:16px}
+ol{margin:0 20px 1em}
+ol li{line-height:normal; padding:0 0 5px}
+dl{margin:0 1.625em}
+dt{font-weight:bold}
+dd{margin-bottom:1.625em}
+strong{font-weight:bold}
+cite, em, i{font-style:italic}
+form, table, input, textarea, dl, dt, dd{outline:none}
+#calendar_wrap table{border:thick dashed #E3E3E3; border-collapse:collapse; width:100%}
+blockquote{background:none repeat scroll 0 0 #EEE; padding:2px 6px; border-color:#999; border-style:solid; border-width:0 0 0 2px; margin:0 10px 1em}
+blockquote:hover{border-color:#06c}
+pre{background:none no-repeat scroll 0 -664px #EAEAEA; border:1px solid #999; color:#333; display:block; line-height:120%; overflow:auto; margin:0 10px 1em; ; padding:10px 10px 10px 20px}
+h1, h2, h3, h4, h5, h6{color:#333; line-height:1.1em; margin:0.3em 0; padding:0}
+h1, h2{font-weight:normal}
+h3, h4, h5, h6{font-weight:bold}
+h1{font-size:200%}
+h2{font-size:183%}
+h3{font-size:166%}
+h4{font-size:150%}
+h5{font-size:133%}
+h6{font-size:116%}
+dl{margin:0 1.625em}
+dt{font-weight:bold}
+dd{margin-bottom:1.625em}
+cite, em, i{font-style:italic}
+code, kbd{font:13px Monaco,Consolas,"Andale Mono","DejaVu Sans Mono",monospace}
+abbr, acronym, dfn{border-bottom:thin dotted; cursor:help; ; cursor:help}
+address{display:block; margin:0 0 1.625em}
+ins{background:none repeat scroll 0 0 #FFF9C0; text-decoration:none}
+sup, sub{font-size:10px; height:0; line-height:1; position:relative; vertical-align:baseline}
+sup{bottom:1ex}
+sub{top:0.5ex}
+#top-bar, #bottom-bar, #rss, .menu-mark, .menu-mark2, .post_info_date, .post_info_author, .post_info_cat, .post_info_edit, .post_title_h2, .post_meta, .previous_post, .next_post, #comments-title, #sidebar ul li ul li, #header_search_area, #reply-title, pre{background-image:url("images/all.png")}
+#top-bar{background-position:0 -632px; height:4px; font-size:0; width:20%; background-color:#F1F1F1;position: absolute}
+#bottom-bar{background-position:0 -639px; height:4px; font-size:0; background-color:#F1F1F1;position: absolute;width: 100%}
+#wrapper{background:none repeat scroll 0 0 #F1F1F1; width:960px; margin:0 auto;padding-top: 4px}
+#header{background:none repeat scroll 0 0 #F1F1F1; border-left:1px solid #E8E8E8; border-right:1px solid #E8E8E8}
+#header #logo{display:inline; float:left; margin:20px 10px}
+#header #logo a, #header #logo a:visited{font-size:32px; color:#06c; line-height:32px}
+#header #logo a:hover{color:#2089cc}
+#header #description{color:#888; font-size:13px; font-weight:400; line-height:13px; margin-top:7px}
+#header #header_meta{float:right; display:inline}
+#header #header_search_area{background-position:-125px 0; float:left; height:20px; position:relative; width:155px; margin:0 91px 0 0; padding:23px 0 0 45px}
+#searchform #s{border-bottom:1px dashed;border-left:none;border-right:none;border-top:none; background:none repeat scroll 0 0 transparent; color:#BBB; display:inline; height:19px; position:absolute; width:65%; margin:2px}
+#searchform #searchsubmit{height:16px; position:absolute; right:0; text-indent:-9999px; width:13px; display:none; margin:2px}
+#header #rss{background-position:0 0; float:left; text-indent:-9999px; height:45px; width:48px; margin:7px 10px 0 0; line-height:45px}
+#header #rss:hover{background-position:-58px 0; float:left; text-indent:-9999px; height:45px; width:48px; margin:7px 10px 0 0; line-height:45px}
+#header #social{float:right; margin-right:20px}
+.facebook a,.twitter a,.flickr a,.delicious a,.gplus a,.picasa a,.tencent a,.sina a,.rss a,.facebook1 a,.twitter1 a{display:inline; float:left; height:32px; width:32px; text-indent:-9999px; margin:3px 2px 2px 2px;background-image:url("images/all.png")}
+#header #social ul li{display:inline}
+.facebook a{background-position:0 -88px}
+.facebook a:hover{background-position:0 -48px}
+.twitter a{background-position:-48px -88px}
+.twitter a:hover{background-position:-48px -48px}
+.flickr a{background-position:-96px -88px}
+.flickr a:hover{background-position:-96px -48px}
+.delicious a{background-position:-144px -88px}
+.delicious a:hover{background-position:-144px -48px}
+.gplus a{background-position:-192px -88px}
+.gplus a:hover{background-position:-192px -48px}
+.picasa a{background-position:-240px -88px}
+.picasa a:hover{background-position:-240px -48px}
+.tencent a{background-position:-289px -87px}
+.tencent a:hover{background-position:-289px -48px}
+.sina a{background-position:-476px -87px}
+.sina a:hover{background-position:-476px -48px}
+.rss a{background-position:-336px -88px}
+.rss a:hover{background-position:-336px -48px}
+.facebook1 a{background-position:-384px -88px}
+.facebook1 a:hover{background-position:-384px -48px}
+.twitter1 a{background-position:-432px -88px}
+.twitter1 a:hover{background-position:-432px -48px}
+.header_menu{border-bottom:1px solid #CCC; border-top:2px dashed #CCC; clear:both; height:36px; padding:0 10px}
+.header_menu ul{list-style:none; float:left; margin:0; padding:0}
+.header_menu ul li{float:left; position:relative; margin:0; padding:0 15px 0 0; border-bottom:1px solid #CCC}
+.header_menu ul li a{color:#555; display:block; text-decoration:none; float:left; padding:10px 5px; cursor:pointer}
+.header_menu ul li a:hover{color:#06c}
+.header_menu .menu-mark{background-position:-721px -14px; float:left; height:16px; width:10px; margin:13px 0 7px}
+.header_menu .menu-mark2{background-position:-893px -14px; float:left; height:16px; width:10px; margin:13px 0 7px}
+.header_menu ul li span.subhover{background-position:center bottom; cursor:pointer}
+.header_menu ul li ul{list-style:none; position:absolute; left:0; top:36px; background:#F1F1F1; display:none; float:left; margin:0; padding:0; z-index:999}
+.header_menu ul li ul li{border-bottom:1px solid #ccc; border-left:1px solid #ccc; border-right:1px solid #ccc; clear:both; width:170px; margin:0; padding:0}
+.header_menu ul ul ul{left:100%; top:-1px}
+.header_menu ul ul li:first-child{border-top:1px solid #ccc}
+#main{background:none repeat scroll 0 0 #F1F1F1; border-left:1px solid #E8E8E8; border-right:1px solid #E8E8E8; clear:both; padding:5px 0 0}
+#content{border-right:4px dashed #FFF; display:inline; float:left; width:680px}
+.page-title{margin:2px; text-align:center}
+.post_title_h2, #reply-title{background-position:-60px -125px; color:#555; font-size:15px; font-weight:400; text-indent:4px; margin:0; padding:4px 0; line-height:20px}
+.post{margin-top:10px}
+.post_content{line-height:20px; margin:10px}
+.post_content img{}
+.post_content table{border-bottom:1px solid #DDD; margin:0 0 1.625em; width:100%}
+.post_content th{color:#666; font-size:10px; font-weight:500; letter-spacing:0.1em; line-height:2.6em; text-transform:uppercase}
+.post_content td{border-top:1px solid #DDD; padding:6px 10px 6px 0}
+.post_content #s{width:75%}
+.post_content ul, .post_content ol{margin:0 0 1em 2em}
+.post_content ul{list-style:square outside none}
+.post_content ol{list-style-type:decimal}
+.post_content .read-more{display:block}
+.post_title_h2 a, .post_title_h2 a:visited{color:#555; display:inline-block}
+.post_info_top{color:#999; margin:0 10px; overflow:hidden}
+.post_info{overflow:hidden; margin:0 6px}
+.post_info_date{background-position:-24px -175px; display:block; padding:0 0 0 10px; margin:0 6px 0 0; line-height:17px; float:left}
+.post_info_author{background-position:-20px -187px; display:block; margin:0 6px 0 0; padding:0 0 0 10px; line-height:17px; float:left}
+.post_info_cat{background-position:-8px -225px; display:block; margin:0 6px 0 0; padding:0 0 0 10px; line-height:17px; float:left}
+.post_info_edit{background-position:-3px -239px; display:block; margin:0 6px 0 0; padding:0 0 0 10px; line-height:17px; float:left}
+.post_info_bootom{overflow:hidden; clear:both; margin:10px 0 10px -7px; padding:0 0 0 7px}
+.single .post_meta{height:auto}
+.single .post_meta li{margin-top:2px}
+.post_meta{float:left; width:550px; display:inline; background-position:right -441px; overflow:hidden; height:19px; margin:0 0 0 -7px; padding:0 0 0 7px}
+.post_meta ul{margin:0; line-height:100%}
+.post_meta li{float:left; position:relative; background:url("images/tag.png") no-repeat scroll transparent; margin-left:-7px; background-position:-12px 0; padding:0 0 0 7px}
+.post_meta li:hover{background:url("images/tag.png") no-repeat scroll -12px -103px transparent}
+.post_meta ul li a{background:url("images/tag.png") no-repeat scroll 100% -50px #b6b6b6; color:#FFF; display:block; float:left; height:19px; line-height:19px; overflow:hidden; padding:0 14px 0 5px}
+.post_meta ul li:hover a, .post_meta ul li a:hover{color:#FFF; background-color:#7ea6dd; background-position:100% -153px}
+.post_readmore{height:17px; line-height:17px; display:inline; margin:0 0 0 6px}
+#sidebar{display:inline; float:right; width:260px; margin:6px 6px 6px 8px; padding:0}
+#sidebar a{color:#666; line-height:19px}
+#sidebar a:hover{color:#06C}
+#sidebar ul li ul li{background-position:-32px -163px; color:#666; font-size:12px; margin-left:5px; padding-left:10px; line-height:17px}
+#sidebar ul li ul li a{font-style:normal}
+#sidebar ul li ul li:hover{background-position:-38px -149px; color:#06C}
+#sidebar li{line-height:100%; margin:0 0 1em; list-style:none}
+#sidebar li li{line-height:19px; margin:0 0 4px}
+#sidebar li li:hover{background-position:0 -204px}
+.widget_title{color:#777; background-color:#EEE; border-left:2px solid #999; font-size:13px; font-weight:bolder; line-height:100%; margin:0 0 0.7em; padding:5px}
+.widget_title:hover{background-color:#EEE; border-left:2px solid #06c}
+.post-nav{overflow:hidden; margin-top:10px; clear:both}
+.post-nav .previous_post{font-family:Microsoft YaHei; font-style:italic; color:#888; background-position:0 -316px; float:left; height:19px; display:block; overflow:hidden; margin:0 0 0 6px; padding:0 10px 0 13px}
+.post-nav .next_post{font-family:Microsoft YaHei; font-style:italic; color:#888; background-position:right -315px; float:right; height:19px; display:block; overflow:hidden; margin:0 6px 0 0; padding:0 17px 0 0}
+#footer{border-top:2px dashed #CCC; background:none repeat scroll 0 0 #F1F1F1; border-left:1px solid #E8E8E8; border-right:1px solid #E8E8E8; height:50px}
+#copyright{color:#888; float:left; display:inline; margin:10px 0 0 20px; padding:0}
+#copyright li{float:left; display:inline; font-size:13px; margin:0 10px 0 0; padding:3px 0 5px 13px}
+#site-info{margin-bottom:5px}
+#site-generator a{color:#777}
+#return_top{float:right; margin:20px 55px 0 0}
+#wp-calendar{width:100%; font-size:13px; margin:0 auto}
+#wp-calendar th, #wp-calendar td{line-height:150%; text-align:center}
+#wp-calendar td a, #wp-calendar td a:visited{color:#06C; display:block}
+#wp-calendar caption{display:none; padding:8px 0}
+#wp-calendar #prev a:hover, #wp-calendar #next a:hover, #side_middle #wp-calendar #prev a:hover, #side_middle #wp-calendar #next a:hover{text-decoration:underline; color:#2089cc}
+#wp-calendar td#today{color:#555; background-color:#DDD}
+#wp-calendar tbody a{background-color:#eee}
+#wp-calendar tbody a:hover{background-color:#e7e7e7}
+#comments{margin-top:30px}
+.comment-content table{border-bottom:1px solid #DDD; margin:0 0 1.625em; width:100%}
+.comment-content th{color:#666; font-size:10px; font-weight:500; letter-spacing:0.1em; line-height:2.6em; text-transform:uppercase}
+.comment-content td{border-top:1px solid #DDD; padding:6px 10px 6px 0}
+.comment-content ul, .comment-content ol{margin:0 0 1em 2em}
+.comment-content ul{list-style:square outside none}
+.comment-content ul li{list-style:square outside none!important; margin:0!important; padding:0}
+.comment-content ol{list-style-type:decimal}
+.comment-content ol li{list-style-type:decimal!important; margin:0!important; padding:0}
+#thecomments{margin-right:20px; width:640px}
+#comments-title{background-position:0 -421px; font-size:14px; font-weight:700; text-align:center; margin:5px 20px 20px; padding:5px 0}
+#comments-title span{background:#f1f1f1; color:#888; padding:0 4px}
+#comments-title span a{color:#888}
+.bypostauthor{}
+ol.commentlist li{position:relative; list-style:none; padding-bottom:4px; margin:0 0 5px}
+ol.commentlist li .by-post-author div.vcard img.avatar{position:absolute; right:0; float:right; border:1px dashed #ddd; margin-top:-4px}
+ol.commentlist li .by-post-author div.vcard cite.fn{float:right; margin:0 50px 0 0}
+ol.commentlist li .by-post-author span.comment-meta{position:absolute; right:48px; top:20px; left:auto}
+ol.commentlist li .by-post-author p{padding:3px 0 3px 44px}
+ol.commentlist li .by-post-author div.reply, ol .commentlist li .atclass{right:auto; left:0; top:5px}
+ol.commentlist li .by-post-author div.comment-author{height:18px}
+ol.commentlist li div.comment-author{height:20px; border-bottom:3px dashed #DDD; margin-bottom:4px}
+ol.commentlist li div.vcard img.avatar{background:none repeat scroll 0 0 #FFF; height:40px; position:absolute; border-color:#CCC; border-style:solid; border-width:1px; padding:1px}
+ol.commentlist li div.vcard cite.fn{margin-left:50px; font-style:normal; font-size:14px; font-weight:700}
+ol.commentlist li div.vcard span.says{position:absolute; text-indent:-9999em}
+ol.commentlist li span.comment-meta{color:#aaa; font-size:12px; left:55px; margin-left:5px; top:25px}
+ol.commentlist li p{padding:0 50px 5px 55px}
+ol.commentlist li.pingback p{margin:0; padding:0 10px 5px}
+ol.commentlist li div.reply, ol .commentlist li .atclass{background:none repeat scroll 0 0 #FFF; border:2px dashed #DDD; position:absolute; right:0; top:8px; font-size:12px; padding:2px}
+ol.commentlist li ul.children li{padding-bottom:0; border-bottom:none}
+ol.commentlist li ul.children li.depth-2{margin:0 0 0 50px}
+ol.commentlist li ul.children li div.comment-author{overflow:hidden; display:block; height:16px; border:none; border-bottom:1px dashed #DDD}
+ol.commentlist li ul.children li div.comment-content{padding-top:5px}
+ol.commentlist li ul.children li div#comments{margin-top:15px}
+ol.commentlist li ul.children .by-post-author div.vcard img.avatar{position:absolute; right:0; float:right; border:1px dashed #ddd; height:24px; margin-top:2px; width:24px}
+ol.commentlist li ul.children .by-post-author div.vcard cite.fn{margin-left:10px; float:right; margin-right:32px}
+ol.commentlist li ul.children .by-post-author span.comment-meta{position:absolute; right:31px; top:16px; left:auto}
+ol.commentlist li ul.children .by-post-author div.reply, ol .commentlist li .atclass{right:auto; left:-17px; top:5px}
+ol.commentlist li ul.children div.vcard img.avatar{position:absolute; right:auto; float:none; border:1px dashed #ddd; height:24px; margin-top:-1px; width:24px}
+ol.commentlist li ul.children div.vcard cite.fn{float:none; margin-left:35px}
+ol.commentlist li ul.children span.comment-meta{float:none; left:38px; top:18px}
+ol.commentlist li ul.children div.reply, ol .commentlist li .atclass{top:6px; right:0; left:auto}
+#respond{margin:20px 20px 20px 55px}
+#respond h2{font-size:18px; font-weight:700; margin-bottom:10px}
+#respond a#cancel-comment-reply-link{font-size:12px; color:#920017}
+#respond a#cancel-comment-reply-link:hover{color:#FF4E00}
+#respond #reply-title{line-height:20px; padding:4px}
+#commentform{margin:0; padding:0}
+#commentform p{overflow:hidden; margin:0 0 10px; padding:0; clear:both}
+#commentform textarea, #author, #email, #url{height:16px; float:left; border:1px dashed #DDD; margin-right:5px; color:#333; padding:3px}
+#commentform textarea:hover, #author:hover, #email:hover, #url:hover{border:1px dashed #bbb}
+#commentform textarea{height:130px}
+#commentform .form-allowed-tags{color:#888; font-size:12px; line-height:1.2em}
+#comment{width:330px; margin:0 10px 0 0}
+#submit{background-color:#888; border:medium none; color:#DDD; padding:2px 5px}
+#submit:hover{background-color:#666}
+ol.pingslist h3{font-weight:700; margin-bottom:10px; border-bottom:1px solid #CCC; color:#555; padding:3px 0}
+ol.pingslist{list-style-type:none; margin:5px 20px 15px}
+ol.pingslist li{color:#AAA; margin:0}
+ol.pingslist a{color:#555; outline:medium none; text-decoration:none}
+#pings-title{font-size:14px; font-weight:700; margin:5px; padding:5px 0; color:#888}
+.page_navi{text-align:center; margin:20px}
+.page_navi li{line-height:0; display:inline; font-size:13px}
+.page_navi a{border:2px dashed #DDD; color:#AAA; line-height:30px; padding:1px 4px}
+.page_navi a:hover{color:#2089CC; background-color:#e9e9e9; border:2px dashed #AAA}
+.floor{float:left; margin:0 5px 0 0}
+#microblog{height:52px; line-height:18px; overflow:hidden}
+#microblog li{height:40px; margin:10px 0}
+img.size-auto, img.size-full, img.size-large, img.size-medium, .attachment img{height:auto; max-width:100%}
+.alignleft, img.alignleft{display:inline; float:left; margin-right:24px; margin-top:4px}
+.alignright, img.alignright{display:inline; float:right; margin-left:24px; margin-top:4px}
+.aligncenter, img.aligncenter{clear:both; display:block; margin-left:auto; margin-right:auto}
+img.alignleft, img.alignright, img.aligncenter{margin-bottom:12px}
+.wp-caption{background:none repeat scroll 0 0 #FFF; line-height:18px; margin-bottom:20px; max-width:632px !important; text-align:center; padding:4px}
+.wp-caption img{padding:0}
+.wp-caption p.wp-caption-text{color:#888; font-size:12px; margin:5px}
+.gallery{margin:0 auto 18px}
+.gallery .gallery-item{float:left; margin-top:0; text-align:center; width:33%}
+.gallery-columns-2 .gallery-item{width:50%}
+.gallery-columns-4 .gallery-item{width:25%}
+.gallery img{border:10px solid #CFCFCF}
+.gallery-columns-2 .attachment-medium{height:auto; max-width:92%}
+.gallery-columns-4 .attachment-thumbnail{height:auto; max-width:84%}
+.gallery .gallery-caption{color:#888; font-size:12px; margin:0 0 12px}
+.navigation{text-align:center; color:#888; font-size:12px; line-height:18px; overflow:hidden}
+.navigation a{border:2px dashed #DDD; color:#AAA; line-height:30px; padding:1px 4px}
+.navigation a:hover{background-color:#E9E9E9; border:2px dashed #AAA; color:#2089CC}
+.nav-previous{float:left; width:50%}
+.nav-next{float:right; text-align:right; width:50%}
+#nav-above{display:none; margin:0 0 18px}
+.paged #nav-above, .single #nav-above{display:block}
+#nav-below{margin:-18px 0 0}
+.page-link{clear:both; color:#000; font-weight:700; word-spacing:0.5em; margin:0 0 22px}
+.page-link a:link, .page-link a:visited{border:2px dashed #DDD; color:#AAA; line-height:30px; padding:1px 4px}
+.home .sticky .page-link a{background:none repeat scroll 0 0 #D9E8F7}
+.page-link a:active, .page-link a:hover{background-color:#E9E9E9; border:2px dashed #AAA; color:#2089CC}
+object, #content .attachment img{display:block; margin:0 auto}
+#header #header_right, .post_info_comments{float:right}
+.post_title_h2 a:hover, #wp-calendar td a:hover{color:#BD0800}
+.post_info_top a, ol.commentlist li div.reply a, ol.commentlist li .atclass a, #respond .comment-notes{color:#999}
+.post_info_top a:hover, #footer a:hover, ol.commentlist li div.vcard cite.fn a.url{color:#06c}
+#footer a, #wp-calendar th, ol.commentlist li div.vcard cite.fn a.url:hover{color:#555}
+ol.commentlist li span.comment-meta a, .page-numbers dots{color:#AAA}
+ol.commentlist li span.comment-meta a:hover, ol.commentlist li div.reply a:hover, ol.commentlist li .atclass a:hover{color:#222}
+ol.commentlist li ul.children .by-post-author p, ol.commentlist li ul.children p{padding:3px 31px 3px 31px}
+#respond .comment-form-comment label, .gallery br+br{display:none}
+.gallery dl{margin:0}
+img.wp-smiley{background:none; margin:0; padding:0; border:none}
+.widget_calendar .widget_title{display:none}
+img[class*="align"], img[class*="wp-image-"]{ height:auto}
+img.size-full{ max-width:97.5%;  width:auto}
+
+img.alignleft, img.alignright, img.aligncenter{ margin-bottom:1.625em}
+p img, .wp-caption{ margin-top:0.4em}
+.wp-caption{ background:none repeat scroll 0 0 #fff;  margin-bottom:1.625em;  max-width:96%}
+.wp-caption img{ display:block;  margin:0 auto;  max-width:98%}
+.wp-caption .wp-caption-text, .gallery-caption{ color:#666;  font-family:Georgia,serif;  font-size:12px}
+.wp-caption .wp-caption-text{ margin-bottom:0.6em;  position:relative}
+.wp-caption .wp-caption-text:before{ color:#666;  font-size:14px;  font-style:normal;  font-weight:bold;  left:10px;  margin-right:5px;  position:absolute;  top:7px}
+#content .gallery{ margin:0 auto 1.625em}
+#content .gallery a img{ border:medium none}
+img#wpstats{ display:block;  margin:0 auto 1.625em}
+#content .gallery-columns-4 .gallery-item{ padding-right:2%;  width:23%}
+#content .gallery-columns-4 .gallery-item img{ height:auto;  width:100%}
+img[class*="align"], img[class*="wp-image-"], #content .gallery .gallery-icon img{background:#fff;  padding:6px; border:1px solid #DDD}
+.wp-caption img{ border-color:#DDD; border:none}
+a:focus img[class*="align"], a:hover img[class*="align"], a:active img[class*="align"], a:focus img[class*="wp-image-"], a:hover img[class*="wp-image-"], a:active img[class*="wp-image-"], #content .gallery .gallery-icon a:focus img, #content .gallery .gallery-icon a:hover img, #content .gallery .gallery-icon a:active img{ background:none repeat scroll 0 0 #FFF;  border-color:#DDD}
+.wp-caption a:focus img, .wp-caption a:active img, .wp-caption a:hover img{ background:none repeat scroll 0 0 #FFF;  border-color:#DDD}
+.post-password-required .entry-header .comments-link{ margin:1.625em 0 0}
+.post-password-required input[type="password"]{ margin:0.8125em 0}
+.post-password-required input[type="password"]:focus{ background:none repeat scroll 0 0 #F7F7F7}
+.attachment-extra-featured-image{background:#FFF; border:1px solid #DDD; padding:4px}
+.post-password-required input[type="password"]{ margin:0.8125em 0}
+input[type="text"], input[type="password"], textarea{ border:1px solid #ccc;  color:#888}

@@ -1,77 +1,256 @@
 <?php
+load_theme_textdomain( 'dot-b', TEMPLATEPATH . '/languages' );
+require_once ( TEMPLATEPATH . '/theme-options.php' );
 
-/* Mini Gavatar Cache by Willin Kan. */
-function my_avatar( $email, $size = '42', $default = '', $alt = false ) {
-  $alt = (false === $alt) ? '' : esc_attr( $alt );
-  $f = md5( strtolower( $email ) );
-  $a =  'http://img.zlz.im/avatar/'. $f. '.jpg';
-  $e = '/home/zlz/domains/img.zlz.im/public_html/avatar/'. $f. '.jpg';
-  $t = 600; //設定14天, 單位:秒
-  if ( empty($default) ) $default = 'http://img.zlz.im/avatar/default.jpg';
-  if ( !is_file($e) || (time() - filemtime($e)) > $t ){ //當頭像不存在或文件超過14天才更新
-    $r = get_option('avatar_rating');
-    //$g = sprintf( "http://%d.gravatar.com", ( hexdec( $f{0} ) % 2 ) ). '/avatar/'. $f. '?s='. $size. '&d='. $default. '&r='. $r; // wp 3.0 的服務器
-    $g = 'http://www.gravatar.com/avatar/'. $f. '?s='. $size. '&d='. $default. '&r='. $r; // 舊服務器 (哪個快就開哪個)
-    copy($g, $e); $a = esc_attr($g);
-  }
-  if (filesize($e) < 500) copy($default, $e);
-  $avatar = "<img title='{$alt}' alt='{$alt}' src='{$a}' class='avatar avatar-{$size} photo' height='{$size}' width='{$size}' />";
-  return apply_filters('my_avatar', $avatar, $email, $size, $default, $alt);
+// Add jQuery to the header and theme JS to the footer
+function dotb_scripts_method(){
+if ( is_singular() && get_option( 'thread_comments' ) )
+wp_enqueue_script( 'comment-reply' );
+
+wp_enqueue_script('jquery');
+wp_register_script('dotb_js', get_template_directory_uri().'/all.js', array(), NULL, 1);
+wp_enqueue_script('dotb_js');
 }
+add_action ( 'wp_enqueue_scripts', 'dotb_scripts_method');
 
-function copyright($content) {
-	if(is_single()||is_feed()) {
-		$content.='<div style="background:#FDFDFD;border: 5px solid #EEEEEE;padding: 5px;">
-<span style="font-weight: bold;">版权所有&copy; HzlzH </span>| 本文采用 <a href="http://zlz.im/#copyright" title="署名-非商业性使用-相同方式共享">BY-NC-SA</a> 进行授权
-<br>
-转载需注明 转自: 《<a title="'.get_the_title().'" href="'.get_permalink().'">'.get_the_title().'</a>》
-</div>
-';
+// Add default posts and comments RSS feed links to head
+add_theme_support( 'automatic-feed-links' );
+
+// This theme allows users to set a custom background
+add_custom_background();
+
+// Your changeable header business starts here.
+if ( ! defined( 'HEADER_TEXTCOLOR' ) )
+	define( 'HEADER_TEXTCOLOR', '' );
+
+// No CSS, just IMG call. The %s is a placeholder for the theme template directory URI.
+if ( ! defined( 'HEADER_IMAGE' ) )
+	define( 'HEADER_IMAGE', '%s/images/headers/inkwell.jpg' );
+
+// The height and width of your custom header. You can hook into the theme's own filters to change these values.
+// Add a filter to dotb_header_image_width and dotb_header_image_height to change these values.
+define( 'HEADER_IMAGE_WIDTH', apply_filters( 'dotb_header_image_width', 958 ) );
+define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'dotb_header_image_height', 198 ) );
+
+// We'll be using post thumbnails for custom header images on posts and pages.
+// We want them to be 940 pixels wide by 198 pixels tall.
+// Larger images will be auto-cropped to fit, smaller ones will be ignored. See header.php.
+set_post_thumbnail_size( HEADER_IMAGE_WIDTH, HEADER_IMAGE_HEIGHT, true );
+
+if ( ! isset( $content_width ) )
+	$content_width = 670;
+	
+// This theme uses post thumbnails
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'extra-featured-image', 620, 200, true );
+function dotb_featured_content($content) {
+	if (is_single() || is_home() || is_archive()) {
+		the_post_thumbnail( 'extra-featured-image' );
 	}
 	return $content;
 }
-add_filter ('the_content', 'copyright');
+add_filter( 'the_content', 'dotb_featured_content',1 );
 
-/**Mp3 player */
-function player($atts, $content=null){
-extract(shortcode_atts(array("auto"=>'no',"loop"=>'no'),$atts));	
-return '<embed src="'.get_bloginfo("template_url").'/player.swf?soundFile='.$content.'&bg=0xeeeeee&leftbg=0x357dce&lefticon=0xFFFFFF&rightbg=0xf06a51&rightbghover=0xaf2910&righticon=0xFFFFFF&righticonhover=0xffffff&text=0x666666&slider=0x666666&track=0xFFFFFF&border=0x666666&loader=0x9FFFB8&loop='.$loop.'&autostart='.$auto.'" type="application/x-shockwave-flash" wmode="transparent" allowscriptaccess="always" width="290" height="30">';
+// Don't support text inside the header image.
+if ( ! defined( 'NO_HEADER_TEXT' ) )
+	define( 'NO_HEADER_TEXT', true );
+	
+add_custom_image_header( '', 'dotb_admin_header_style' );
+
+	// Default custom headers packaged with the theme. %s is a placeholder for the theme template directory URI.
+	register_default_headers( array(
+		'house' => array(
+			'url' => '%s/images/headers/house.jpg',
+			'thumbnail_url' => '%s/images/headers/house-thumbnail.jpg',
+			/* translators: header image description */
+			'description' => __( 'House', 'dot-b' )
+		),
+		'inkwell' => array(
+			'url' => '%s/images/headers/inkwell.jpg',
+			'thumbnail_url' => '%s/images/headers/inkwell-thumbnail.jpg',
+			/* translators: header image description */
+			'description' => __( 'Inkwell', 'dot-b' )
+		),
+		'willow' => array(
+			'url' => '%s/images/headers/willow.jpg',
+			'thumbnail_url' => '%s/images/headers/willow-thumbnail.jpg',
+			/* translators: header image description */
+			'description' => __( 'Willow', 'dot-b' )
+		),
+		'shore' => array(
+			'url' => '%s/images/headers/shore.jpg',
+			'thumbnail_url' => '%s/images/headers/shore-thumbnail.jpg',
+			/* translators: header image description */
+			'description' => __( 'Shore', 'dot-b' )
+		),
+		'sky' => array(
+			'url' => '%s/images/headers/sky.jpg',
+			'thumbnail_url' => '%s/images/headers/sky-thumbnail.jpg',
+			/* translators: header image description */
+			'description' => __( 'Sky', 'dot-b' )
+		),
+		'path' => array(
+			'url' => '%s/images/headers/path.jpg',
+			'thumbnail_url' => '%s/images/headers/path-thumbnail.jpg',
+			/* translators: header image description */
+			'description' => __( 'Path', 'dot-b' )
+		),
+	) );
+
+// Register nav_menu
+if ( function_exists('register_nav_menu') ) { 
+	register_nav_menus(
+		array(
+		  'primary' => __( 'Header Menu', 'dot-b' ),
+		  'social_media' => __( 'Custom Social Media', 'dot-b' )
+		)
+	);
 }
-add_shortcode('music','player');
-/**FLV player */
-function flvplayer($atts, $content=null){
-extract(shortcode_atts(array("width"=>'460',"height"=>'330'),$atts));	
-return '<embed width="'.$width.'" height="'.$height.'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" allowfullscreen="true" src="'.get_bloginfo("template_url").'/flvplayer.swf?&IsAutoPlay=0&IsContinue=0&BarPosition=0&IsShowBar=0&vcastr_file='.$content.'">
-';
+
+// Register sidebar
+register_sidebar(array(
+	'before_widget' => '<li id="%1$s" class="widget %2$s">'."\n",
+	'after_widget' => "</li>\n",
+	'before_title' => '<h3 class="widget_title">',
+	'after_title' => "</h3>\n",
+	'name' => __('SideBar', 'dot-b' ),
+	'id' => 'right-sidebar'
+));
+
+
+if ( ! function_exists( 'dotb_admin_header_style' ) ) :
+/**
+ * Styles the header image displayed on the Appearance > Header admin panel.
+ *
+ * Referenced via add_custom_image_header() in dotb_setup().
+ *
+ */
+function dotb_admin_header_style() {
+?>
+	<style type="text/css">
+	/* Shows the same border as on front end */
+	#headimg {
+		border-bottom: 1px solid #000;
+		border-top: 4px solid #000;
+	}
+	/* If NO_HEADER_TEXT is false, you would style the text with these selectors:
+		#headimg #name { }
+		#headimg #desc { }
+	*/
+	</style>
+<?php
 }
-add_shortcode('mv','flvplayer');
- /** Download Image */
-function download($atts, $content = null)
-    {
-     return '<a href="'.$content.'" rel="external nofollow" target="_blank" title="download-Link"><img src="http://zlz.im/up/download.gif" border="0" /></a>';
+endif;
+
+// Wp_tag_cloud Widget
+function dotb_colorfultagcloud($text) { 
+	$text = preg_replace_callback('|<a (.+?)>|i', 'dotb_colorfultagcloudcallback', $text);
+	return $text;
+	}
+function dotb_colorfultagcloudcallback($matches) { 
+	$text = $matches[1];
+	$color = dechex(rand(0,16777215));// Here you can control the color of tags
+	$pattern = '/style=(\'|\")(.*)(\'|\")/i';
+	$text = preg_replace($pattern, "style=\"color:#{$color};$2;\"", $text);
+	return "<a $text>";
+}
+
+// Custom Comments List.
+function dotb_mytheme_comment( $comment, $args, $depth ) {
+	$GLOBALS['comment'] = $comment;
+	if ( $post = get_post($post_id) ) {
+                       if ( $comment->user_id === $post->post_author )
+                               $bypostauthor = 'by-post-author'; else $bypostauthor = 'by-vistor';
+               }
+	switch ( $comment->comment_type ) :
+		case '' :
+	?>
+	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+		<div id="comment-<?php comment_ID(); ?>" class="<?php echo $bypostauthor;?>">
+		<div class="comment-author vcard">
+			<?php echo get_avatar( $comment, 40 ); ?>
+			<?php printf( sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
+			<span class="comment-meta commentmetadata">
+			<?php
+				/* translators: 1: date, 2: time */
+				printf( __( '%1$s at %2$s', 'dot-b' ), get_comment_date(),  get_comment_time() ); ?><a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"> # </a><?php edit_comment_link( __( '(Edit)', 'dot-b' ), ' ' );
+			?>
+		</span><!-- .comment-meta .commentmetadata -->
+		</div><!-- .comment-author .vcard -->
+		<?php if ( $comment->comment_approved == '0' ) : ?>
+			<em><?php _e( 'Your comment is awaiting moderation.', 'dot-b' ); ?></em>
+			<br />
+		<?php endif; ?>
+
+		<div class="comment-content"><?php comment_text(); ?></div>
+
+		<div class="reply">
+			<?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+		</div><!-- .reply -->
+	</div><!-- #comment-##  -->
+
+	<?php
+			break;
+		case 'pingback'  :
+	?>
+	<li class="pings pingback">
+        <?php comment_author_link(); ?> - Pingback on <?php echo mysql2date('Y/m/d/ H:i', $comment->comment_date); ?>
+	<?php
+			break;
+		case 'trackback' :
+	?>
+	<li class="pings trackback">
+        <?php comment_author_link(); ?> - Trackback on <?php echo mysql2date('Y/m/d/ H:i', $comment->comment_date); ?>
+	<?php
+			break;
+	endswitch;
+}
+
+?>
+<?php
+class dotb_widget_colorfultagcloud extends WP_Widget {
+    function dotb_widget_colorfultagcloud() {
+        $widget_ops = array('description' => 'Dot-B '.__( 'Display Colorful Tags Cloud', 'dot-b'));
+        $this->WP_Widget('dotb_widget_colorfultagcloud', 'Dot-B '.__( 'Colorful Tag Cloud', 'dot-b'), $widget_ops);
     }
-    add_shortcode("download", "download");
- /** URL **/
-function myUrl($atts, $content = null) {
-extract(shortcode_atts(array(
-"href" => 'http://'
-), $atts));
-return '<a target="_blank" href="'.$href.'" rel="nofollow">'.$content.'</a>';
+    function widget($args, $instance) {
+        extract($args);
+        $title = apply_filters('widget_title', esc_attr($instance['title']));
+        echo $before_widget.$before_title.$title.$after_title;
+        echo '<div class="colorfultagcloud">';
+		add_filter('wp_tag_cloud', 'dotb_colorfultagcloud', 1);
+		wp_tag_cloud();
+        echo '</div>';
+        echo $after_widget;
+    }
+    function update($new_instance, $old_instance) {
+        if (!isset($new_instance['submit'])) {
+            return false;
+        }
+        $instance = $old_instance;
+        $instance['title'] = strip_tags($new_instance['title']);
+
+        return $instance;
+    }
+    function form($instance) {
+        global $wpdb;
+        $instance = wp_parse_args((array) $instance, array('title' => __( 'Tag Cloud', 'dot-b')));
+        $title = esc_attr($instance['title']);
+?>
+        <p>
+            <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e( 'Title', 'dot-b'); ?>:<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" /></label>
+        </p>
+        <input type="hidden" id="<?php echo $this->get_field_id('submit'); ?>" name="<?php echo $this->get_field_name('submit'); ?>" value="1" />
+<?php
+    }
 }
-add_shortcode("url", "myUrl");
-/** title **/
-function Title($atts, $content=null){
-	return '<span style="color: rgb(230, 230, 250);background-color: rgb(0, 100, 0);font-weight:bolder;">'.$content.'</span>';
+add_action('widgets_init', 'dotb_widget_colorfultagcloud_init');
+function dotb_widget_colorfultagcloud_init() {
+    register_widget('dotb_widget_colorfultagcloud');
 }
-add_shortcode("title", "Title");
-// -- END ----------------------------------------
-function no_self_ping( &$links ) {
-	$home = get_option( 'home' );
-	foreach ( $links as $l => $link )
-		if ( 0 === strpos( $link, $home ) )
-			unset($links[$l]);
+// Redirect to theme options page after theme activation.
+global $pagenow;
+if(is_admin() && isset($_GET['activated']) && $pagenow = 'themes.php') {
+	header('Location: '.admin_url().'themes.php?page=theme_options' );
 }
-//no-self-pingback
-add_action( 'pre_ping', 'no_self_ping' );
-remove_action( 'wp_head', 'feed_links', 2 );//remove default Rss feed
 ?>
