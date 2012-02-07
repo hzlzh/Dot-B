@@ -2,6 +2,9 @@
 $dotb_settings = get_option( 'dotb_options', $dotb_options ); ?>
 	<div id="footer">
 		<div id="copyright">
+			<div id="site-host">
+				<a target="_blank" href="http://zlz.im/links/mediatemple.html" title="Host on MediaTemple"><span>MediaTemple</span></a>
+			</div>
 			<div id="site-info">
 				<?php echo $dotb_settings['dotb_footer'];?>
 			</div>
