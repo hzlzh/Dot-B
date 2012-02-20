@@ -11,6 +11,9 @@ http://zlz.im/how-to-control-social-media-icons-display-with-wordpress-menu-func
 http://zlz.im/dot-b-social-media-icons-set-release/
 
 == LOGS == For more detials check here: http://bit.ly/Dot-B-Dev
+-- 1.8.9 beta  -- 2012.02.20
+Polish language supported | 支持波兰语
+
 -- 1.8.8  -- 2011.12.02
 Fix the language files into UTF-8 for chinese users| 修复了中文下的一个字节的乱码
 
