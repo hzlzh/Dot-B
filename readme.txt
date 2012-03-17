@@ -12,6 +12,7 @@ http://zlz.im/dot-b-social-media-icons-set-release/
 
 == LOGS == For more detials check here: http://bit.ly/Dot-B-Dev
 -- 1.8.9 beta  -- 2012.02.20
+Spanish language supported | 支持西班牙语
 Polish language supported | 支持波兰语
 
 -- 1.8.8  -- 2011.12.02

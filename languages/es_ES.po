@@ -1,0 +1,407 @@
+# Copyright (C) 2010 Dot-B in Spanish
+# This file is distributed under the same license as the Dot-B package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Dot-B 1.8.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-11-23 11:46+0100\n"
+"PO-Revision-Date: 2012-03-17 12:52+0100\n"
+"Last-Translator: Maese Webero <maesewebero@gmail.com>\n"
+"Language-Team: Maese Webero <maesewebero@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:12
+#: index.php:27
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "Esto es algo incómodo, no?"
+
+#: 404.php:15
+#: index.php:30
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help."
+msgstr "Parece que no podemos encontrar lo que busca. Puede que una búsqueda o uno de los enlaces inferiores, puedan ayudarle."
+
+#: 404.php:19
+#: index.php:34
+msgid "Most Used Categories"
+msgstr "Categorías más utilizadas"
+
+#: 404.php:27
+#: index.php:42
+msgid "Try looking in the monthly archives."
+msgstr "Trate de buscar en los archivos mensuales."
+
+#: archive.php:18
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "Archivos del día : %s"
+
+#: archive.php:20
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "Archivos del mes : %s"
+
+#: archive.php:22
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "Archivos del año : %s"
+
+#: archive.php:24
+msgid "Blog Archives"
+msgstr "Archivos del blog"
+
+#: archive.php:31
+#: index.php:12
+#, php-format
+msgid "Posted on %s"
+msgstr "Publicado el %s"
+
+#: archive.php:32
+#: index.php:13
+#: page.php:9
+#: single.php:9
+msgid "by"
+msgstr "por"
+
+#: archive.php:33
+#: index.php:14
+#: page.php:10
+#: single.php:11
+msgid "[ Edit ]"
+msgstr "[Editar]"
+
+#: archive.php:36
+#: index.php:17
+msgid "Read more &raquo;"
+msgstr "Leer más &raquo;"
+
+#: archive.php:42
+#: comments.php:10
+#: index.php:23
+#: page.php:19
+#: single.php:20
+msgid "Leave a Reply ?"
+msgstr "¿ Un comentario ?"
+
+#: archive.php:42
+#: index.php:23
+#: page.php:19
+#: single.php:20
+msgid "[ 1 Reply ]"
+msgstr "[1 comentario]"
+
+#: archive.php:42
+#: index.php:23
+#: page.php:19
+#: single.php:20
+msgid "[ % Replies ]"
+msgstr "[% comentarios]"
+
+#: archive.php:46
+#: page.php:23
+#: single.php:28
+msgid "Nothing Found"
+msgstr "Nada encontrado"
+
+#: comments.php:3
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Este artículo está protegido por una clave de paso. Indíquela para ver los comentarios."
+
+#: footer.php:11
+#: theme-options.php:233
+msgid "queries in"
+msgstr "peticiones en"
+
+#: footer.php:11
+#: theme-options.php:233
+msgid "seconds"
+msgstr "segundos"
+
+#: footer.php:14
+msgid "Back to top"
+msgstr "Volver al inicio"
+
+#: footer.php:14
+msgid "Top"
+msgstr "Inicio"
+
+#: functions.php:66
+msgid "House"
+msgstr "House"
+
+#: functions.php:72
+msgid "Inkwell"
+msgstr "Inkwell"
+
+#: functions.php:78
+msgid "Willow"
+msgstr "Willow"
+
+#: functions.php:84
+msgid "Shore"
+msgstr "Shore"
+
+#: functions.php:90
+msgid "Sky"
+msgstr "Sky"
+
+#: functions.php:96
+msgid "Path"
+msgstr "Path"
+
+#: functions.php:104
+msgid "Header Menu"
+msgstr "Menu Cabecera"
+
+#: functions.php:105
+msgid "Custom Social Media"
+msgstr "Personalizar Redes Sociales"
+
+#: functions.php:116
+msgid "SideBar"
+msgstr "BarraLateral"
+
+#: functions.php:176
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s a %2$s"
+
+#: functions.php:176
+msgid "(Edit)"
+msgstr "(Editar)"
+
+#: functions.php:181
+msgid "Your comment is awaiting moderation."
+msgstr "Su comentario está a la espera de moderación."
+
+#: functions.php:213
+msgid "Display Colorful Tags Cloud"
+msgstr "Mostrar un nube de etiquetas coloreadas"
+
+#: functions.php:214
+msgid "Colorful Tag Cloud"
+msgstr "Nube coloreada"
+
+#: functions.php:237
+msgid "Tag Cloud"
+msgstr "Nube de etiquetas"
+
+#: functions.php:241
+msgid "Title"
+msgstr "Título"
+
+#: header.php:21
+#, php-format
+msgid "Page %s"
+msgstr "Pág. %s"
+
+#: header.php:41
+msgid "RSS Feed"
+msgstr "RSS Feed"
+
+#: page.php:8
+#: single.php:8
+#, php-format
+msgid "Posted on %s "
+msgstr "Publicado el %s"
+
+#: searchform.php:3
+msgid "type, hit enter"
+msgstr "Buscar..."
+
+#: searchform.php:4
+msgid "SEARCH"
+msgstr "BUSCAR"
+
+#: sidebar.php:16
+msgid "Recent Post"
+msgstr "Entradas recientes"
+
+#: sidebar.php:20
+msgid "Recent Comments"
+msgstr "Comentarios recientes"
+
+#: sidebar.php:24
+msgid "Archives"
+msgstr "Archivos"
+
+#: sidebar.php:31
+msgid "Tags"
+msgstr "Etiquetas"
+
+#: sidebar.php:38
+msgid "Meta"
+msgstr "Meta"
+
+#: single.php:10
+msgid "in"
+msgstr "en"
+
+#: single.php:23
+msgid "Already the latest post!"
+msgstr "¡Última entrada!"
+
+#: single.php:24
+msgid "Already the last post!"
+msgstr "¡Última entrada!"
+
+#: theme-options.php:8
+msgid ">>Read more"
+msgstr "&raquo; Leer más"
+
+#: theme-options.php:124
+#: theme-options.php:160
+msgid "Theme Options"
+msgstr "Opciones del Tema"
+
+#: theme-options.php:163
+msgid "Options reset successfully!"
+msgstr "¡Opciones restauradas!"
+
+#: theme-options.php:165
+msgid "Options saved successfully!"
+msgstr "¡Opciones guardadas!"
+
+#: theme-options.php:180
+msgid "Rss Feed URL"
+msgstr "URL RSS Feed"
+
+#: theme-options.php:182
+msgid "( With \"<code>http://</code>\" )   Keep blank to use WordPress default Rss Feed URL."
+msgstr "( Con \"<code>http://</code>\" )  Dejar vacío para usar la URL por defecto de RSS Feed de WordPress."
+
+#: theme-options.php:186
+msgid "Enable Excerpt"
+msgstr "Activar Extracto"
+
+#: theme-options.php:189
+msgid "Show excerpt in Home and Archives with"
+msgstr "Mostrar extracto de entrada y archivos con"
+
+#: theme-options.php:192
+msgid "length"
+msgstr "caracteres"
+
+#: theme-options.php:196
+msgid "Text of Read More link"
+msgstr "Texto del enlace Leer Más"
+
+#: theme-options.php:198
+#: theme-options.php:218
+#: theme-options.php:225
+#: theme-options.php:233
+#: theme-options.php:241
+msgid "Preview"
+msgstr "Vista previa"
+
+#: theme-options.php:202
+msgid "Use Google Analytics?"
+msgstr "¿Usar Google Analytics?"
+
+#: theme-options.php:205
+msgid "You can get you <code>Google Analytics</code> code <a target=\"_blank\" href=\"https://www.google.com/analytics/settings/check_status_profile_handler\">here</a>."
+msgstr "Puede obtener su código <code>Google Analytics</code> <a target=\"_blank\" href=\"https://www.google.com/analytics/settings/check_status_profile_handler\">aquí</a>."
+
+#: theme-options.php:210
+msgid "Analytics Code"
+msgstr "Código de Google Analytics"
+
+#: theme-options.php:216
+msgid "Footer Copyright"
+msgstr "Copyright de Pie de página"
+
+#: theme-options.php:222
+msgid "Display colourful bar on header and footer?"
+msgstr "¿Mostrar la barra coloreada en la cabecera y al pie de página?"
+
+#: theme-options.php:230
+msgid "Display SQL count at footer?"
+msgstr "¿Mostrar el contador SQL al pie de página?"
+
+#: theme-options.php:238
+msgid "Display Comment Note below comment form?"
+msgstr "¿Mostrar nota comentada debajo del formulario de comentarios?"
+
+#: theme-options.php:258
+msgid "Some Tips Here"
+msgstr "Unos consejos aquí"
+
+#: theme-options.php:260
+msgid "1.Customize your Social Media (Facebook, Twitter, Google+ .etc) according to this"
+msgstr "1.Personalizar las redes sociales (Facebook, Twitter, Google+ .etc) según estos"
+
+#: theme-options.php:260
+#: theme-options.php:264
+msgid "Instructions"
+msgstr "Instrucciones"
+
+#: theme-options.php:261
+msgid "2.Your threaded (nested) comments"
+msgstr "2.Encadene sus comentarios"
+
+#: theme-options.php:261
+msgid "levels deep, change it here"
+msgstr "cambie esta preferencia aquí"
+
+#: theme-options.php:261
+msgid "Settings"
+msgstr "Preferencias"
+
+#: theme-options.php:261
+msgid "Discussion"
+msgstr "Discusión"
+
+#: theme-options.php:262
+msgid "3.Change <code>&lt;Body&gt;</code> background image here"
+msgstr "3.Cambie la imagen del fondo del <code>&lt;Body&gt;</code> aquí"
+
+#: theme-options.php:262
+#: theme-options.php:263
+#: theme-options.php:265
+msgid "Appearance"
+msgstr "Apariencia"
+
+#: theme-options.php:262
+msgid "Background"
+msgstr "Fondo"
+
+#: theme-options.php:263
+msgid "4.Customize <code>&lt;Header&gt;</code> image here"
+msgstr "4.Personalizar la imagen del <code>&lt;Header&gt;</code> aquí"
+
+#: theme-options.php:263
+msgid "Header"
+msgstr "Cabecera"
+
+#: theme-options.php:264
+msgid "5.Download & Customize <code>Social Media Icons</code> from PSD source files here"
+msgstr "5.Descargue y personalice sus <code>iconos de redes sociales</code> a partir de ficheros fuente PSD aquí"
+
+#: theme-options.php:265
+msgid "6.Use <code>Dot-B Colorful Tag Cloud</code> widget at sidebar"
+msgstr "6.Use widget de <code>la nube de etiquetas coloreada de Dot-B</code> en la barra lateral"
+
+#: theme-options.php:265
+msgid "Widgets"
+msgstr "Widgets"
+
+#: theme-options.php:266
+msgid "========= Feel free to get my help by both Twitter: <a href=\"http://twitter.com/hzlzh\">@hzlzh</a> and Email: <a href=\"mailto:hzlzh.dev@gmail.com\">hzlzh.dev@gmail.com</a> ========="
+msgstr "========= No dude en solicitarme ayuda tanto por Twitter: <a href=\"http://twitter.com/hzlzh\">@hzlzh</a> como por Email: <a href=\"mailto:hzlzh.dev@gmail.com\">hzlzh.dev@gmail.com</a> ========="
+
+#: theme-options.php:273
+msgid "Created, Developed and maintained by <a href=\"http://zlz.im/\">hzlzh</a><br>If you like the <code>Dot-B</code> theme, please donate. It will help in developing new features and versions."
+msgstr "Creado, desarrollado y mantenido por <a href=\"http://zlz.im/\">hzlzh</a>. Traducido por <a href=\"http://www.probatinas.net\">Maese Webero</a>.<br>Si le gusta el tema <code>Dot-B</code>, considere hacer un donativo. Con ello ayudará al desarrollo de nuevas funciones y versiones."
+
+#: theme-options.php:293
+msgid "Alipay"
+msgstr "Alipay"
+
