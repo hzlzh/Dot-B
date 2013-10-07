@@ -1,4 +1,5 @@
-![screenshot]
+![screenshot]  
+**Released Page | 发布页面:** [https://zlz.im/dot-b/](https://zlz.im/dot-b/)
 
 **Theme Name | 主题名:** Dot-B  
 
