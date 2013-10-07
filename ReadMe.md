@@ -30,7 +30,7 @@
 * 支持无限嵌套评论样式，建议开启5至6层
 * 支持 自定义导航，自定义顶部图片，自定义背景图片，自定义社交媒体图标
 
-**Download | 下載:** [WordPress Theme Directory] & 本站下载
+**Download | 下載:** [WordPress Theme Directory] & <del>本站下载</del>
 
 **Subversion | 版本控制**：[https://github.com/hzlzh/Dot-B](https://github.com/hzlzh/Dot-B) (You can get all the latest language support files here)
 
