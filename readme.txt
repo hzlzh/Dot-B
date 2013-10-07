@@ -13,7 +13,7 @@ http://zlz.im/dot-b-social-media-icons-set-release/
 == LOGS == For more detials check here: http://bit.ly/Dot-B-Dev
 
 -- 1.8.9  -- 2013.10.07
-Croatian language supported | 支持克罗地亚语
+Serbo-Croatian language supported | 支持塞尔维亚-克罗地亚语
 
 -- 1.8.9 beta  -- 2012.02.20
 Spanish language supported | 支持西班牙语
