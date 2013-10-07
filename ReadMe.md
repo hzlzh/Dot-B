@@ -194,7 +194,7 @@ Custom Header |自定义顶部图像
 
 
 
-[Française(fr_FR)]: http://www.li-an.fr/wpplugins/mes-traductions-de-plugins/#dotb ''
+[Française(fr_FR)]: http://www.li-an.fr/wpplugins/mes-traductions-de-plugins/#dotb
 [русский(ru_RU)]: http://k-notes.ru/notes/rus-theme-dot-b/
 [Romanian(ro_RO)]: https://github.com/hzlzh/Dot-B/tree/master/languages
 [Polish(pl_PL)]: https://github.com/hzlzh/Dot-B/tree/master/languages
