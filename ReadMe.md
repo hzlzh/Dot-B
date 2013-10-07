@@ -2,7 +2,7 @@
 
 **Theme Name | 主题名:** Dot-B  
 
-**Version | 版本:** 1.8.9 (Last update 2012.02.20 21:31)  
+**Version | 版本:** 1.8.9 (Last update 2013.10.07)  
 
 **Description | 描述:** A simple, fresh and dot-decorated looking theme with a lot of basic theme-custom options  prepared for you to start you site. You can use those features : custom-background, custom-menu, drop-down menus, custom-header, widgets… and much more. Also you can recreate you child themes based on Dot-B. Compatible with WordPress 2.9+, valid XHTML & CSS + WP3 ready and Multi-language supported.
 
