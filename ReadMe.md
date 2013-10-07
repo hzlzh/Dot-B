@@ -16,7 +16,7 @@
 **More | 更多:**
 
 * Support IE6/7/8/9+, Firefox 3.5+, Chrome 3+, Opera 10.x, etc
-* Multi-language supported. (English, 简体中文, 繁體中文, Française, русский, Romanian, Polish, Spanish)
+* Multi-language supported. (English, 简体中文, 繁體中文, Française, русский, Romanian, Polish, Spanish, Serbian)
 * Valid XHTML & CSS.
 * Theme Recommended plug-ins: [Custom Smilies se] | [Show Useragent] | [WordPress Related Posts]
 * Support threaded comments 5 levels deep recommended
