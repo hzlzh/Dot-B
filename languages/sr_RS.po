@@ -1,0 +1,407 @@
+# Copyright (C) 2010 Dot-B in French
+# This file is distributed under the same license as the Dot-B package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Dot-B 1.8.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-11-23 11:46+0100\n"
+"PO-Revision-Date: 2013-10-07 10:33+0100\n"
+"Last-Translator: Li-An <lian00@gmail.com>\n"
+"Language-Team: Wolforg <contact@wolforg.eu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: fr_FR\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:12 index.php:27
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "Ovo je pomalo sramotno, zar ne?"
+
+#: 404.php:15 index.php:30
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching, or one of the links below, can help."
+msgstr ""
+"Izgleda da ne možemo&rsquo;t naći ono što&rsquo; tražite. Možda pretraga ili "
+"neki od linkova ispod mogu pomoći."
+
+#: 404.php:19 index.php:34
+msgid "Most Used Categories"
+msgstr "Najćešće korišćene kategorije"
+
+#: 404.php:27 index.php:42
+msgid "Try looking in the monthly archives."
+msgstr "Pogledajte u mesečnim arhivama."
+
+#: archive.php:18
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "Dnevne arhive: %s"
+
+#: archive.php:20
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "Mesečne arhive:%s"
+
+#: archive.php:22
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "Godišnje arhive:%s"
+
+#: archive.php:24
+msgid "Blog Archives"
+msgstr "Blog arhive"
+
+#: archive.php:31 index.php:12
+#, php-format
+msgid "Posted on %s"
+msgstr "Postovano na %s"
+
+#: archive.php:32 index.php:13 page.php:9 single.php:9
+msgid "by"
+msgstr "od strane"
+
+#: archive.php:33 index.php:14 page.php:10 single.php:11
+msgid "[ Edit ]"
+msgstr "[ Edit ]"
+
+#: archive.php:36 index.php:17
+msgid "Read more &raquo;"
+msgstr "Pročitaj više  &raquo;"
+
+#: archive.php:42 comments.php:10 index.php:23 page.php:19 single.php:20
+msgid "Leave a Reply ?"
+msgstr "Ostavi odgovor?"
+
+#: archive.php:42 index.php:23 page.php:19 single.php:20
+msgid "[ 1 Reply ]"
+msgstr "[ 1 Odgovor ]"
+
+#: archive.php:42 index.php:23 page.php:19 single.php:20
+msgid "[ % Replies ]"
+msgstr "[ % Odgovori ]"
+
+#: archive.php:46 page.php:23 single.php:28
+msgid "Nothing Found"
+msgstr "Ništa nije pronadjeno"
+
+#: comments.php:3
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+"Ovaj post je zaštićen šifrom. Unesite šifru da biste pregledali komentare."
+
+#: footer.php:11 theme-options.php:233
+msgid "queries in"
+msgstr "pretrage u"
+
+#: footer.php:11 theme-options.php:233
+msgid "seconds"
+msgstr "sekunde"
+
+#: footer.php:14
+msgid "Back to top"
+msgstr "Natrag na početak"
+
+#: footer.php:14
+msgid "Top"
+msgstr "Početak"
+
+#: functions.php:66
+msgid "House"
+msgstr "Kuća"
+
+#: functions.php:72
+msgid "Inkwell"
+msgstr "Inkwell"
+
+#: functions.php:78
+msgid "Willow"
+msgstr "Willow"
+
+#: functions.php:84
+msgid "Shore"
+msgstr "Obala"
+
+#: functions.php:90
+msgid "Sky"
+msgstr "Nebo"
+
+#: functions.php:96
+msgid "Path"
+msgstr "Putanja"
+
+#: functions.php:104
+msgid "Header Menu"
+msgstr "Header meni"
+
+#: functions.php:105
+msgid "Custom Social Media"
+msgstr "Custom Social Media"
+
+#: functions.php:116
+msgid "SideBar"
+msgstr "SideBar"
+
+#: functions.php:176
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s na  %2$s"
+
+#: functions.php:176
+msgid "(Edit)"
+msgstr "(Edit)"
+
+#: functions.php:181
+msgid "Your comment is awaiting moderation."
+msgstr "Vaš komentar čeka odobrenje."
+
+#: functions.php:213
+msgid "Display Colorful Tags Cloud"
+msgstr "Prikaži Cloud tagove u boji"
+
+#: functions.php:214
+msgid "Colorful Tag Cloud"
+msgstr "Tag Cloud u boji"
+
+#: functions.php:237
+msgid "Tag Cloud"
+msgstr "Tag Cloud"
+
+#: functions.php:241
+msgid "Title"
+msgstr "Naslov"
+
+#: header.php:21
+#, php-format
+msgid "Page %s"
+msgstr "Stranica %s "
+
+#: header.php:41
+msgid "RSS Feed"
+msgstr "RSS Feed"
+
+#: page.php:8 single.php:8
+#, php-format
+msgid "Posted on %s "
+msgstr "Postovano na %s"
+
+#: searchform.php:3
+msgid "type, hit enter"
+msgstr "ukucaj, pritisni enter"
+
+#: searchform.php:4
+msgid "SEARCH"
+msgstr "PRETRAGA"
+
+#: sidebar.php:16
+msgid "Recent Post"
+msgstr "Poslednji post"
+
+#: sidebar.php:20
+msgid "Recent Comments"
+msgstr "Poslednji komentari"
+
+#: sidebar.php:24
+msgid "Archives"
+msgstr "Arhive"
+
+#: sidebar.php:31
+msgid "Tags"
+msgstr "Tagovi"
+
+#: sidebar.php:38
+msgid "Meta"
+msgstr "Meta"
+
+#: single.php:10
+msgid "in"
+msgstr "u"
+
+#: single.php:23
+msgid "Already the latest post!"
+msgstr "Već je poslednji post!"
+
+#: single.php:24
+msgid "Already the last post!"
+msgstr "Već je poslednji post!"
+
+#: theme-options.php:8
+msgid ">>Read more"
+msgstr ">>Pročitaj više"
+
+#: theme-options.php:124 theme-options.php:160
+msgid "Theme Options"
+msgstr "Opcije teme"
+
+#: theme-options.php:163
+msgid "Options reset successfully!"
+msgstr "Opcije uspešno resetovane!"
+
+#: theme-options.php:165
+msgid "Options saved successfully!"
+msgstr "Opcije uspešno resetovane!"
+
+#: theme-options.php:180
+msgid "Rss Feed URL"
+msgstr "Rss Feed URL"
+
+#: theme-options.php:182
+msgid ""
+"( With \"<code>http://</code>\" )   Keep blank to use WordPress default Rss "
+"Feed URL."
+msgstr ""
+"( sa  \"<code>http://</code>\" ) Ostaviti prazno radi upotrebe WordPress "
+"default Rss Feed URL."
+
+#: theme-options.php:186
+msgid "Enable Excerpt"
+msgstr "Omogućiti izvod"
+
+#: theme-options.php:189
+msgid "Show excerpt in Home and Archives with"
+msgstr "Pokazati izvod u Home i Arhive sa"
+
+#: theme-options.php:192
+msgid "length"
+msgstr "dužina"
+
+#: theme-options.php:196
+msgid "Text of Read More link"
+msgstr "Tekst od Pročitaj još linka"
+
+#: theme-options.php:198 theme-options.php:218 theme-options.php:225
+#: theme-options.php:233 theme-options.php:241
+msgid "Preview"
+msgstr "Pregled"
+
+#: theme-options.php:202
+msgid "Use Google Analytics?"
+msgstr "Koristiti Google Analytics?"
+
+#: theme-options.php:205
+msgid ""
+"You can get you <code>Google Analytics</code> code <a target=\"_blank\" href="
+"\"https://www.google.com/analytics/settings/check_status_profile_handler"
+"\">here</a>."
+msgstr ""
+"Možete dobiti vaš<code> Google Analytics</code> code <a target=\"_blank\" "
+"href=\"https://www.google.com/analytics/settings/check_status_profile_handler"
+"\"> ovde</a>."
+
+#: theme-options.php:210
+msgid "Analytics Code"
+msgstr "Analytics Code"
+
+#: theme-options.php:216
+msgid "Footer Copyright"
+msgstr "Footer Copyright"
+
+#: theme-options.php:222
+msgid "Display colourful bar on header and footer?"
+msgstr "Prikaži obojeni tab na headeru i footeru?"
+
+#: theme-options.php:230
+msgid "Display SQL count at footer?"
+msgstr "Prikaži SQL brojač na footer-u?"
+
+#: theme-options.php:238
+msgid "Display Comment Note below comment form?"
+msgstr "Prikaži Belešku o komentarima ispod forme za komentare?"
+
+#: theme-options.php:258
+msgid "Some Tips Here"
+msgstr "Neki saveti ovde"
+
+#: theme-options.php:260
+msgid ""
+"1.Customize your Social Media (Facebook, Twitter, Google+ .etc) according to "
+"this"
+msgstr ""
+"1.Kostumizirajte vaše Social Media (Facebook, Twitter, Google+ itd ) prema "
+"ovome"
+
+#: theme-options.php:260 theme-options.php:264
+msgid "Instructions"
+msgstr "Upustva"
+
+#: theme-options.php:261
+msgid "2.Your threaded (nested) comments"
+msgstr "2.Vaši komentari kojima ste se bavili  "
+
+#: theme-options.php:261
+msgid "levels deep, change it here"
+msgstr "stepeni dubine, ovde promenite"
+
+#: theme-options.php:261
+msgid "Settings"
+msgstr "Postavke"
+
+#: theme-options.php:261
+msgid "Discussion"
+msgstr "Diskusije"
+
+#: theme-options.php:262
+msgid "3.Change <code>&lt;Body&gt;</code> background image here"
+msgstr "3.Promeni <code>&lt;Body&gt;</code> sliku pozadine ovde"
+
+#: theme-options.php:262 theme-options.php:263 theme-options.php:265
+msgid "Appearance"
+msgstr "Izgled"
+
+#: theme-options.php:262
+msgid "Background"
+msgstr "Pozadina"
+
+#: theme-options.php:263
+msgid "4.Customize <code>&lt;Header&gt;</code> image here"
+msgstr "4.Kostumizirajte<code>&lt;Header&gt;</code> sliku Header-a ovde  "
+
+#: theme-options.php:263
+msgid "Header"
+msgstr "Header"
+
+#: theme-options.php:264
+msgid ""
+"5.Download & Customize <code>Social Media Icons</code> from PSD source files "
+"here"
+msgstr ""
+"5.Download & kostumizacija<code> Social Media ikona</code> sa PSD izvornih "
+"fajlova ovde"
+
+#: theme-options.php:265
+msgid "6.Use <code>Dot-B Colorful Tag Cloud</code> widget at sidebar"
+msgstr "6.Koristite<code> Dot-B raznobojni Tag Cloud</code>  widget sa strane"
+
+#: theme-options.php:265
+msgid "Widgets"
+msgstr "Widgets"
+
+#: theme-options.php:266
+msgid ""
+"========= Feel free to get my help by both Twitter: <a href=\"http://twitter."
+"com/hzlzh\">@hzlzh</a> and Email: <a href=\"mailto:hzlzh.dev@gmail.com"
+"\">hzlzh.dev@gmail.com</a> ========="
+msgstr ""
+"========= Slobodno potražite moju pomoć na Twitter:<a href=\"http://twitter."
+"com/hzlzh\">@hzlzh</a>  i Email:<a href=\"mailto:hzlzh.dev@gmail.com\"> "
+"hzlzh.dev@gmail.com</a> ========="
+
+#: theme-options.php:273
+msgid ""
+"Created, Developed and maintained by <a href=\"http://zlz.im/\">hzlzh</"
+"a><br>If you like the <code>Dot-B</code> theme, please donate. It will help "
+"in developing new features and versions."
+msgstr ""
+"Stvoreno, programirano i održavano od strane<a href=\"http://zlz.im/"
+"\">hzlzh</a><br> ako vam se dopada<code>Dot-B</code> tema, molim vas "
+"donirajte. To će pomoći u razvitku novih karateristika i verzija."
+
+#: theme-options.php:293
+msgid "Alipay"
+msgstr "Alipay"

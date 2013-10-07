@@ -1,4 +1,4 @@
-== Dot-B 1.8.8 ==
+== Dot-B 1.8.9 ==
 
 Created, Developed and maintained by hzlzh http://zlz.im/
 
@@ -11,6 +11,10 @@ http://zlz.im/how-to-control-social-media-icons-display-with-wordpress-menu-func
 http://zlz.im/dot-b-social-media-icons-set-release/
 
 == LOGS == For more detials check here: http://bit.ly/Dot-B-Dev
+
+-- 1.8.9  -- 2013.10.07
+Croatian language supported | 支持克罗地亚语
+
 -- 1.8.9 beta  -- 2012.02.20
 Spanish language supported | 支持西班牙语
 Polish language supported | 支持波兰语
