@@ -1,4 +1,4 @@
-# Copyright (C) 2010 Dot-B in Serbo-Croatian
+# Copyright (C) 2010 Dot-B in Serbian
 # This file is distributed under the same license as the Dot-B package.
 msgid ""
 msgstr ""
@@ -6,8 +6,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-11-23 11:46+0100\n"
 "PO-Revision-Date: 2013-10-07 10:33+0100\n"
-"Last-Translator: Li-An <lian00@gmail.com>\n"
-"Language-Team: Wolforg <contact@wolforg.eu>\n"
+"Last-Translator: Borisa Djuraskovic <borisad@webhostinghub.com>\n"
+"Language-Team: Borisa Djuraskovic <borisad@webhostinghub.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
