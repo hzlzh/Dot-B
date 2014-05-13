@@ -1,0 +1,406 @@
+# Copyright (C) 2010 Dot-B
+# This file is distributed under the same license as the Dot-B package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Dot-B 1.8.6\n"
+"Report-Msgid-Bugs-To: http://zlz.im/dot-b/\n"
+"POT-Creation-Date: 2011-09-28 22:47:23+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-05-13 18:12+0800\n"
+"Last-Translator: hzlzh <hzlzh.dev@gmail.com>\n"
+"Language-Team: LANGUAGE <hzlzh.dev@gmail.com>\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: uk_UA\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:12 index.php:27
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "Це трохи незручно, чи не так?"
+
+#: 404.php:15 index.php:30
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching, or one of the links below, can help."
+msgstr ""
+"Здається, ми не можемо знайти те, що ви шукаєте. Можливо, пошук, одного з "
+"посилань нижче, може допомогти."
+
+#: 404.php:19 index.php:34
+msgid "Most Used Categories"
+msgstr "Найбільш часто використовувані категорії"
+
+#: 404.php:27 index.php:42
+msgid "Try looking in the monthly archives."
+msgstr "Спробуйте подивитися в щомісячних архівів."
+
+#: archive.php:18
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "Щодений архів: %s"
+
+#: archive.php:20
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "Місячний архів: %s"
+
+#: archive.php:22
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "Щорічні Архіви: %s"
+
+#: archive.php:24
+msgid "Blog Archives"
+msgstr "Архів блогу"
+
+#: archive.php:31 index.php:12
+#, php-format
+msgid "Posted on %s"
+msgstr "Опубліковано %s"
+
+#: archive.php:32 index.php:13 page.php:9 single.php:9
+msgid "by"
+msgstr "по"
+
+#: archive.php:33 index.php:14 page.php:10 single.php:11
+msgid "[ Edit ]"
+msgstr "[Змінити]"
+
+#: archive.php:36 index.php:17
+msgid "Read more &raquo;"
+msgstr "Читати далі &raquo;"
+
+#: archive.php:42 comments.php:10 index.php:23 page.php:19 single.php:20
+msgid "Leave a Reply ?"
+msgstr "Залишити коментар?"
+
+#: archive.php:42 index.php:23 page.php:19 single.php:20
+msgid "[ 1 Reply ]"
+msgstr "[1 Відповідь]"
+
+#: archive.php:42 index.php:23 page.php:19 single.php:20
+msgid "[ % Replies ]"
+msgstr "[% Відповіді]"
+
+#: archive.php:46 page.php:23 single.php:28
+msgid "Nothing Found"
+msgstr "Нічого не знайдено"
+
+#: comments.php:3
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+"Це повідомлення захищене паролем. Введіть пароль для перегляду коментарів."
+
+#: footer.php:11 theme-options.php:233
+msgid "queries in"
+msgstr "запитів в"
+
+#: footer.php:11 theme-options.php:233
+msgid "seconds"
+msgstr "секунди"
+
+#: footer.php:14
+msgid "Back to top"
+msgstr "На рівень вище"
+
+#: footer.php:14
+msgid "Top"
+msgstr "Угору"
+
+#: functions.php:55
+msgid "House"
+msgstr "Будинок"
+
+#: functions.php:61
+msgid "Inkwell"
+msgstr "Inkwell"
+
+#: functions.php:67
+msgid "Willow"
+msgstr "Willow"
+
+#: functions.php:73
+msgid "Shore"
+msgstr "Берег"
+
+#: functions.php:79
+msgid "Sky"
+msgstr "Небо"
+
+#: functions.php:85
+msgid "Path"
+msgstr "Шлях"
+
+#: functions.php:93
+msgid "Header Menu"
+msgstr "Тема меню"
+
+#: functions.php:94
+msgid "Custom Social Media"
+msgstr "Користувальницькі Соціальні медіа"
+
+#: functions.php:105
+msgid "SideBar"
+msgstr "Бокова панель"
+
+#: functions.php:165
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s at %2$s"
+
+#: functions.php:165
+msgid "(Edit)"
+msgstr "(Змінити)"
+
+#: functions.php:170
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш коментар очікує модерації."
+
+#: functions.php:202
+msgid "Display Colorful Tags Cloud"
+msgstr "Дисплей хмари кольорових тегів"
+
+#: functions.php:203
+msgid "Colorful Tag Cloud"
+msgstr "Барвиста Хмара тегів"
+
+#: functions.php:226
+msgid "Tag Cloud"
+msgstr "Хмара тегів"
+
+#: functions.php:230
+msgid "Title"
+msgstr "Назва"
+
+#: header.php:21
+#, php-format
+msgid "Page %s"
+msgstr "Сторінка %s"
+
+#: header.php:48
+msgid "RSS Feed"
+msgstr "RSS Подача"
+
+#: page.php:8 single.php:8
+#, php-format
+msgid "Posted on %s "
+msgstr "Опубліковано %s"
+
+#: searchform.php:3
+msgid "type, hit enter"
+msgstr "надрукуйте, та натисніть Enter"
+
+#: searchform.php:4
+msgid "SEARCH"
+msgstr "ШУКАТИ"
+
+#: sidebar.php:16
+msgid "Recent Post"
+msgstr "Останні повідомлення"
+
+#: sidebar.php:20
+msgid "Recent Comments"
+msgstr "Останні коментарі"
+
+#: sidebar.php:24
+msgid "Archives"
+msgstr "Архів"
+
+#: sidebar.php:31
+msgid "Tags"
+msgstr "Мітки"
+
+#: sidebar.php:38
+msgid "Meta"
+msgstr "Мета"
+
+#: single.php:10
+msgid "in"
+msgstr "в"
+
+#: single.php:23
+msgid "Already the latest post!"
+msgstr "Вже останнє повідомлення!"
+
+#: single.php:24
+msgid "Already the last post!"
+msgstr "Вже останній пост!"
+
+#: theme-options.php:8
+msgid "Read more"
+msgstr "Детальніше"
+
+#: theme-options.php:124 theme-options.php:160
+msgid "Theme Options"
+msgstr "Параметри теми"
+
+#: theme-options.php:163
+msgid "Options reset successfully!"
+msgstr "Опції успішно скинуті!"
+
+#: theme-options.php:165
+msgid "Options saved successfully!"
+msgstr "Налаштування збережено!"
+
+#: theme-options.php:180
+msgid "Rss Feed URL"
+msgstr "Стрічка RSS URL"
+
+#: theme-options.php:182
+msgid ""
+"( With \"<code>http://</code>\" )   Keep blank to use WordPress default Rss "
+"Feed URL."
+msgstr ""
+"(С \"<code>http://</code>\" ) Тримайте порожнім для використання WordPress "
+"за замовчуванням RSS потік URL."
+
+#: theme-options.php:186
+msgid "Enable Excerpt"
+msgstr "Включити витримку"
+
+#: theme-options.php:189
+msgid "Show excerpt in Home and Archives with"
+msgstr "Показати уривок в будинку і архівів з"
+
+#: theme-options.php:192
+msgid "length"
+msgstr "довжина"
+
+#: theme-options.php:196
+msgid "Text of Read More link"
+msgstr "Детальніший Текст посилання"
+
+#: theme-options.php:198 theme-options.php:218 theme-options.php:225
+#: theme-options.php:233 theme-options.php:241
+msgid "Preview"
+msgstr "Попередній перегляд"
+
+#: theme-options.php:202
+msgid "Use Google Analytics?"
+msgstr "Використовуєте Google Analytics?"
+
+#: theme-options.php:205
+msgid ""
+"You can get you <code>Google Analytics</code> code <a target=\"_blank\" href="
+"\"https://www.google.com/analytics/settings/check_status_profile_handler"
+"\">here</a>."
+msgstr ""
+"Ви можете отримати <code>Google Analytics</code> код <a target=\"_blank\" "
+"href=\"https://www.google.com/analytics/settings/check_status_profile_handler"
+"\">тут</a> ."
+
+#: theme-options.php:210
+msgid "Analytics Code"
+msgstr "Код Аналітикса"
+
+#: theme-options.php:216
+msgid "Footer Copyright"
+msgstr "Footer Copyright"
+
+#: theme-options.php:222
+msgid "Display colourful bar on header and footer?"
+msgstr "Відобразити барвисту панель на верхньому і нижньому колонтитули?"
+
+#: theme-options.php:230
+msgid "Display SQL count at footer?"
+msgstr "Дисплей лічильника SQL у виносці?"
+
+#: theme-options.php:238
+msgid "Display Comment Note below comment form?"
+msgstr "Показати коментар Примітки нижче формі коментаря?"
+
+#: theme-options.php:258
+msgid "Some Tips Here"
+msgstr "Деякі поради Тут"
+
+#: theme-options.php:260
+msgid ""
+"1.Customize your Social Media (Facebook, Twitter, Google+ .etc) according to "
+"this"
+msgstr ""
+"1.Настойте свої соціальні мережі (Facebook, Twitter, Google+. т.д.) "
+"відповідно з цим"
+
+#: theme-options.php:260 theme-options.php:264
+msgid "Instructions"
+msgstr "Інструкції"
+
+#: theme-options.php:261
+msgid "2.Your threaded (nested) comments"
+msgstr "2.Ваші переплетені (вкладені) коментарі"
+
+#: theme-options.php:261
+msgid "levels deep, change it here"
+msgstr "рівнів в глибину, змінити його тут"
+
+#: theme-options.php:261
+msgid "Settings"
+msgstr "Налаштування"
+
+#: theme-options.php:261
+msgid "Discussion"
+msgstr "Обговорення"
+
+#: theme-options.php:262
+msgid "3.Change <code>&lt;Body&gt;</code> background image here"
+msgstr "3.Змінити <code>&lt;Body&gt;</code> фонове зображення тут"
+
+#: theme-options.php:262 theme-options.php:263 theme-options.php:265
+msgid "Appearance"
+msgstr "Поява"
+
+#: theme-options.php:262
+msgid "Background"
+msgstr "Фон"
+
+#: theme-options.php:263
+msgid "4.Customize <code>&lt;Header&gt;</code> image here"
+msgstr "4.Налаштуйте <code>&lt;Header&gt;</code> зображення тут"
+
+#: theme-options.php:263
+msgid "Header"
+msgstr "Тема"
+
+#: theme-options.php:264
+msgid ""
+"5.Download & Customize <code>Social Media Icons</code> from PSD source files "
+"here"
+msgstr ""
+"5.Скачати & Налаштувати <code>Social Media Icons</code> з PSD вихідних "
+"файлів тут"
+
+#: theme-options.php:265
+msgid "6.Use <code>Dot-B Colorful Tag Cloud</code> widget at sidebar"
+msgstr ""
+"6.Використання <code>Dot-B Colorful Tag Cloud</code> віджет на бічній панелі"
+
+#: theme-options.php:265
+msgid "Widgets"
+msgstr "Віджети"
+
+#: theme-options.php:266
+msgid ""
+"========= Feel free to get my help by both Twitter: <a href=\"http://twitter."
+"com/hzlzh\">@hzlzh</a> and Email: <a href=\"mailto:hzlzh.dev@gmail.com"
+"\">hzlzh.dev@gmail.com</a> ========="
+msgstr ""
+"========= Не соромтеся, щоб отримати мою допомогу у Twitter: <a href="
+"\"http://twitter.com/hzlzh\">@hzlzh</a> і Email: <a href=\"mailto:hzlzh."
+"dev@gmail.com\">hzlzh.dev@gmail.com</a> ========="
+
+#: theme-options.php:273
+msgid ""
+"Created, Developed and maintained by <a href=\"http://zlz.im/\">hzlzh</"
+"a><br>If you like the <code>Dot-B</code> theme, please donate. It will help "
+"in developing new features and versions."
+msgstr ""
+"Створення, Розробка та підтримка <a href=\"http://zlz.im/\">hzlzh</a> <br> "
+"Якщо вам подобається <code>Dot-B</code> тема, будь ласка, пожертвуйте. Це "
+"допоможе в розробці нових функцій і версії."
+
+#: theme-options.php:293
+msgid "Alipay"
+msgstr "Alipay"
