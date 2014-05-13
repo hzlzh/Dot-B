@@ -62,8 +62,11 @@ Help me with different language support! :) ]
 
 **Logs | 更新日志:**  
 
--- 1.8.9  -- 2013.10.07
-Serbian language supported | 支持塞尔维亚语
+
+-- 1.8.9  -- 2014.05.13
+
+* Ukraine language supported | 支持乌克兰语
+* Serbian language supported | 支持塞尔维亚语
 
 – 1.8.9 beta — 2012.02.20  
 
